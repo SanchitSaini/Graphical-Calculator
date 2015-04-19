@@ -11,6 +11,9 @@ public class CheckMain {
 		// TODO Auto-generated method stub
 		GUI gui = new GUI();
 		gui.setVisible(true);
+		ImportExport data = new ImportExport();
+		data.setDataSource("C:\\Users\\Pawas\\Desktop\\data4.txt");
+		data.importData();
 	}
 
 }
