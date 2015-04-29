@@ -1,28 +1,15 @@
 package Calculator.Operators;
 
-import Calculator.CharacterInterpreter;
-import Calculator.Operations.Arithmetic.Arithmetic;
-import Calculator.Operations.MemoryBased.Memory;
-import Calculator.Operations.Statistics.Statistics;
-import Calculator.Operations.Trigonometric.Trigonometric;
-
-
-public class Operator {
-
-  protected FunctionFamily functionType;
-
-  protected String operatorType;
-
-    public Statistics  myStatistics;
-    public Arithmetic  myArithmetic;
-    public Memory  myMemory;
-    public Trigonometric  myTrigonometric;
-    public CharacterInterpreter myCharacterInterpreter;
-    
-  public Operator() {
-  }
-
-  public void evaluate() {
-  }
+/***
+ * Abstract class for operators
+ * @version 1
+ */
+public abstract class Operator {
+	
+	/**
+	 * This function will perform an operation using the operator
+	 * @return evaluated value
+	 */
+	public abstract String evaluate();
 
 }

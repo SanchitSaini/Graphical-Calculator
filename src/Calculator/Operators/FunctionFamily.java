@@ -1,14 +1,9 @@
 package Calculator.Operators;
 
-enum FunctionFamily {
-
+public enum FunctionFamily {
   ARITHMETIC,
-
   TRIGONOMETRIC,
-
   STATISTICAL,
-
-  MEMORYBASED;
-
-
+  MEMORYBASED,
+  OTHERS
 }

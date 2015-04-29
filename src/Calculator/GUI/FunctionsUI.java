@@ -1,9 +1,9 @@
 package Calculator.GUI;
 
-import Calculator.Operations.Arithmetic.Arithmetic;
-import Calculator.Operations.MemoryBased.Memory;
-import Calculator.Operations.Statistics.Statistics;
-import Calculator.Operations.Trigonometric.Trigonometric;
+import Calculator.Operators.Arithmetic.Arithmetic;
+import Calculator.Operators.MemoryBased.Memory;
+import Calculator.Operators.Statistics.Statistics;
+import Calculator.Operators.Trigonometric.Trigonometric;
 
 
 public class FunctionsUI {

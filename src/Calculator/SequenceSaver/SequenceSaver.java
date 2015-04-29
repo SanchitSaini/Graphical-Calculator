@@ -7,9 +7,6 @@ import Calculator.Calculator;
 public class SequenceSaver {
 
   private HashMap sequence;
-
-    public Calculator myCalculator;
-
   public SequenceSaver() {
   }
 
