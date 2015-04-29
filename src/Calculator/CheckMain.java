@@ -3,6 +3,8 @@ package Calculator;
 import Calculator.Operators.Operator;
 import Calculator.Operators.Arithmetic.Add;
 import Calculator.Operators.Statistics.Mean;
+import Calculator.Operators.Statistics.Median;
+import Calculator.Operators.Statistics.Mode;
 import Calculator.Operators.Statistics.Statistics;
 
 /***
@@ -38,8 +40,14 @@ public class CheckMain {
 //				
 		ImportExport data = new ImportExport();
 		data.setDataSource("C:\\Users\\Pawas\\Desktop\\data4.txt");
-		Statistics meanObj = new Mean(data.importData());
-		meanObj.evaluate();
+		data.importData();
+//		Statistics meanObj = new Mean(data.getDataValues());
+//		meanObj.evaluate();
+//		Statistics medObj = new Median(data.getDataValues());
+//		medObj.evaluate();
+		Statistics modeObj = new Mode(data.getDataValues());
+		modeObj.evaluate();
+		
 	}
 
 }
