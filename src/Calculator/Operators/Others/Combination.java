@@ -1,16 +1,15 @@
-package Calculator.Operations.Others;
-
-
+package Calculator.Operators.Others;
 
 public class Combination extends More_Function_Families {
 
-  public void evaluate() {
+  public String evaluate() {
+	  return null;
   }
 
   public String getType() { return new String();
   }
 
-  public void Combination() {
+  public Combination() {
   }
 
 }

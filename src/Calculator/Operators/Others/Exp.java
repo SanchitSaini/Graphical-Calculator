@@ -1,9 +1,10 @@
-package Calculator.Operations.Others;
+package Calculator.Operators.Others;
 
 
 public class Exp extends More_Function_Families {
 
-  public void evaluate() {
+  public String evaluate() {
+	  return null;
   }
 
   public String getType() {

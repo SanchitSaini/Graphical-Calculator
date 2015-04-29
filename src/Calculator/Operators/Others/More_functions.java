@@ -1,4 +1,4 @@
-package Calculator.Operations.Others;
+package Calculator.Operators.Others;
 
 public class More_functions {
 
