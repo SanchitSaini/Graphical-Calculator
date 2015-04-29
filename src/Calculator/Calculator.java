@@ -43,5 +43,10 @@ public class Calculator {
 
   public void displayResult(String abc) {
   }
+  
+  public void compute(String exp)
+  {
+	  //charInterpreter.compute(exp);
+  }
 
 }
