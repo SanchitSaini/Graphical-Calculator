@@ -20,7 +20,7 @@ public class ImportExport {
 		alignType = Alignment.ROWWISE;
 	}
 
-	public void importData() {
+	public List<List<String>> importData() {
 
 		BufferedReader reader = null;
 		String line = "";
@@ -59,14 +59,16 @@ public class ImportExport {
 			else
 				dataValues = data;
 			
-			for(List<String> row : dataValues){
-				for(String col : row){
-					System.out.print(col + " ");
-				}
-				System.out.print("\n");
-			}
-
-
+			
+//			for(List<String> row : dataValues){
+//				for(String col : row){
+//					System.out.print(col + " ");
+//				}
+//				System.out.print("\n");
+//			}
+			
+			reader.close();
+			
 		}
 		catch(FileNotFoundException e)
 		{
@@ -75,6 +77,7 @@ public class ImportExport {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		return dataValues;
 
 	}
 

@@ -2,6 +2,8 @@ package Calculator;
 
 import Calculator.Operators.Operator;
 import Calculator.Operators.Arithmetic.Add;
+import Calculator.Operators.Statistics.Mean;
+import Calculator.Operators.Statistics.Statistics;
 
 /***
  *  Class to check new functionalities
@@ -36,7 +38,8 @@ public class CheckMain {
 //				
 		ImportExport data = new ImportExport();
 		data.setDataSource("C:\\Users\\Pawas\\Desktop\\data4.txt");
-		data.importData();
+		Statistics meanObj = new Mean(data.importData());
+		meanObj.evaluate();
 	}
 
 }
