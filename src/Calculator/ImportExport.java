@@ -20,7 +20,7 @@ public class ImportExport {
 		alignType = Alignment.ROWWISE;
 	}
 
-	public List<List<String>> importData() {
+	public void importData() {
 
 		BufferedReader reader = null;
 		String line = "";
@@ -59,7 +59,7 @@ public class ImportExport {
 			else
 				dataValues = data;
 			
-			
+//			
 //			for(List<String> row : dataValues){
 //				for(String col : row){
 //					System.out.print(col + " ");
@@ -77,7 +77,6 @@ public class ImportExport {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		return dataValues;
 
 	}
 
