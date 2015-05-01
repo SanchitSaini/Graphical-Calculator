@@ -60,45 +60,45 @@ public class TrigonometricFunctionsUI extends JPanel{
   		}
   	});
   	
-  	JButton btnSin_1 = new JButton("sin-1");
+  	JButton btnSin_1 = new JButton("asin");
   	btnSin_1.addActionListener(new ActionListener() {
   		public void actionPerformed(ActionEvent e) {
-  			input.setText(input.getText() + "sin-1(");
+  			input.setText(input.getText() + "asin(");
   		}
   	});
   	
-  	JButton btnCos = new JButton("cos-1");
+  	JButton btnCos = new JButton("acos");
   	btnCos.addActionListener(new ActionListener() {
   		public void actionPerformed(ActionEvent e) {
-  			input.setText(input.getText() + "cos-1(");
+  			input.setText(input.getText() + "acos(");
   		}
   	});
   	
-  	JButton btnTan_1 = new JButton("tan-1");
+  	JButton btnTan_1 = new JButton("atan");
   	btnTan_1.addActionListener(new ActionListener() {
   		public void actionPerformed(ActionEvent e) {
-  			input.setText(input.getText() + "tan-1(");
+  			input.setText(input.getText() + "atan(");
   		}
   	});
   	
-  	JButton btnCosec = new JButton("cosec-1");
+  	JButton btnCosec = new JButton("acosec");
   	btnCosec.addActionListener(new ActionListener() {
   		public void actionPerformed(ActionEvent e) {
-  			input.setText(input.getText() + "cosec-1(");
+  			input.setText(input.getText() + "acosec(");
   		}
   	});
   	
-  	JButton btnSec_1 = new JButton("sec-1");
+  	JButton btnSec_1 = new JButton("asec");
   	btnSec_1.addActionListener(new ActionListener() {
   		public void actionPerformed(ActionEvent e) {
-  			input.setText(input.getText() + "sec-1(");
+  			input.setText(input.getText() + "asec(");
   		}
   	});
   	
-  	JButton btnCot_1 = new JButton("cot-1");
+  	JButton btnCot_1 = new JButton("acot");
   	btnCot_1.addActionListener(new ActionListener() {
   		public void actionPerformed(ActionEvent e) {
-  			input.setText(input.getText() + "cot-1(");
+  			input.setText(input.getText() + "acot(");
   		}
   	});
   	GroupLayout groupLayout = new GroupLayout(this);

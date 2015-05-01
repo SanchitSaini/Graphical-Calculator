@@ -3,6 +3,8 @@ package Calculator.Operators.Statistics;
 import java.util.ArrayList;
 import java.util.List;
 
+import Calculator.ErrorModule;
+
 public class Mean extends Statistics {
 
 
@@ -21,11 +23,11 @@ public class Mean extends Statistics {
 		List<String> meanList = new ArrayList<String>();
 		StringBuilder meanStr = new StringBuilder();
 		boolean iter = false;
-//		if(dataPoints == null)
-//		{
-//			ErrorModule.displayError("Please import a file or enter data points to work on.");
-//			return null;
-//		}
+		if(dataPoints == null)
+		{
+			ErrorModule.displayError("Please import a file or enter data points to work on.");
+			return null;
+		}
 		for (List<String> row : dataPoints) {
 			int length = row.size();
 			float sum = 0;

@@ -4,6 +4,7 @@ import java.awt.BorderLayout;
 import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.Event;
+import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.GridLayout;
@@ -16,6 +17,7 @@ import java.awt.event.ComponentListener;
 import java.awt.event.KeyEvent;
 
 import javax.swing.JComponent;
+import javax.swing.JFileChooser;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JTabbedPane;
@@ -34,6 +36,9 @@ import java.util.ArrayList;
 import javax.swing.JInternalFrame;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
+import javax.swing.plaf.FileChooserUI;
+import javax.swing.JRadioButton;
+import javax.swing.ButtonGroup;
 
 
 
@@ -48,10 +53,22 @@ public class GUI extends JFrame{
     public Calculator myCalculator;
     private JTextField Input;
     private String expression;
-    
+    private String fileName;
+    private String dir;
+    private final ButtonGroup buttonGroup = new ButtonGroup();
+    private final ButtonGroup buttonGroup_1 = new ButtonGroup();
+    private String alignment;
+    private String inputType;
+    private double minX = -5;
+	private double maxX = 5;
+	private double minY = -5;
+	private double maxY = 5;
+	private int xAxis = 0;
+	private int yAxis = 0;
     /*private ArrayList<String> expElements = new ArrayList<String>();
     private ArrayList<String> expression = new ArrayList<String>();
     */
+  
     
     
     
@@ -62,7 +79,41 @@ public class GUI extends JFrame{
 
     
     //Input JLabel added
+    
+    
+
     calculator = new Calculator();
+    JRadioButton rdbtnRadian = new JRadioButton("Radian");
+  	buttonGroup_1.add(rdbtnRadian);
+  	
+  	JRadioButton radioButton = new JRadioButton("Degree");
+  	buttonGroup_1.add(radioButton);
+  	
+  	JRadioButton rdbtnRowwise = new JRadioButton("Rowwise");
+  	buttonGroup.add(rdbtnRowwise);
+  	
+  	JRadioButton rdbtnColumnwise = new JRadioButton("Columnwise");
+  	buttonGroup.add(rdbtnColumnwise);
+  	
+    
+    if(rdbtnRowwise.isSelected())
+    {
+    	alignment = rdbtnRowwise.getText(); 
+    }
+    if(rdbtnColumnwise.isSelected())
+    {
+    	alignment = rdbtnColumnwise.getText(); 
+    }
+    
+    if(rdbtnRadian.isSelected())
+    {
+    	inputType = rdbtnRadian.getText(); 
+    }
+    if(radioButton.isSelected())
+    {
+    	inputType = radioButton.getText(); 
+    }
+    
     Input = new JTextField();
   	Input.setColumns(10);
   	Input.getDocument().addDocumentListener(new DocumentListener(){
@@ -78,7 +129,7 @@ public class GUI extends JFrame{
 			// TODO Auto-generated method stub
 			expression = Input.getText();
 			System.out.println(expression);
-			calculator.compute(expression);
+			//calculator.compute(expression);
 //			exp = Input.getText();
 //			expElements.add(exp);
 //			String a = null;
@@ -165,8 +216,27 @@ public class GUI extends JFrame{
   		
   	});
   	varGrid[0][2].setText("A²");
+  	varGrid[0][2].addActionListener(new ActionListener(){
+
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			// TODO Auto-generated method stub
+			JButton temp = (JButton)e.getSource();
+			Input.setText(Input.getText() + "^2");
+		}
+  		
+  	});
   	varGrid[0][3].setText("Aˣ");
-  	
+  	varGrid[0][3].addActionListener(new ActionListener(){
+
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			// TODO Auto-generated method stub
+			JButton temp = (JButton)e.getSource();
+			Input.setText(Input.getText() + "^");
+		}
+  		
+  	});
   	varGrid[1][0].setText("(");
   	varGrid[1][0].addActionListener(new ActionListener(){
 
@@ -281,6 +351,16 @@ public class GUI extends JFrame{
   		
   	});
   	varGrid[3][3].setText("10ˣ");
+  	varGrid[3][3].addActionListener(new ActionListener(){
+
+		@Override
+		public void actionPerformed(ActionEvent arg0) {
+			// TODO Auto-generated method stub
+			JButton temp = (JButton)arg0.getSource();
+			Input.setText(Input.getText() + "10^");
+		}
+  		
+  	});
   	
   	for(int i=0;i<4;i++)
   	{
@@ -289,113 +369,129 @@ public class GUI extends JFrame{
   			staticPanel.add(varGrid[i][j]);
   		}
   	}
-  		
-     JPanel graphPanel = new JPanel(){
-    	 int count = 1;
-
-    	 	@Override
-	  		public Dimension getPreferredSize()
-	  		{
-	  			return new Dimension(100,100);
-	  		}
-	  		Dimension size = getSize();
-	  		
-	  		@Override
-	  		public void paintComponents(Graphics g){
-	  			if(size!=getSize()){
-	  			System.out.println("hello");
-	  			count = count + 1;
-	  			System.out.println(String.valueOf(count));
-	  			super.paintComponent(g);
-	  			//setPreferredSize(new Dimension(400,400));
-	  			Graphics2D g2 = (Graphics2D)g;
-	  			
-	  			//g2.setColor(Color.WHITE);
-	  			//g2.fillRect(getX(), getY(), getWidth(), getHeight());
-	  			setBackground(Color.WHITE);
-	  	        //g2.fillRect(padding + labelPadding, padding, getWidth() - (2 * padding) - labelPadding, getHeight() - 2 * padding - labelPadding);
-		  	   // g2.setColor(Color.RED);
-	  	        //g2.drawRect(getX(), getY(), getWidth(), getHeight());
-		  	    //g2.drawRect(padding + labelPadding + 1, padding + 1, getWidth() - (2 * padding) - labelPadding + 1, getHeight() - 2 * padding - labelPadding + 1);
-	  	        //System.out.println(getWidth());
-//	  	        System.out.println(getHeight());
-		  	    //g2.drawLine(0,0,100,100);
-		  	    //g2.drawLine(getX() + (getWidth()/2), getY(),getX() + (getWidth()/2), getY() + getHeight());
-		  	    }
-//	  	        g2.drawLine(getX() + 3, getY() + (getHeight()/2),getX() + getWidth() - 3,getY() + (getHeight()/2));
-	  		}
-	  	};
-	  	  	
-
-  	getContentPane().add(graphPanel);
-  	
-	graphPanel.addComponentListener(new ComponentListener(){
-
-		@Override
-		public void componentHidden(ComponentEvent arg0) {
-			// TODO Auto-generated method stub
-			
-		}
-
-		@Override
-		public void componentMoved(ComponentEvent arg0) {
-			// TODO Auto-generated method stub
-			
-		}
-
-		@Override
-		public void componentResized(ComponentEvent arg0) {
-			// TODO Auto-generated method stub
-			System.out.println("Gjdfk");
-			
-			JPanel a = (JPanel)arg0.getComponent();
-			//System.out.println(a.getSize());
-			a.paintComponents(getGraphics());
-			
-		}
-
-		@Override
-		public void componentShown(ComponentEvent arg0) {
-			// TODO Auto-generated method stub
-			
-		}
-  		
-  	});
+//  	groupLayout_1.setHorizontalGroup(
+//  		groupLayout_1.createParallelGroup(Alignment.LEADING)
+//  			.addGap(0, 796, Short.MAX_VALUE)
+//  	);
+//  	groupLayout_1.setVerticalGroup(
+//  		groupLayout_1.createParallelGroup(Alignment.LEADING)
+//  			.addGap(0, 259, Short.MAX_VALUE)
+//  	);
+//  	
+//	graphPanel.addComponentListener(new ComponentListener(){
+//
+//		@Override
+//		public void componentHidden(ComponentEvent arg0) {
+//			// TODO Auto-generated method stub
+//			
+//		}
+//
+//		@Override
+//		public void componentMoved(ComponentEvent arg0) {
+//			// TODO Auto-generated method stub
+//			
+//		}
+//
+//		@Override
+//		public void componentResized(ComponentEvent arg0) {
+//			// TODO Auto-generated method stub
+//			System.out.println("Gjdfk");
+//			
+//			JPanel a = (JPanel)arg0.getComponent();
+//			//System.out.println(a.getSize());
+//			a.paintComponents(getGraphics());
+//			
+//		}
+//
+//		@Override
+//		public void componentShown(ComponentEvent arg0) {
+//			// TODO Auto-generated method stub
+//			
+//		}
+//  		
+//  	});
 
   	
   	
    	//Adding TabbedPane
   	JTabbedPane tabbedPane = new JTabbedPane(JTabbedPane.TOP);
+  	
+  	JButton btnChooseFile = new JButton("Choose File");
+  	btnChooseFile.addActionListener(new ActionListener() {
+  		public void actionPerformed(ActionEvent arg0) {
+  			JFileChooser c = new JFileChooser();
+  	      // Demonstrate "Open" dialog:
+  	      int rVal = c.showOpenDialog(c);
+  			if (rVal == JFileChooser.APPROVE_OPTION) {
+  				//use alignment here for rowwise and columnwise
+  				fileName = c.getSelectedFile().getName();
+  				dir = c.getCurrentDirectory().toString();
+  	        
+  	        	//System.out.println(fileName);
+  	      		//System.out.println(dir);
+  	      }
+  	      if (rVal == JFileChooser.CANCEL_OPTION) {
+  	        System.out.println("No File Selected!!");
+  	      }
+  		}
+  	});
+  	
+  	GraphPanel panel = new GraphPanel();
+  	
+  	panel.setMinimumSize(new Dimension(400,1400));
+  	panel.setPreferredSize(new Dimension(400,400));
+  	
   	GroupLayout groupLayout = new GroupLayout(getContentPane());
   	groupLayout.setHorizontalGroup(
-  		groupLayout.createParallelGroup(Alignment.LEADING)
+  		groupLayout.createParallelGroup(Alignment.TRAILING)
   			.addGroup(groupLayout.createSequentialGroup()
-  				.addGap(24)
-  				.addGroup(groupLayout.createParallelGroup(Alignment.LEADING)
-  					.addComponent(graphPanel, GroupLayout.PREFERRED_SIZE, 796, GroupLayout.PREFERRED_SIZE)
-  					.addComponent(Input, GroupLayout.PREFERRED_SIZE, 489, GroupLayout.PREFERRED_SIZE)
-  					.addGroup(groupLayout.createSequentialGroup()
-  						.addGap(25)
-  						.addComponent(digitPanel, GroupLayout.PREFERRED_SIZE, 352, GroupLayout.PREFERRED_SIZE)
-  						.addGap(18)
-  						.addComponent(tabbedPane, GroupLayout.PREFERRED_SIZE, 326, GroupLayout.PREFERRED_SIZE)))
-  				.addContainerGap(269, Short.MAX_VALUE))
-  			.addGroup(Alignment.TRAILING, groupLayout.createSequentialGroup()
   				.addContainerGap(755, Short.MAX_VALUE)
   				.addComponent(staticPanel, GroupLayout.PREFERRED_SIZE, 324, GroupLayout.PREFERRED_SIZE)
   				.addContainerGap())
+  			.addGroup(Alignment.LEADING, groupLayout.createSequentialGroup()
+  				.addGap(24)
+  				.addGroup(groupLayout.createParallelGroup(Alignment.LEADING)
+  					.addComponent(panel, GroupLayout.PREFERRED_SIZE, 684, GroupLayout.PREFERRED_SIZE)
+  					.addGroup(groupLayout.createSequentialGroup()
+  						.addGap(25)
+  						.addGroup(groupLayout.createParallelGroup(Alignment.LEADING)
+  							.addComponent(digitPanel, GroupLayout.PREFERRED_SIZE, 352, GroupLayout.PREFERRED_SIZE)
+  							.addGroup(groupLayout.createSequentialGroup()
+  								.addComponent(rdbtnRadian)
+  								.addGap(18)
+  								.addComponent(radioButton, GroupLayout.PREFERRED_SIZE, 69, GroupLayout.PREFERRED_SIZE)))
+  						.addGap(18)
+  						.addComponent(tabbedPane, GroupLayout.PREFERRED_SIZE, 326, GroupLayout.PREFERRED_SIZE))
+  					.addGroup(groupLayout.createSequentialGroup()
+  						.addComponent(Input, GroupLayout.PREFERRED_SIZE, 489, GroupLayout.PREFERRED_SIZE)
+  						.addGap(34)
+  						.addComponent(btnChooseFile)
+  						.addGap(34)
+  						.addComponent(rdbtnRowwise)
+  						.addGap(18)
+  						.addComponent(rdbtnColumnwise)))
+  				.addContainerGap(255, Short.MAX_VALUE))
   	);
   	groupLayout.setVerticalGroup(
   		groupLayout.createParallelGroup(Alignment.TRAILING)
   			.addGroup(groupLayout.createSequentialGroup()
   				.addGap(36)
-  				.addComponent(Input, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-  				.addGap(26)
-  				.addComponent(graphPanel, GroupLayout.PREFERRED_SIZE, 259, GroupLayout.PREFERRED_SIZE)
+  				.addGroup(groupLayout.createParallelGroup(Alignment.BASELINE)
+  					.addComponent(Input, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+  					.addComponent(btnChooseFile)
+  					.addComponent(rdbtnColumnwise)
+  					.addComponent(rdbtnRowwise))
+  				.addGap(59)
+  				.addComponent(panel, GroupLayout.PREFERRED_SIZE, 194, GroupLayout.PREFERRED_SIZE)
+  				.addGap(32)
   				.addGroup(groupLayout.createParallelGroup(Alignment.LEADING)
   					.addGroup(groupLayout.createParallelGroup(Alignment.LEADING)
   						.addGroup(groupLayout.createSequentialGroup()
-  							.addPreferredGap(ComponentPlacement.RELATED, 32, Short.MAX_VALUE)
+  							.addGap(18)
+  							.addGroup(groupLayout.createParallelGroup(Alignment.BASELINE)
+  								.addComponent(rdbtnRadian)
+  								.addComponent(radioButton))
+  							.addPreferredGap(ComponentPlacement.RELATED, 16, Short.MAX_VALUE)
   							.addComponent(digitPanel, GroupLayout.PREFERRED_SIZE, 201, GroupLayout.PREFERRED_SIZE)
   							.addGap(76))
   						.addGroup(groupLayout.createSequentialGroup()
@@ -407,6 +503,11 @@ public class GUI extends JFrame{
   						.addComponent(tabbedPane, GroupLayout.PREFERRED_SIZE, 241, GroupLayout.PREFERRED_SIZE)
   						.addContainerGap())))
   	);
+  	
+  	getContentPane().add(panel);
+  	//panel.setBackground(Color.WHITE);
+  	panel.setVisible(true);
+  	
   	TrigonometricFunctionsUI trigPanel = new TrigonometricFunctionsUI(Input);
   	tabbedPane.add("trig", trigPanel);
   	StatisticalFunctionsUI statPanel = new StatisticalFunctionsUI();
@@ -522,7 +623,19 @@ public class GUI extends JFrame{
   	this.setSize(1105, 716);
   
   }
-
+    
   public void clear() {
   }
+  
+  public synchronized int UnitToPixelX(double x) {
+		double pixelsPerUnit = this.getWidth() / (maxX - minX);
+		double pos = (x - minX) * pixelsPerUnit;
+		return (int) pos;
+	}
+  public synchronized int UnitToPixelY(double y) {
+		double pixelsPerUnit = this.getHeight() / (maxY - minY);
+		double pos = (y - minY) * pixelsPerUnit;
+		pos = -pos + this.getHeight();
+		return (int) pos;
+	}
 }
