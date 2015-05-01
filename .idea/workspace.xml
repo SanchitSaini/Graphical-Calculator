@@ -2,105 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="88cc919b-783b-4233-9977-195a57450faf" name="Default" comment="Error Module">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/Calculator/ErrorModule.class" />
-      <change type="DELETED" beforePath="C:\Users\Pranav\Documents\GitHub\Graphical-Calculator\bin\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranav\Documents\GitHub\Graphical-Calculator\bin\Calculator\Operations\Arithmetic\Add.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranav\Documents\GitHub\Graphical-Calculator\bin\Calculator\Operations\Arithmetic\Arithmetic.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranav\Documents\GitHub\Graphical-Calculator\bin\Calculator\Operations\Arithmetic\Divide.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranav\Documents\GitHub\Graphical-Calculator\bin\Calculator\Operations\Arithmetic\Multiply.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranav\Documents\GitHub\Graphical-Calculator\bin\Calculator\Operations\Arithmetic\Subtract.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranav\Documents\GitHub\Graphical-Calculator\bin\Calculator\Operations\MemoryBased\MClear.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranav\Documents\GitHub\Graphical-Calculator\bin\Calculator\Operations\MemoryBased\MRecall.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranav\Documents\GitHub\Graphical-Calculator\bin\Calculator\Operations\MemoryBased\MSet.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranav\Documents\GitHub\Graphical-Calculator\bin\Calculator\Operations\MemoryBased\M_Minus.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranav\Documents\GitHub\Graphical-Calculator\bin\Calculator\Operations\MemoryBased\M_Plus.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranav\Documents\GitHub\Graphical-Calculator\bin\Calculator\Operations\MemoryBased\Memory.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranav\Documents\GitHub\Graphical-Calculator\bin\Calculator\Operations\Others\Combination.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranav\Documents\GitHub\Graphical-Calculator\bin\Calculator\Operations\Others\Exp.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranav\Documents\GitHub\Graphical-Calculator\bin\Calculator\Operations\Others\Factorial.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranav\Documents\GitHub\Graphical-Calculator\bin\Calculator\Operations\Others\Floor.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranav\Documents\GitHub\Graphical-Calculator\bin\Calculator\Operations\Others\LCM.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranav\Documents\GitHub\Graphical-Calculator\bin\Calculator\Operations\Others\Log.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranav\Documents\GitHub\Graphical-Calculator\bin\Calculator\Operations\Others\More_Function_Families.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranav\Documents\GitHub\Graphical-Calculator\bin\Calculator\Operations\Others\More_functions.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranav\Documents\GitHub\Graphical-Calculator\bin\Calculator\Operations\Others\Percentage.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranav\Documents\GitHub\Graphical-Calculator\bin\Calculator\Operations\Others\Permutation.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranav\Documents\GitHub\Graphical-Calculator\bin\Calculator\Operations\Statistics\Mean.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranav\Documents\GitHub\Graphical-Calculator\bin\Calculator\Operations\Statistics\Median.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranav\Documents\GitHub\Graphical-Calculator\bin\Calculator\Operations\Statistics\Mode.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranav\Documents\GitHub\Graphical-Calculator\bin\Calculator\Operations\Statistics\Statistics.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranav\Documents\GitHub\Graphical-Calculator\bin\Calculator\Operations\Trigonometric\AngleNotation.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranav\Documents\GitHub\Graphical-Calculator\bin\Calculator\Operations\Trigonometric\Cos.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranav\Documents\GitHub\Graphical-Calculator\bin\Calculator\Operations\Trigonometric\CosInverse.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranav\Documents\GitHub\Graphical-Calculator\bin\Calculator\Operations\Trigonometric\InverseTrigonometric.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranav\Documents\GitHub\Graphical-Calculator\bin\Calculator\Operations\Trigonometric\NormalTrigonometric.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranav\Documents\GitHub\Graphical-Calculator\bin\Calculator\Operations\Trigonometric\Sin.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranav\Documents\GitHub\Graphical-Calculator\bin\Calculator\Operations\Trigonometric\SinInverse.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranav\Documents\GitHub\Graphical-Calculator\bin\Calculator\Operations\Trigonometric\Tan.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranav\Documents\GitHub\Graphical-Calculator\bin\Calculator\Operations\Trigonometric\TanInverse.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranav\Documents\GitHub\Graphical-Calculator\bin\Calculator\Operations\Trigonometric\Trigonometric.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/Operators/Arithmetic/Add.class" afterPath="$PROJECT_DIR$/bin/Calculator/Operators/Arithmetic/Add.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/Alignment.class" afterPath="$PROJECT_DIR$/bin/Calculator/Alignment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/Operators/Trigonometric/AngleNotation.class" afterPath="$PROJECT_DIR$/bin/Calculator/Operators/Trigonometric/AngleNotation.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/Operators/Arithmetic/Arithmetic.class" afterPath="$PROJECT_DIR$/bin/Calculator/Operators/Arithmetic/Arithmetic.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/ArithmeticFunctionsUI.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/ArithmeticFunctionsUI.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Calculator/Operators/OperatorFactory.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/CharacterInterpreter.class" afterPath="$PROJECT_DIR$/bin/Calculator/CharacterInterpreter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/CheckAndCorrectUI.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/CheckAndCorrectUI.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/Operators/Others/Combination.class" afterPath="$PROJECT_DIR$/bin/Calculator/Operators/Others/Combination.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/Operators/Trigonometric/Cos.class" afterPath="$PROJECT_DIR$/bin/Calculator/Operators/Trigonometric/Cos.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/Operators/Trigonometric/CosInverse.class" afterPath="$PROJECT_DIR$/bin/Calculator/Operators/Trigonometric/CosInverse.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/Operators/Arithmetic/Divide.class" afterPath="$PROJECT_DIR$/bin/Calculator/Operators/Arithmetic/Divide.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/EquationSolver/EquationSolver.class" afterPath="$PROJECT_DIR$/bin/Calculator/EquationSolver/EquationSolver.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/Operators/Others/Exp.class" afterPath="$PROJECT_DIR$/bin/Calculator/Operators/Others/Exp.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/Operators/Others/Factorial.class" afterPath="$PROJECT_DIR$/bin/Calculator/Operators/Others/Factorial.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/Operators/Others/Floor.class" afterPath="$PROJECT_DIR$/bin/Calculator/Operators/Others/Floor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/Operators/FunctionFamily.class" afterPath="$PROJECT_DIR$/bin/Calculator/Operators/FunctionFamily.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/FunctionsUI.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/FunctionsUI.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/ImportExport.class" afterPath="$PROJECT_DIR$/bin/Calculator/ImportExport.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/InputType.class" afterPath="$PROJECT_DIR$/bin/Calculator/InputType.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/Operators/Trigonometric/InverseTrigonometric.class" afterPath="$PROJECT_DIR$/bin/Calculator/Operators/Trigonometric/InverseTrigonometric.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/Operators/Others/LCM.class" afterPath="$PROJECT_DIR$/bin/Calculator/Operators/Others/LCM.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/Operators/Others/Log.class" afterPath="$PROJECT_DIR$/bin/Calculator/Operators/Others/Log.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/Operators/MemoryBased/MClear.class" afterPath="$PROJECT_DIR$/bin/Calculator/Operators/MemoryBased/MClear.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/Operators/MemoryBased/MRecall.class" afterPath="$PROJECT_DIR$/bin/Calculator/Operators/MemoryBased/MRecall.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/Operators/MemoryBased/MSet.class" afterPath="$PROJECT_DIR$/bin/Calculator/Operators/MemoryBased/MSet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/Operators/MemoryBased/M_Minus.class" afterPath="$PROJECT_DIR$/bin/Calculator/Operators/MemoryBased/M_Minus.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/Operators/MemoryBased/M_Plus.class" afterPath="$PROJECT_DIR$/bin/Calculator/Operators/MemoryBased/M_Plus.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/Operators/MemoryBased/Memory.class" afterPath="$PROJECT_DIR$/bin/Calculator/Operators/MemoryBased/Memory.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/MemoryBasedFunctionsUI.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/MemoryBasedFunctionsUI.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/MiscFunctionsUI$1.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/MiscFunctionsUI$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/MiscFunctionsUI$2.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/MiscFunctionsUI$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/MiscFunctionsUI$3.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/MiscFunctionsUI$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/MiscFunctionsUI$4.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/MiscFunctionsUI$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/MiscFunctionsUI$5.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/MiscFunctionsUI$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/MiscFunctionsUI$7.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/MiscFunctionsUI$7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/Operators/Others/More_Function_Families.class" afterPath="$PROJECT_DIR$/bin/Calculator/Operators/Others/More_Function_Families.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/Operators/Others/More_functions.class" afterPath="$PROJECT_DIR$/bin/Calculator/Operators/Others/More_functions.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/Operators/Arithmetic/Multiply.class" afterPath="$PROJECT_DIR$/bin/Calculator/Operators/Arithmetic/Multiply.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/Operators/Trigonometric/NormalTrigonometric.class" afterPath="$PROJECT_DIR$/bin/Calculator/Operators/Trigonometric/NormalTrigonometric.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/NumbersUI.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/NumbersUI.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/Operators/Operator.class" afterPath="$PROJECT_DIR$/bin/Calculator/Operators/Operator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/Operators/Others/Percentage.class" afterPath="$PROJECT_DIR$/bin/Calculator/Operators/Others/Percentage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/Operators/Others/Permutation.class" afterPath="$PROJECT_DIR$/bin/Calculator/Operators/Others/Permutation.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/PlotUI.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/PlotUI.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/Plotter/Plotter.class" afterPath="$PROJECT_DIR$/bin/Calculator/Plotter/Plotter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/SequenceSaver/SequenceSaver.class" afterPath="$PROJECT_DIR$/bin/Calculator/SequenceSaver/SequenceSaver.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/Operators/Trigonometric/Sin.class" afterPath="$PROJECT_DIR$/bin/Calculator/Operators/Trigonometric/Sin.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/Operators/Trigonometric/SinInverse.class" afterPath="$PROJECT_DIR$/bin/Calculator/Operators/Trigonometric/SinInverse.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/StatisticalFunctionsUI$1.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/StatisticalFunctionsUI$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/StatisticalFunctionsUI.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/StatisticalFunctionsUI.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/Operators/Statistics/Statistics.class" afterPath="$PROJECT_DIR$/bin/Calculator/Operators/Statistics/Statistics.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/Operators/Arithmetic/Subtract.class" afterPath="$PROJECT_DIR$/bin/Calculator/Operators/Arithmetic/Subtract.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/Operators/Trigonometric/Tan.class" afterPath="$PROJECT_DIR$/bin/Calculator/Operators/Trigonometric/Tan.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/Operators/Trigonometric/TanInverse.class" afterPath="$PROJECT_DIR$/bin/Calculator/Operators/Trigonometric/TanInverse.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/Operators/Trigonometric/Trigonometric.class" afterPath="$PROJECT_DIR$/bin/Calculator/Operators/Trigonometric/Trigonometric.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/TrigonometricFunctionsUI$1.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/TrigonometricFunctionsUI$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/TrigonometricFunctionsUI$2.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/TrigonometricFunctionsUI$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/TrigonometricFunctionsUI$3.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/TrigonometricFunctionsUI$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/TrigonometricFunctionsUI$4.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/TrigonometricFunctionsUI$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/TrigonometricFunctionsUI$5.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/TrigonometricFunctionsUI$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/TrigonometricFunctionsUI$6.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/TrigonometricFunctionsUI$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Calculator/ErrorModule.java" afterPath="$PROJECT_DIR$/src/Calculator/ErrorModule.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/CheckMain.class" afterPath="$PROJECT_DIR$/bin/Calculator/CheckMain.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/Operators/Statistics/Mean.class" afterPath="$PROJECT_DIR$/bin/Calculator/Operators/Statistics/Mean.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/Operators/Statistics/Median.class" afterPath="$PROJECT_DIR$/bin/Calculator/Operators/Statistics/Median.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/Operators/Statistics/Mode.class" afterPath="$PROJECT_DIR$/bin/Calculator/Operators/Statistics/Mode.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Calculator/CheckMain.java" afterPath="$PROJECT_DIR$/src/Calculator/CheckMain.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Calculator/Operators/Arithmetic/Divide.java" afterPath="$PROJECT_DIR$/src/Calculator/Operators/Arithmetic/Divide.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Calculator/Operators/Statistics/Mean.java" afterPath="$PROJECT_DIR$/src/Calculator/Operators/Statistics/Mean.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Calculator/Operators/Statistics/Median.java" afterPath="$PROJECT_DIR$/src/Calculator/Operators/Statistics/Median.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Calculator/Operators/Statistics/Mode.java" afterPath="$PROJECT_DIR$/src/Calculator/Operators/Statistics/Mode.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Calculator/Operators/Arithmetic/Multiply.java" afterPath="$PROJECT_DIR$/src/Calculator/Operators/Arithmetic/Multiply.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Calculator/Operators/OperatorTester.java" afterPath="$PROJECT_DIR$/src/Calculator/Operators/OperatorTester.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Calculator/Operators/Trigonometric/Sin.java" afterPath="$PROJECT_DIR$/src/Calculator/Operators/Trigonometric/Sin.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Calculator/Operators/Arithmetic/Subtract.java" afterPath="$PROJECT_DIR$/src/Calculator/Operators/Arithmetic/Subtract.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Graphical Calculator.iws" />
@@ -136,8 +52,8 @@
       <file leaf-file-name="CharacterInterpreter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Calculator/CharacterInterpreter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="867" max-vertical-offset="2108">
-              <caret line="106" column="0" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="909" max-vertical-offset="2108">
+              <caret line="123" column="46" selection-start-line="123" selection-start-column="46" selection-end-line="123" selection-end-column="46" />
               <folding>
                 <element signature="method#pushElementToStack#0;class#CharacterInterpreter#0" expanded="false" />
                 <element signature="method#popElementFromStack#0;class#CharacterInterpreter#0" expanded="false" />
@@ -150,14 +66,69 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Add.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="OperatorTester.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Calculator/Operators/OperatorTester.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="80" max-vertical-offset="765">
+              <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Sin.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Calculator/Operators/Trigonometric/Sin.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="918">
+              <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+              <folding>
+                <element signature="e#282#283#0" expanded="true" />
+                <element signature="e#306#307#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Add.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Calculator/Operators/Arithmetic/Add.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.37226278" vertical-offset="0" max-vertical-offset="748">
-              <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="748">
+              <caret line="6" column="35" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OperatorFactory.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Calculator/Operators/OperatorFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.19854015" vertical-offset="0" max-vertical-offset="1632">
+              <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Cos.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Calculator/Operators/Trigonometric/Cos.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="799">
+              <caret line="27" column="69" selection-start-line="27" selection-start-column="69" selection-end-line="27" selection-end-column="69" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Divide.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Calculator/Operators/Arithmetic/Divide.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="935">
+              <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -175,9 +146,6 @@
         <option value="$PROJECT_DIR$/src/Calculator/ErrorModule.java" />
         <option value="$PROJECT_DIR$/src/Calculator/Operators/Trigonometric/Trigonometric.java" />
         <option value="$PROJECT_DIR$/src/Calculator/Operators/Arithmetic/Add.java" />
-        <option value="$PROJECT_DIR$/src/Calculator/Operators/Arithmetic/Divide.java" />
-        <option value="$PROJECT_DIR$/src/Calculator/Operators/Arithmetic/Subtract.java" />
-        <option value="$PROJECT_DIR$/src/Calculator/Operators/Arithmetic/Multiply.java" />
         <option value="$PROJECT_DIR$/src/Calculator/Operators/Others/TenExpX.java" />
         <option value="$PROJECT_DIR$/src/Calculator/Operators/Others/SquareRoot.java" />
         <option value="$PROJECT_DIR$/src/Calculator/Operators/Others/Square.java" />
@@ -209,9 +177,16 @@
         <option value="$PROJECT_DIR$/src/Calculator/Operators/Trigonometric/TanInverse.java" />
         <option value="$PROJECT_DIR$/src/Calculator/Operators/Trigonometric/Tan.java" />
         <option value="$PROJECT_DIR$/src/Calculator/Operators/Trigonometric/SinInverse.java" />
-        <option value="$PROJECT_DIR$/src/Calculator/Operators/Trigonometric/Sin.java" />
         <option value="$PROJECT_DIR$/src/Calculator/Operators/Trigonometric/SecInverse.java" />
         <option value="$PROJECT_DIR$/src/Calculator/CharacterInterpreter.java" />
+        <option value="$PROJECT_DIR$/src/Calculator/Operators/Trigonometric/Sin.java" />
+        <option value="$PROJECT_DIR$/src/Calculator/Operators/OperatorTester.java" />
+        <option value="$PROJECT_DIR$/src/Calculator/Operators/Arithmetic/Subtract.java" />
+        <option value="$PROJECT_DIR$/src/Calculator/Operators/Arithmetic/Multiply.java" />
+        <option value="$PROJECT_DIR$/src/Calculator/Operators/Arithmetic/Divide.java" />
+        <option value="$PROJECT_DIR$/src/Calculator/Operators/Others/OperatorFactory.java" />
+        <option value="$PROJECT_DIR$/src/Calculator/Operators/Trigonometric/OperatorFactory.java" />
+        <option value="$PROJECT_DIR$/src/Calculator/Operators/OperatorFactory.java" />
       </list>
     </option>
   </component>
@@ -307,58 +282,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Graphical-Calculator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Graphical-Calculator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Calculator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Operators" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Others" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Graphical-Calculator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Graphical-Calculator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Calculator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Operators" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Arithmetic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
@@ -381,6 +304,11 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="Calculator.Operators" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.CheckMain">
     <configuration default="false" name="CheckMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -648,7 +576,7 @@
       <workItem from="1430334195051" duration="9044000" />
       <workItem from="1430468194270" duration="19000" />
       <workItem from="1430492916888" duration="1662000" />
-      <workItem from="1430494660619" duration="4326000" />
+      <workItem from="1430494660619" duration="12572000" />
     </task>
     <task id="LOCAL-00001" summary="Error Module">
       <created>1430339818210</created>
@@ -672,7 +600,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33280000" />
+    <option name="totallyTimeSpent" value="41526000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1552" height="845" extended-state="6" />
@@ -689,10 +617,10 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32959327" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27629733" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21879382" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32959327" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -729,7 +657,9 @@
     <option name="LAST_COMMIT_MESSAGE" value="Operators coming in..." />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -775,14 +705,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Calculator/Operators/OperatorTester.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="332" max-vertical-offset="782">
-          <caret line="37" column="20" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Calculator/Operators/Trigonometric/Trigonometric.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.099270076" vertical-offset="0" max-vertical-offset="685">
@@ -796,7 +718,7 @@
         <state vertical-scroll-proportion="0.47883213" vertical-offset="182" max-vertical-offset="901">
           <caret line="32" column="69" selection-start-line="32" selection-start-column="69" selection-end-line="32" selection-end-column="69" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -806,7 +728,7 @@
         <state vertical-scroll-proportion="0.44671533" vertical-offset="85" max-vertical-offset="850">
           <caret line="23" column="69" selection-start-line="23" selection-start-column="69" selection-end-line="23" selection-end-column="69" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -816,7 +738,7 @@
         <state vertical-scroll-proportion="0.5459854" vertical-offset="0" max-vertical-offset="952">
           <caret line="24" column="69" selection-start-line="24" selection-start-column="69" selection-end-line="24" selection-end-column="69" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -826,7 +748,7 @@
         <state vertical-scroll-proportion="0.620438" vertical-offset="0" max-vertical-offset="935">
           <caret line="27" column="69" selection-start-line="27" selection-start-column="69" selection-end-line="27" selection-end-column="69" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -836,7 +758,7 @@
         <state vertical-scroll-proportion="0.64525545" vertical-offset="0" max-vertical-offset="969">
           <caret line="28" column="69" selection-start-line="28" selection-start-column="69" selection-end-line="28" selection-end-column="69" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1022,7 +944,7 @@
         <state vertical-scroll-proportion="0.59562045" vertical-offset="0" max-vertical-offset="816">
           <caret line="26" column="69" selection-start-line="26" selection-start-column="69" selection-end-line="26" selection-end-column="69" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1048,7 +970,7 @@
         <state vertical-scroll-proportion="0.620438" vertical-offset="0" max-vertical-offset="816">
           <caret line="27" column="69" selection-start-line="27" selection-start-column="69" selection-end-line="27" selection-end-column="69" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1058,7 +980,7 @@
         <state vertical-scroll-proportion="0.59562045" vertical-offset="0" max-vertical-offset="816">
           <caret line="26" column="69" selection-start-line="26" selection-start-column="69" selection-end-line="26" selection-end-column="69" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1068,7 +990,7 @@
         <state vertical-scroll-proportion="0.64525545" vertical-offset="0" max-vertical-offset="833">
           <caret line="28" column="69" selection-start-line="28" selection-start-column="69" selection-end-line="28" selection-end-column="69" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1078,7 +1000,7 @@
         <state vertical-scroll-proportion="0.620438" vertical-offset="0" max-vertical-offset="816">
           <caret line="27" column="69" selection-start-line="27" selection-start-column="69" selection-end-line="27" selection-end-column="69" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1088,17 +1010,7 @@
         <state vertical-scroll-proportion="0.59562045" vertical-offset="0" max-vertical-offset="816">
           <caret line="26" column="69" selection-start-line="26" selection-start-column="69" selection-end-line="26" selection-end-column="69" />
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Calculator/Operators/Trigonometric/Cos.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.620438" vertical-offset="0" max-vertical-offset="833">
-          <caret line="27" column="69" selection-start-line="27" selection-start-column="69" selection-end-line="27" selection-end-column="69" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1108,7 +1020,7 @@
         <state vertical-scroll-proportion="0.64525545" vertical-offset="0" max-vertical-offset="833">
           <caret line="28" column="69" selection-start-line="28" selection-start-column="69" selection-end-line="28" selection-end-column="69" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1118,7 +1030,7 @@
         <state vertical-scroll-proportion="0.670073" vertical-offset="0" max-vertical-offset="867">
           <caret line="29" column="69" selection-start-line="29" selection-start-column="69" selection-end-line="29" selection-end-column="69" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1128,17 +1040,7 @@
         <state vertical-scroll-proportion="0.670073" vertical-offset="0" max-vertical-offset="867">
           <caret line="29" column="69" selection-start-line="29" selection-start-column="69" selection-end-line="29" selection-end-column="69" />
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Calculator/Operators/Trigonometric/Sin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.670073" vertical-offset="0" max-vertical-offset="867">
-          <caret line="29" column="69" selection-start-line="29" selection-start-column="69" selection-end-line="29" selection-end-column="69" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1148,35 +1050,65 @@
         <state vertical-scroll-proportion="0.620438" vertical-offset="0" max-vertical-offset="816">
           <caret line="27" column="69" selection-start-line="27" selection-start-column="69" selection-end-line="27" selection-end-column="69" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Calculator/CharacterInterpreter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="909" max-vertical-offset="2108">
+          <caret line="123" column="46" selection-start-line="123" selection-start-column="46" selection-end-line="123" selection-end-column="46" />
+          <folding>
+            <element signature="method#pushElementToStack#0;class#CharacterInterpreter#0" expanded="false" />
+            <element signature="method#popElementFromStack#0;class#CharacterInterpreter#0" expanded="false" />
+            <element signature="method#peakIntoStack#0;class#CharacterInterpreter#0" expanded="false" />
+            <element signature="method#checkString#0;class#CharacterInterpreter#0" expanded="false" />
+            <element signature="method#checkNumber#0;class#CharacterInterpreter#0" expanded="false" />
+            <element signature="method#getPriority#0;class#CharacterInterpreter#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Calculator/Operators/Trigonometric/Sin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="918">
+          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+          <folding>
+            <element signature="e#282#283#0" expanded="true" />
+            <element signature="e#306#307#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Calculator/Operators/OperatorTester.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="80" max-vertical-offset="765">
+          <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Calculator/Operators/Arithmetic/Subtract.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22335766" vertical-offset="0" max-vertical-offset="731">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="697">
+          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Calculator/Operators/Arithmetic/Multiply.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22335766" vertical-offset="0" max-vertical-offset="748">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.17372262" vertical-offset="0" max-vertical-offset="714">
+          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Calculator/Operators/Arithmetic/Divide.java">
+    <entry file="file://$PROJECT_DIR$/src/Calculator/Operators/Arithmetic/Add.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14890511" vertical-offset="0" max-vertical-offset="969">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="748">
+          <caret line="6" column="35" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1191,25 +1123,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Calculator/CharacterInterpreter.java">
+    <entry file="file://$PROJECT_DIR$/src/Calculator/Operators/Arithmetic/Divide.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="867" max-vertical-offset="2108">
-          <caret line="106" column="0" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
-          <folding>
-            <element signature="method#pushElementToStack#0;class#CharacterInterpreter#0" expanded="false" />
-            <element signature="method#popElementFromStack#0;class#CharacterInterpreter#0" expanded="false" />
-            <element signature="method#peakIntoStack#0;class#CharacterInterpreter#0" expanded="false" />
-            <element signature="method#checkString#0;class#CharacterInterpreter#0" expanded="false" />
-            <element signature="method#checkNumber#0;class#CharacterInterpreter#0" expanded="false" />
-            <element signature="method#getPriority#0;class#CharacterInterpreter#0" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="935">
+          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Calculator/Operators/Arithmetic/Add.java">
+    <entry file="file://$PROJECT_DIR$/src/Calculator/Operators/Trigonometric/Cos.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37226278" vertical-offset="0" max-vertical-offset="748">
-          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="799">
+          <caret line="27" column="69" selection-start-line="27" selection-start-column="69" selection-end-line="27" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Calculator/Operators/OperatorFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19854015" vertical-offset="0" max-vertical-offset="1632">
+          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
