@@ -67,7 +67,54 @@ public class CharacterInterpreter {
 
         String input = input_str;
 
-        splitString(input);
+        valuesStack.empty();
+        operatorStack.empty();
+
+
+
+        while(input.length()!=0)
+        {
+            for (String s:variableBlackList)
+            {
+                if (input.toLowerCase().startsWith(s))
+                {
+                    if (input.charAt(s.length())!='(')
+                    {
+                        ErrorModule.displayError("Wrong format: Expected '(' after " + s);
+                        return;
+                    }
+
+                    operatorStack.push(s);
+                    operatorStack.push("(");
+                    input = input.substring(s.length()+1);
+                }
+            }
+
+            if (input.charAt(0)=='+' || input.charAt(0)=='-' || input.charAt(0)=='*' || input.charAt(0)=='/' || input.charAt(0)=='%' || input.charAt(0)=='^')
+            {
+                if (!Character.isDigit(input.charAt(1)) && !Character.isLetter(input.charAt(1)))
+                {
+                    ErrorModule.displayError("Wrong Format: expected number or variable after " + input.charAt(0));
+                    return;
+                }
+                operatorStack.push(input.substring(0, 1));
+                input = input.substring(1);
+            }
+            else if (input.charAt(0)==')')
+            {
+                while (operatorStack.peek()!="(")
+                {
+
+                }
+            }
+            else {
+                pushElementToStack(input.substring(0, 1));
+                input = input.substring(1);
+            }
+
+        }
+
+
 
 
 
@@ -123,48 +170,4 @@ public class CharacterInterpreter {
         return str.matches("-?\\d+(\\.\\d+)?");  //match a number with optional '-' and decimal.
     }
 
-    private void splitString(String input)
-    {
-
-        valuesStack.empty();
-        operatorStack.empty();
-
-
-
-        while(input.length()!=0)
-        {
-            for (String s:variableBlackList)
-            {
-                if (input.toLowerCase().startsWith(s))
-                {
-                    if (input.charAt(s.length())!='(')
-                    {
-                        ErrorModule.displayError("Wrong format: Expected '(' after " + s);
-                        return;
-                    }
-
-                    operatorStack.push(s);
-                    operatorStack.push("(");
-                    input = input.substring(s.length()+1);
-                }
-            }
-
-            if (input.charAt(0)=='+' || input.charAt(0)=='-' || input.charAt(0)=='*' || input.charAt(0)=='/' || input.charAt(0)=='%' || input.charAt(0)=='^')
-            {
-                if (!Character.isDigit(input.charAt(1)) && !Character.isLetter(input.charAt(1)))
-                {
-                    ErrorModule.displayError("Wrong Format: expected number or variable after " + input.charAt(0));
-                    return;
-                }
-                operatorStack.push(input.substring(0, 1));
-                input = input.substring(1);
-            }
-
-            else {
-                pushElementToStack(input.substring(0, 1));
-                input = input.substring(1);
-            }
-
-        }
-    }
 }
