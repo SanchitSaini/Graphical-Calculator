@@ -9,6 +9,11 @@ import java.util.logging.Logger;
  */
 public class Subtract extends Arithmetic {
 
+	public Subtract(){
+		firstOperand = null;
+		secondOperand = null;
+	}
+	
 	public Subtract(String firstOperand, String secondOperand) {
 		super.firstOperand = firstOperand;
 		super.secondOperand = secondOperand;

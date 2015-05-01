@@ -11,7 +11,16 @@ public class M_Minus extends Memory {
 
 	private String valueToSubtract;
 	
+	public M_Minus()
+	{
+		valueToSubtract = null;
+	}
+	
 	public M_Minus(String valueToSubtract) {
+		this.valueToSubtract = valueToSubtract;
+	}
+	
+	public void setValueToSubtract(String valueToSubtract){
 		this.valueToSubtract = valueToSubtract;
 	}
 	

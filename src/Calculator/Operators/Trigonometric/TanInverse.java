@@ -5,8 +5,13 @@ import Calculator.ErrorModule;
 import java.util.logging.Logger;
 
 
-public class TanInverse extends InverseTrigonometric {
+public class TanInverse extends Trigonometric {
 
+	public TanInverse()
+	{
+		angleValue = null;
+	}
+	
 	public TanInverse(String angleValueToUse) {
 		super.angleValue = angleValueToUse;
 	}

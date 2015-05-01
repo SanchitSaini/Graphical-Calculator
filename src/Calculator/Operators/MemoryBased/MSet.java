@@ -11,9 +11,19 @@ public class MSet extends Memory {
 
 	private String valueToSet;
 	
+	public MSet()
+	{
+		valueToSet = null;
+	}
+	
 	public MSet(String valueToSet) {
 		this.valueToSet = valueToSet;
 	}
+	
+	public void setValueToSet(String valueToSet){
+		this.valueToSet = valueToSet;
+	}
+	
 	/*
 	 * This function stores the parameter to the memory
 	 * @param value to be stored to memory

@@ -6,8 +6,13 @@ import java.util.logging.Logger;
 
 
 
-public class Sin extends NormalTrigonometric {
+public class Sin extends Trigonometric {
 
+	public Sin()
+	{
+		angleValue = null;
+	}
+	
 	public Sin(String angleValueToUse) {
 		super.angleValue = angleValueToUse;
 	}

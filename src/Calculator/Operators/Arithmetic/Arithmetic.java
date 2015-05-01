@@ -12,4 +12,15 @@ public abstract class Arithmetic extends Operator {
 	
 	public abstract String evaluate();
 	
+	public void setOperands(String[] operands)
+	{
+		firstOperand = operands[0];
+		secondOperand = operands[1];
+	}
+	
+	public int getNumArguments()
+	{
+		return 2;
+	}
+	
 }

@@ -9,6 +9,11 @@ import java.util.logging.Logger;
  */
 public class Multiply extends Arithmetic {
 
+	public Multiply(){
+		firstOperand = null;
+		secondOperand = null;
+	}
+	
 	public Multiply(String firstOperand, String secondOperand) {
 		super.firstOperand = firstOperand;
 		super.secondOperand = secondOperand;

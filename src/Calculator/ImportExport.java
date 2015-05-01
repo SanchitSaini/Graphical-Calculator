@@ -1,3 +1,6 @@
+/*
+ * Imports and exports data from the calculator.
+ */
 package Calculator;
 
 import java.io.BufferedReader;

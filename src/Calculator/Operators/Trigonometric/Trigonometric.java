@@ -28,4 +28,14 @@ public abstract class Trigonometric extends Operator {
 	protected static void setAngleType(AngleNotation angleType) {
 		Trigonometric.angleType = angleType;
 	}
+	
+	public void setOperands(String[] operands)
+	{
+		angleValue = operands[0];
+	}
+	
+	public int getNumArguments()
+	{
+		return 1;
+	}
 }

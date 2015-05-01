@@ -6,6 +6,11 @@ import java.util.logging.Logger;
 
 public class Divide extends Arithmetic {
 
+	public Divide(){
+		firstOperand = null;
+		secondOperand = null;
+	}
+	
 	public Divide(String firstOperand, String secondOperand) {
 		super.firstOperand = firstOperand;
 		super.secondOperand = secondOperand;

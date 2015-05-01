@@ -5,8 +5,13 @@ import Calculator.ErrorModule;
 import java.util.logging.Logger;
 
 
-public class CosInverse extends InverseTrigonometric {
+public class CosInverse extends Trigonometric {
 
+	public CosInverse()
+	{
+		angleValue = null;
+	}
+	
 	public CosInverse(String angleValueToUse) {
 		super.angleValue = angleValueToUse;
 	}

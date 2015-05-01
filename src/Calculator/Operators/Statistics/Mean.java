@@ -1,6 +1,6 @@
 /*
  * Calculates the mean of data exported through a file in comma separated format.
- * If data is multi-dimensional, returns returns mode for every dimension considered individually.
+ * If data is multi-dimensional, returns returns mean for every dimension considered individually.
  */
 
 package Calculator.Operators.Statistics;

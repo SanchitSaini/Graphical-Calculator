@@ -6,6 +6,11 @@ import java.util.logging.Logger;
 
 public class Add extends Arithmetic {
 
+	public Add(){
+		firstOperand = null;
+		secondOperand = null;
+	}
+	
 	public Add(String firstOperand, String secondOperand){
 		super.firstOperand = firstOperand;
 		super.secondOperand = secondOperand;

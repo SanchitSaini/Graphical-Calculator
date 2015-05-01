@@ -6,8 +6,13 @@ import java.util.logging.Logger;
 
 
 
-public class Tan extends NormalTrigonometric {
+public class Tan extends Trigonometric {
 
+	public Tan()
+	{
+		angleValue = null;
+	}
+	
 	public Tan(String angleValueToUse) {
 		super.angleValue = angleValueToUse;
 	}

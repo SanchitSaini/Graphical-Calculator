@@ -6,8 +6,13 @@ import java.util.logging.Logger;
 
 
 
-public class SinInverse extends InverseTrigonometric {
+public class SinInverse extends Trigonometric {
 
+	public SinInverse()
+	{
+		angleValue = null;
+	}
+	
 	public SinInverse(String angleValueToUse) {
 		super.angleValue = angleValueToUse;
 	}

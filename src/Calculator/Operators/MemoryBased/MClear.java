@@ -13,6 +13,12 @@ public class MClear extends Memory {
 		super.setMemoryData(String.valueOf(0.0));
 	}
 	
+	@Override
+	public int getNumArguments()
+	{
+		return 0;
+	}
+	
 	/**
 	 * This function will clear the memory. 
 	 * @return true/false as String, based on the success of clearing operation
