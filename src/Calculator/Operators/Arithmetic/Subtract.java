@@ -7,7 +7,7 @@ import java.util.logging.Logger;
 /***
  * Class to perform subtraction
  */
-class Subtract extends Arithmetic {
+public class Subtract extends Arithmetic {
 
 	public Subtract(String firstOperand, String secondOperand) {
 		super.firstOperand = firstOperand;

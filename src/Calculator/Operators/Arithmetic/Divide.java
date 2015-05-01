@@ -4,7 +4,7 @@ import Calculator.ErrorModule;
 
 import java.util.logging.Logger;
 
-class Divide extends Arithmetic {
+public class Divide extends Arithmetic {
 
 	public Divide(String firstOperand, String secondOperand) {
 		super.firstOperand = firstOperand;

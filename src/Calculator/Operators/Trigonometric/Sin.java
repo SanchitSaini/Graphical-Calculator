@@ -11,7 +11,12 @@ public class Sin extends NormalTrigonometric {
 	public Sin(String angleValueToUse) {
 		super.angleValue = angleValueToUse;
 	}
-	
+
+    public static int numberOfArgs()
+    {
+        return 1;
+    }
+
   	public String evaluate() {
   		try {
   			Double angle = Double.parseDouble(super.angleValue);

@@ -7,7 +7,7 @@ import java.util.logging.Logger;
 /***
  * This class implements the multiplication operator
  */
-class Multiply extends Arithmetic {
+public class Multiply extends Arithmetic {
 
 	public Multiply(String firstOperand, String secondOperand) {
 		super.firstOperand = firstOperand;

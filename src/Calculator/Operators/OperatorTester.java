@@ -35,9 +35,8 @@ public class OperatorTester {
 		a = new Absolute("10");
 		res = a.evaluate();
 		System.out.println(res);
-		a = new Sin("12");
-		
-		
+//		a = new Sin();
+//        int i = Sin.numberOfArgs();
 	}
 
 }
