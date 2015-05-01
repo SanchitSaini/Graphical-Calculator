@@ -3,7 +3,6 @@ package Calculator;
 import java.util.Stack;
 
 import Calculator.Operators.Operator;
-import Calculator.Operators.Others.Percentage;
 
 
 public class CharacterInterpreter {

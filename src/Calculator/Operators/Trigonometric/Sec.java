@@ -6,6 +6,11 @@ import java.util.logging.Logger;
 
 public class Sec extends Trigonometric {
 
+	public Sec()
+	{
+		angleValue = null;
+	}
+	
 	public Sec(String angleValueToUse) {
 		super.angleValue = angleValueToUse;
 	}

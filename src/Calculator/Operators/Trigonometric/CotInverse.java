@@ -6,6 +6,11 @@ import java.util.logging.Logger;
 
 public class CotInverse extends Trigonometric {
 
+	public CotInverse()
+	{
+		angleValue = null;
+	}
+	
 	public CotInverse(String angleValueToUse) {
 		super.angleValue = angleValueToUse;
 	}

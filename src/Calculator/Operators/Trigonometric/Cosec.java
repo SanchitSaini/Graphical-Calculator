@@ -6,6 +6,12 @@ import java.util.logging.Logger;
 
 public class Cosec extends Trigonometric {
 
+	public Cosec()
+	{
+		angleValue = null;
+	}
+	
+	
 	public Cosec(String angleValueToUse) {
 		super.angleValue = angleValueToUse;
 	}

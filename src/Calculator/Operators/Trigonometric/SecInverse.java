@@ -6,6 +6,12 @@ import java.util.logging.Logger;
 
 public class SecInverse extends Trigonometric {
 
+	public SecInverse()
+	{
+		angleValue = null;
+	}
+	
+	
 	public SecInverse(String angleValueToUse) {
 		super.angleValue = angleValueToUse;
 	}

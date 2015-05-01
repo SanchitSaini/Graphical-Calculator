@@ -4,7 +4,6 @@ import Calculator.Operators.Arithmetic.*;
 import Calculator.Operators.Trigonometric.*;
 import Calculator.Operators.MemoryBased.*;
 import Calculator.Operators.Operator;
-import Calculator.Operators.Others.*;
 import Calculator.Operators.OtherBinary.*;
 import Calculator.Operators.OtherUnary.*;
 
@@ -86,7 +85,7 @@ public class OperatorFactory {
                 return new SecInverse();
             case "acot":
                 return new CotInverse();
-
+            default: return null;
         }
 
     }

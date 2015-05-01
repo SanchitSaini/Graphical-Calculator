@@ -4,8 +4,13 @@ import Calculator.ErrorModule;
 
 import java.util.logging.Logger;
 
-public class CosecInverse extends InverseTrigonometric {
+public class CosecInverse extends Trigonometric {
 
+	public CosecInverse()
+	{
+		angleValue = null;
+	}
+	
 	public CosecInverse(String angleValueToUse) {
 		super.angleValue = angleValueToUse;
 	}
