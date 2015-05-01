@@ -5,8 +5,13 @@ import Calculator.ErrorModule;
 import java.util.logging.Logger;
 
 
-public class Cos extends NormalTrigonometric {
+public class Cos extends Trigonometric {
 
+	public Cos()
+	{
+		angleValue = null;
+	}
+	
 	public Cos(String angleValueToUse) {
 		super.angleValue = angleValueToUse;
 	}

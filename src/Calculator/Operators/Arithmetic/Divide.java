@@ -4,8 +4,13 @@ import Calculator.ErrorModule;
 
 import java.util.logging.Logger;
 
-class Divide extends Arithmetic {
+public class Divide extends Arithmetic {
 
+	public Divide(){
+		firstOperand = null;
+		secondOperand = null;
+	}
+	
 	public Divide(String firstOperand, String secondOperand) {
 		super.firstOperand = firstOperand;
 		super.secondOperand = secondOperand;

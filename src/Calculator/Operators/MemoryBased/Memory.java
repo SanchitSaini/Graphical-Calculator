@@ -35,4 +35,9 @@ public abstract class Memory extends Operator {
 		Memory.memoryData = memoryData;
 	}
 	
+	public int getNumArguments()
+	{
+		return 1;
+	}
+
 }

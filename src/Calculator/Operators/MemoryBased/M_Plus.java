@@ -11,7 +11,16 @@ public class M_Plus extends Memory {
 
 	private String valueToAdd;
 	
+	public M_Plus()
+	{
+		valueToAdd = null;
+	}
+	
 	public M_Plus(String valueToAdd) {
+		this.valueToAdd = valueToAdd;
+	}
+	
+	public void setValueToAdd(String valueToAdd){
 		this.valueToAdd = valueToAdd;
 	}
 	

@@ -3,6 +3,9 @@ package Calculator;
 import Calculator.GUI.GUI;
 import Calculator.Operators.Operator;
 import Calculator.Operators.Arithmetic.Add;
+import Calculator.Operators.MemoryBased.MRecall;
+import Calculator.Operators.MemoryBased.MSet;
+import Calculator.Operators.MemoryBased.Memory;
 import Calculator.Operators.Statistics.Mean;
 import Calculator.Operators.Statistics.Median;
 import Calculator.Operators.Statistics.Mode;
@@ -48,7 +51,8 @@ public class CheckMain {
 //		medObj.evaluate();
 		Statistics modeObj = new Mode(data.getDataValues());
 		modeObj.evaluate();
-		
+		Memory m = new MSet();
+		System.out.println(m.getNumArguments());
 	}
 
 }

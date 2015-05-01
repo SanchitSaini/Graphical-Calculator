@@ -12,6 +12,13 @@ public class MRecall extends Memory {
 	public MRecall() {
 		//this.valueToReturn = super.memoryData;
 	}
+	
+	@Override
+	public int getNumArguments()
+	{
+		return 0;
+	}
+	
 	/**
 	 * This function will clear the memory. 
 	 * @return true/false as String, based on the success of clearing operation
