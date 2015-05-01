@@ -3,16 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="88cc919b-783b-4233-9977-195a57450faf" name="Default" comment="Error Module">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/Calculator/ErrorModule.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Graphical Calculator.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="DELETED" beforePath="C:\Users\Pranav\Documents\GitHub\Graphical-Calculator\bin\.gitignore" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\Pranav\Documents\GitHub\Graphical-Calculator\bin\Calculator\Operations\Arithmetic\Add.class" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\Pranav\Documents\GitHub\Graphical-Calculator\bin\Calculator\Operations\Arithmetic\Arithmetic.class" afterPath="" />
@@ -49,16 +39,13 @@
       <change type="DELETED" beforePath="C:\Users\Pranav\Documents\GitHub\Graphical-Calculator\bin\Calculator\Operations\Trigonometric\Tan.class" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\Pranav\Documents\GitHub\Graphical-Calculator\bin\Calculator\Operations\Trigonometric\TanInverse.class" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\Pranav\Documents\GitHub\Graphical-Calculator\bin\Calculator\Operations\Trigonometric\Trigonometric.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Pranav\Documents\GitHub\Graphical-Calculator\src\Calculator\Operators\Others\More_functions.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/Operators/Arithmetic/Add.class" afterPath="$PROJECT_DIR$/bin/Calculator/Operators/Arithmetic/Add.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/Alignment.class" afterPath="$PROJECT_DIR$/bin/Calculator/Alignment.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/Operators/Trigonometric/AngleNotation.class" afterPath="$PROJECT_DIR$/bin/Calculator/Operators/Trigonometric/AngleNotation.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/Operators/Arithmetic/Arithmetic.class" afterPath="$PROJECT_DIR$/bin/Calculator/Operators/Arithmetic/Arithmetic.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/ArithmeticFunctionsUI.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/ArithmeticFunctionsUI.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/Calculator.class" afterPath="$PROJECT_DIR$/bin/Calculator/Calculator.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/CharacterInterpreter.class" afterPath="$PROJECT_DIR$/bin/Calculator/CharacterInterpreter.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/CheckAndCorrectUI.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/CheckAndCorrectUI.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/CheckMain.class" afterPath="$PROJECT_DIR$/bin/Calculator/CheckMain.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/Operators/Others/Combination.class" afterPath="$PROJECT_DIR$/bin/Calculator/Operators/Others/Combination.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/Operators/Trigonometric/Cos.class" afterPath="$PROJECT_DIR$/bin/Calculator/Operators/Trigonometric/Cos.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/Operators/Trigonometric/CosInverse.class" afterPath="$PROJECT_DIR$/bin/Calculator/Operators/Trigonometric/CosInverse.class" />
@@ -69,26 +56,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/Operators/Others/Floor.class" afterPath="$PROJECT_DIR$/bin/Calculator/Operators/Others/Floor.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/Operators/FunctionFamily.class" afterPath="$PROJECT_DIR$/bin/Calculator/Operators/FunctionFamily.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/FunctionsUI.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/FunctionsUI.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/GUI$1.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/GUI$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/GUI$10.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/GUI$10.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/GUI$11.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/GUI$11.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/GUI$12.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/GUI$12.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/GUI$13.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/GUI$13.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/GUI$14.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/GUI$14.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/GUI$15.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/GUI$15.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/GUI$16.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/GUI$16.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/GUI$17.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/GUI$17.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/GUI$18.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/GUI$18.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/GUI$19.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/GUI$19.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/GUI$2.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/GUI$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/GUI$3.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/GUI$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/GUI$4.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/GUI$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/GUI$5.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/GUI$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/GUI$6.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/GUI$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/GUI$7.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/GUI$7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/GUI$8.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/GUI$8.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/GUI$9.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/GUI$9.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/GUI.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/GUI.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/ImportExport.class" afterPath="$PROJECT_DIR$/bin/Calculator/ImportExport.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/InputType.class" afterPath="$PROJECT_DIR$/bin/Calculator/InputType.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/Operators/Trigonometric/InverseTrigonometric.class" afterPath="$PROJECT_DIR$/bin/Calculator/Operators/Trigonometric/InverseTrigonometric.class" />
@@ -99,8 +66,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/Operators/MemoryBased/MSet.class" afterPath="$PROJECT_DIR$/bin/Calculator/Operators/MemoryBased/MSet.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/Operators/MemoryBased/M_Minus.class" afterPath="$PROJECT_DIR$/bin/Calculator/Operators/MemoryBased/M_Minus.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/Operators/MemoryBased/M_Plus.class" afterPath="$PROJECT_DIR$/bin/Calculator/Operators/MemoryBased/M_Plus.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/Operators/Statistics/Mean.class" afterPath="$PROJECT_DIR$/bin/Calculator/Operators/Statistics/Mean.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/Operators/Statistics/Median.class" afterPath="$PROJECT_DIR$/bin/Calculator/Operators/Statistics/Median.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/Operators/MemoryBased/Memory.class" afterPath="$PROJECT_DIR$/bin/Calculator/Operators/MemoryBased/Memory.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/MemoryBasedFunctionsUI.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/MemoryBasedFunctionsUI.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/MiscFunctionsUI$1.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/MiscFunctionsUI$1.class" />
@@ -108,10 +73,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/MiscFunctionsUI$3.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/MiscFunctionsUI$3.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/MiscFunctionsUI$4.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/MiscFunctionsUI$4.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/MiscFunctionsUI$5.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/MiscFunctionsUI$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/MiscFunctionsUI$6.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/MiscFunctionsUI$6.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/MiscFunctionsUI$7.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/MiscFunctionsUI$7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/MiscFunctionsUI.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/MiscFunctionsUI.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/Operators/Statistics/Mode.class" afterPath="$PROJECT_DIR$/bin/Calculator/Operators/Statistics/Mode.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/Operators/Others/More_Function_Families.class" afterPath="$PROJECT_DIR$/bin/Calculator/Operators/Others/More_Function_Families.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/Operators/Others/More_functions.class" afterPath="$PROJECT_DIR$/bin/Calculator/Operators/Others/More_functions.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/Operators/Arithmetic/Multiply.class" afterPath="$PROJECT_DIR$/bin/Calculator/Operators/Arithmetic/Multiply.class" />
@@ -133,52 +95,13 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/Operators/Trigonometric/TanInverse.class" afterPath="$PROJECT_DIR$/bin/Calculator/Operators/Trigonometric/TanInverse.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/Operators/Trigonometric/Trigonometric.class" afterPath="$PROJECT_DIR$/bin/Calculator/Operators/Trigonometric/Trigonometric.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/TrigonometricFunctionsUI$1.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/TrigonometricFunctionsUI$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/TrigonometricFunctionsUI$10.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/TrigonometricFunctionsUI$10.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/TrigonometricFunctionsUI$11.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/TrigonometricFunctionsUI$11.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/TrigonometricFunctionsUI$12.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/TrigonometricFunctionsUI$12.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/TrigonometricFunctionsUI$2.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/TrigonometricFunctionsUI$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/TrigonometricFunctionsUI$3.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/TrigonometricFunctionsUI$3.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/TrigonometricFunctionsUI$4.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/TrigonometricFunctionsUI$4.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/TrigonometricFunctionsUI$5.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/TrigonometricFunctionsUI$5.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/TrigonometricFunctionsUI$6.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/TrigonometricFunctionsUI$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/TrigonometricFunctionsUI$7.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/TrigonometricFunctionsUI$7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/TrigonometricFunctionsUI$8.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/TrigonometricFunctionsUI$8.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/TrigonometricFunctionsUI$9.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/TrigonometricFunctionsUI$9.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/TrigonometricFunctionsUI.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/TrigonometricFunctionsUI.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Calculator/Operators/Arithmetic/Add.java" afterPath="$PROJECT_DIR$/src/Calculator/Operators/Arithmetic/Add.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Calculator/Operators/Trigonometric/AngleNotation.java" afterPath="$PROJECT_DIR$/src/Calculator/Operators/Trigonometric/AngleNotation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Calculator/Operators/Arithmetic/Arithmetic.java" afterPath="$PROJECT_DIR$/src/Calculator/Operators/Arithmetic/Arithmetic.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Calculator/CharacterInterpreter.java" afterPath="$PROJECT_DIR$/src/Calculator/CharacterInterpreter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Calculator/Operators/Others/Combination.java" afterPath="$PROJECT_DIR$/src/Calculator/Operators/Others/Combination.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Calculator/Operators/Trigonometric/Cos.java" afterPath="$PROJECT_DIR$/src/Calculator/Operators/Trigonometric/Cos.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Calculator/Operators/Trigonometric/CosInverse.java" afterPath="$PROJECT_DIR$/src/Calculator/Operators/Trigonometric/CosInverse.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Calculator/Operators/Arithmetic/Divide.java" afterPath="$PROJECT_DIR$/src/Calculator/Operators/Arithmetic/Divide.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Calculator/ErrorModule.java" afterPath="$PROJECT_DIR$/src/Calculator/ErrorModule.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Calculator/Operators/Others/Exp.java" afterPath="$PROJECT_DIR$/src/Calculator/Operators/Others/Exp.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Calculator/Operators/Others/Factorial.java" afterPath="$PROJECT_DIR$/src/Calculator/Operators/Others/Factorial.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Calculator/Operators/Others/Floor.java" afterPath="$PROJECT_DIR$/src/Calculator/Operators/Others/Floor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Calculator/Operators/FunctionFamily.java" afterPath="$PROJECT_DIR$/src/Calculator/Operators/FunctionFamily.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Calculator/Operators/Trigonometric/InverseTrigonometric.java" afterPath="$PROJECT_DIR$/src/Calculator/Operators/Trigonometric/InverseTrigonometric.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Calculator/Operators/Others/LCM.java" afterPath="$PROJECT_DIR$/src/Calculator/Operators/Others/LCM.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Calculator/Operators/Others/Log.java" afterPath="$PROJECT_DIR$/src/Calculator/Operators/Others/Log.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Calculator/Operators/MemoryBased/MClear.java" afterPath="$PROJECT_DIR$/src/Calculator/Operators/MemoryBased/MClear.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Calculator/Operators/MemoryBased/MRecall.java" afterPath="$PROJECT_DIR$/src/Calculator/Operators/MemoryBased/MRecall.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Calculator/Operators/MemoryBased/MSet.java" afterPath="$PROJECT_DIR$/src/Calculator/Operators/MemoryBased/MSet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Calculator/Operators/MemoryBased/M_Minus.java" afterPath="$PROJECT_DIR$/src/Calculator/Operators/MemoryBased/M_Minus.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Calculator/Operators/MemoryBased/M_Plus.java" afterPath="$PROJECT_DIR$/src/Calculator/Operators/MemoryBased/M_Plus.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Calculator/Operators/MemoryBased/Memory.java" afterPath="$PROJECT_DIR$/src/Calculator/Operators/MemoryBased/Memory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Calculator/Operators/Others/More_Function_Families.java" afterPath="$PROJECT_DIR$/src/Calculator/Operators/Others/More_Function_Families.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Calculator/Operators/Arithmetic/Multiply.java" afterPath="$PROJECT_DIR$/src/Calculator/Operators/Arithmetic/Multiply.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Calculator/Operators/Trigonometric/NormalTrigonometric.java" afterPath="$PROJECT_DIR$/src/Calculator/Operators/Trigonometric/NormalTrigonometric.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Calculator/Operators/Operator.java" afterPath="$PROJECT_DIR$/src/Calculator/Operators/Operator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Calculator/Operators/Others/Percentage.java" afterPath="$PROJECT_DIR$/src/Calculator/Operators/Others/Percentage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Calculator/Operators/Others/Permutation.java" afterPath="$PROJECT_DIR$/src/Calculator/Operators/Others/Permutation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Calculator/Operators/Trigonometric/Sin.java" afterPath="$PROJECT_DIR$/src/Calculator/Operators/Trigonometric/Sin.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Calculator/Operators/Trigonometric/SinInverse.java" afterPath="$PROJECT_DIR$/src/Calculator/Operators/Trigonometric/SinInverse.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Calculator/Operators/Arithmetic/Subtract.java" afterPath="$PROJECT_DIR$/src/Calculator/Operators/Arithmetic/Subtract.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Calculator/Operators/Trigonometric/Tan.java" afterPath="$PROJECT_DIR$/src/Calculator/Operators/Trigonometric/Tan.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Calculator/Operators/Trigonometric/TanInverse.java" afterPath="$PROJECT_DIR$/src/Calculator/Operators/Trigonometric/TanInverse.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Calculator/Operators/Trigonometric/Trigonometric.java" afterPath="$PROJECT_DIR$/src/Calculator/Operators/Trigonometric/Trigonometric.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Graphical Calculator.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -209,7 +132,37 @@
     <favorites_list name="Graphical Calculator" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="CharacterInterpreter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Calculator/CharacterInterpreter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="867" max-vertical-offset="2108">
+              <caret line="106" column="0" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
+              <folding>
+                <element signature="method#pushElementToStack#0;class#CharacterInterpreter#0" expanded="false" />
+                <element signature="method#popElementFromStack#0;class#CharacterInterpreter#0" expanded="false" />
+                <element signature="method#peakIntoStack#0;class#CharacterInterpreter#0" expanded="false" />
+                <element signature="method#checkString#0;class#CharacterInterpreter#0" expanded="false" />
+                <element signature="method#checkNumber#0;class#CharacterInterpreter#0" expanded="false" />
+                <element signature="method#getPriority#0;class#CharacterInterpreter#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Add.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Calculator/Operators/Arithmetic/Add.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.37226278" vertical-offset="0" max-vertical-offset="748">
+              <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -220,7 +173,6 @@
         <option value="$PROJECT_DIR$/src/Calculator/Operators/Others/More_Function_Families.java" />
         <option value="$PROJECT_DIR$/src/Calculator/CheckMain.java" />
         <option value="$PROJECT_DIR$/src/Calculator/ErrorModule.java" />
-        <option value="$PROJECT_DIR$/src/Calculator/CharacterInterpreter.java" />
         <option value="$PROJECT_DIR$/src/Calculator/Operators/Trigonometric/Trigonometric.java" />
         <option value="$PROJECT_DIR$/src/Calculator/Operators/Arithmetic/Add.java" />
         <option value="$PROJECT_DIR$/src/Calculator/Operators/Arithmetic/Divide.java" />
@@ -259,6 +211,7 @@
         <option value="$PROJECT_DIR$/src/Calculator/Operators/Trigonometric/SinInverse.java" />
         <option value="$PROJECT_DIR$/src/Calculator/Operators/Trigonometric/Sin.java" />
         <option value="$PROJECT_DIR$/src/Calculator/Operators/Trigonometric/SecInverse.java" />
+        <option value="$PROJECT_DIR$/src/Calculator/CharacterInterpreter.java" />
       </list>
     </option>
   </component>
@@ -376,59 +329,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Trigonometric" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Graphical-Calculator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Graphical-Calculator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Calculator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Operators" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="Others" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Graphical-Calculator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Graphical-Calculator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Calculator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Operators" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MemoryBased" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -747,7 +648,7 @@
       <workItem from="1430334195051" duration="9044000" />
       <workItem from="1430468194270" duration="19000" />
       <workItem from="1430492916888" duration="1662000" />
-      <workItem from="1430494660619" duration="2551000" />
+      <workItem from="1430494660619" duration="4326000" />
     </task>
     <task id="LOCAL-00001" summary="Error Module">
       <created>1430339818210</created>
@@ -761,11 +662,17 @@
       <option name="project" value="LOCAL" />
       <updated>1430342527554</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Operators coming in...">
+      <created>1430500047748</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1430500047748</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31505000" />
+    <option name="totallyTimeSpent" value="33280000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1552" height="845" extended-state="6" />
@@ -818,7 +725,8 @@
     </option>
     <MESSAGE value="Error Module" />
     <MESSAGE value="Adding basic Character Interpreter functionality [Incomplete]" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding basic Character Interpreter functionality [Incomplete]" />
+    <MESSAGE value="Operators coming in..." />
+    <option name="LAST_COMMIT_MESSAGE" value="Operators coming in..." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -856,21 +764,6 @@
         <state vertical-scroll-proportion="0.47111112" vertical-offset="468" max-vertical-offset="918">
           <caret line="45" column="16" selection-start-line="45" selection-start-column="16" selection-end-line="45" selection-end-column="16" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Calculator/CharacterInterpreter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="735" max-vertical-offset="2108">
-          <caret line="94" column="83" selection-start-line="94" selection-start-column="83" selection-end-line="94" selection-end-column="83" />
-          <folding>
-            <element signature="method#pushElementToStack#0;class#CharacterInterpreter#0" expanded="false" />
-            <element signature="method#popElementFromStack#0;class#CharacterInterpreter#0" expanded="false" />
-            <element signature="method#peakIntoStack#0;class#CharacterInterpreter#0" expanded="false" />
-            <element signature="method#checkString#0;class#CharacterInterpreter#0" expanded="false" />
-            <element signature="method#checkNumber#0;class#CharacterInterpreter#0" expanded="false" />
-            <element signature="method#getPriority#0;class#CharacterInterpreter#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1298,21 +1191,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Calculator/Operators/Arithmetic/Add.java">
+    <entry file="file://$PROJECT_DIR$/src/Calculator/CharacterInterpreter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14890511" vertical-offset="0" max-vertical-offset="748">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="867" max-vertical-offset="2108">
+          <caret line="106" column="0" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="method#pushElementToStack#0;class#CharacterInterpreter#0" expanded="false" />
+            <element signature="method#popElementFromStack#0;class#CharacterInterpreter#0" expanded="false" />
+            <element signature="method#peakIntoStack#0;class#CharacterInterpreter#0" expanded="false" />
+            <element signature="method#checkString#0;class#CharacterInterpreter#0" expanded="false" />
+            <element signature="method#checkNumber#0;class#CharacterInterpreter#0" expanded="false" />
+            <element signature="method#getPriority#0;class#CharacterInterpreter#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Calculator/Operators/Others/More_functions.java">
+    <entry file="file://$PROJECT_DIR$/src/Calculator/Operators/Arithmetic/Add.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29781023" vertical-offset="0" max-vertical-offset="685">
-          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-          <folding />
+        <state vertical-scroll-proportion="0.37226278" vertical-offset="0" max-vertical-offset="748">
+          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
