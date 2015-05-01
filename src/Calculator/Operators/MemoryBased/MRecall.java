@@ -1,11 +1,15 @@
 package Calculator.Operators.MemoryBased;
 
+import Calculator.ErrorModule;
+
+import java.util.logging.Logger;
+
 /***
  * Class to get the value from the memory location 
  */
 public class MRecall extends Memory {
 
-	MRecall() {
+	public MRecall() {
 		//this.valueToReturn = super.memoryData;
 	}
 	/**
@@ -13,14 +17,29 @@ public class MRecall extends Memory {
 	 * @return true/false as String, based on the success of clearing operation
 	 */
 	public String evaluate() {
-		//load the value from the memory location
-		if(super.memoryData.isEmpty()) {
-			//return null if error encountered
-			return null;
+		try {
+			//load the value from the memory location
+			if(super.getMemoryData().equals(null)) {
+                //Display an error message
+                ErrorModule.displayError("Error. Please try again.");
+				//Log the problem that memory is null
+				Logger.getLogger("memory is null in MRecall");
+				//return null if error encountered
+				return null;
+			}
+			else {
+				//return the value if done successfully
+				return super.getMemoryData().toString();
+			}
 		}
-		else {
-			//return the value if done successfully
-			return super.memoryData.toString();
-		}
+        catch(Exception e)
+        {
+            //Display an error message
+            ErrorModule.displayError("Error. Please try again.");
+            //Log the error
+            Logger.getLogger(e.getMessage());
+            //Return null
+            return null;
+        }
 	}
 }

@@ -1,5 +1,7 @@
 package Calculator.Operators.MemoryBased;
 
+import Calculator.ErrorModule;
+
 import java.util.logging.Logger;
 
 /***
@@ -9,7 +11,7 @@ public class M_Plus extends Memory {
 
 	private String valueToAdd;
 	
-	M_Plus(String valueToAdd) {
+	public M_Plus(String valueToAdd) {
 		this.valueToAdd = valueToAdd;
 	}
 	
@@ -21,21 +23,30 @@ public class M_Plus extends Memory {
 		Float result = (float) 0.0;
 		//Check if value in memory is valid
 		try {
-			if(super.memoryData.isEmpty()) {
-				super.memoryData = String.valueOf(0.0);
+			if(super.getMemoryData().equals(null)) {
+                //Display an error message
+                ErrorModule.displayError("Error. Please try again.");
+				//Log the problem that memory is null
+				Logger.getLogger("memory is null in M_Plus");
+				//Return null
+				return null;
 			}
 			else {
-				Float memData = Float.parseFloat(super.memoryData);
+				Float memData = Float.parseFloat(super.getMemoryData());
 				//If valid, perform the subtraction
 				result = memData + Float.parseFloat(this.valueToAdd);
 				//return result;
 				return result.toString();
 			}
 		}
-		catch(Exception e) {
-			Logger.getLogger(e.getMessage());
-			return null;
-		}
-		return null;
+        catch(Exception e)
+        {
+            //Display an error message
+            ErrorModule.displayError("Error. Please try again.");
+            //Log the error
+            Logger.getLogger(e.getMessage());
+            //Return null
+            return null;
+        }
 	}
 }
