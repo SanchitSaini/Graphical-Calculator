@@ -6,6 +6,8 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+import Calculator.ErrorModule;
+
 public class Mode extends Statistics {
 
 
@@ -21,11 +23,11 @@ public class Mode extends Statistics {
 	  
 		StringBuilder modeStr = new StringBuilder();
 		boolean iter = false;
-//		if(dataPoints == null)
-//		{
-//			ErrorModule.displayError("Please import a file or enter data points to work on.");
-//			return null;
-//		}
+		if(dataPoints == null)
+		{
+			ErrorModule.displayError("Please import a file or enter data points to work on.");
+			return null;
+		}
 		
 		for (List<String> row : dataPoints) {
 			List<Float> modeFloat = new ArrayList<Float>();

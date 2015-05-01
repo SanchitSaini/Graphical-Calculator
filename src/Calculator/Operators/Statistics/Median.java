@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import Calculator.ErrorModule;
+
 
 
 public class Median extends Statistics {
@@ -21,11 +23,11 @@ public class Median extends Statistics {
 		List<String> medianList = new ArrayList<String>();
 		StringBuilder medianStr = new StringBuilder();
 		boolean iter = false;
-//		if(dataPoints == null)
-//		{
-//			ErrorModule.displayError("Please import a file or enter data points to work on.");
-//			return null;
-//		}
+		if(dataPoints == null)
+		{
+			ErrorModule.displayError("Please import a file or enter data points to work on.");
+			return null;
+		}
 		for (List<String> row : dataPoints) {
 			List<Float> medianFloat = new ArrayList<Float>();
 			float tempMedian = 0;

@@ -59,7 +59,7 @@ public class MiscFunctionsUI extends JPanel{
 		JButton btnEx = new JButton("e^x");
 		btnEx.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				
+				input.setText(input.getText() + "e^");
 			}
 		});
 		
