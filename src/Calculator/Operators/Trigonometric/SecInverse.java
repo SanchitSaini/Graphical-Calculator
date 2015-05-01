@@ -4,7 +4,7 @@ import Calculator.ErrorModule;
 
 import java.util.logging.Logger;
 
-public class SecInverse extends InverseTrigonometric {
+public class SecInverse extends Trigonometric {
 
 	public SecInverse(String angleValueToUse) {
 		super.angleValue = angleValueToUse;

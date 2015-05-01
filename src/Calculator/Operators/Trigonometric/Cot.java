@@ -4,7 +4,7 @@ import Calculator.ErrorModule;
 
 import java.util.logging.Logger;
 
-public class Cot extends NormalTrigonometric {
+public class Cot extends Trigonometric {
 
 	public Cot(String angleValueToUse) {
 		super.angleValue = angleValueToUse;

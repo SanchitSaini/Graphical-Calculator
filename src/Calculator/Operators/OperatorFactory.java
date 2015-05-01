@@ -5,6 +5,9 @@ import Calculator.Operators.Trigonometric.*;
 import Calculator.Operators.MemoryBased.*;
 import Calculator.Operators.Operator;
 import Calculator.Operators.Others.*;
+import Calculator.Operators.OtherBinary.*;
+import Calculator.Operators.OtherUnary.*;
+
 
 import javax.swing.*;
 
@@ -26,9 +29,9 @@ public class OperatorFactory {
             case "/":
                 return new Divide();
             case "m+":
-                return new M_Plus():
+                return new M_Plus();
             case "m-":
-                return new M_Minus():
+                return new M_Minus();
             case "mc":
                 return new MClear();
             case "mr":
@@ -52,7 +55,7 @@ public class OperatorFactory {
             case "log10":
                 return new Log10();
             case "log":
-                return new Log():
+                return new Log();
             case "%":
                 return new Percentage();
             case "p":

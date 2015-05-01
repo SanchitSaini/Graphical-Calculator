@@ -4,7 +4,7 @@ import Calculator.ErrorModule;
 
 import java.util.logging.Logger;
 
-public class CotInverse extends InverseTrigonometric {
+public class CotInverse extends Trigonometric {
 
 	public CotInverse(String angleValueToUse) {
 		super.angleValue = angleValueToUse;
