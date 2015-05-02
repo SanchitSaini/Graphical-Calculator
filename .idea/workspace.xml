@@ -1,72 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="88cc919b-783b-4233-9977-195a57450faf" name="Default" comment="Error Module">
-      <change type="DELETED" beforePath="C:\Users\Pranav\Documents\GitHub\Graphical-Calculator\bin\.gitignore" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/ArithmeticFunctionsUI.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/ArithmeticFunctionsUI.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/CheckAndCorrectUI.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/CheckAndCorrectUI.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/FunctionsUI.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/FunctionsUI.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/GUI$1.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/GUI$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/GUI$10.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/GUI$10.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/GUI$11.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/GUI$11.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/GUI$12.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/GUI$12.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/GUI$13.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/GUI$13.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/GUI$14.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/GUI$14.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/GUI$15.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/GUI$15.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/GUI$16.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/GUI$16.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/GUI$17.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/GUI$17.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/GUI$18.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/GUI$18.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/GUI$19.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/GUI$19.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/GUI$2.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/GUI$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/GUI$3.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/GUI$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/GUI$4.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/GUI$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/GUI$5.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/GUI$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/GUI$6.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/GUI$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/GUI$7.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/GUI$7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/GUI$8.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/GUI$8.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/GUI$9.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/GUI$9.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/GUI.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/GUI.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/MemoryBasedFunctionsUI.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/MemoryBasedFunctionsUI.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/MiscFunctionsUI$1.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/MiscFunctionsUI$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/MiscFunctionsUI$2.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/MiscFunctionsUI$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/MiscFunctionsUI$3.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/MiscFunctionsUI$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/MiscFunctionsUI$4.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/MiscFunctionsUI$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/MiscFunctionsUI$5.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/MiscFunctionsUI$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/MiscFunctionsUI$6.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/MiscFunctionsUI$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/MiscFunctionsUI$7.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/MiscFunctionsUI$7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/MiscFunctionsUI.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/MiscFunctionsUI.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/NumbersUI.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/NumbersUI.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/PlotUI.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/PlotUI.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/Plotter/Plotter.class" afterPath="$PROJECT_DIR$/bin/Calculator/Plotter/Plotter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/SequenceSaver/SequenceSaver.class" afterPath="$PROJECT_DIR$/bin/Calculator/SequenceSaver/SequenceSaver.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/StatisticalFunctionsUI$1.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/StatisticalFunctionsUI$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/StatisticalFunctionsUI.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/StatisticalFunctionsUI.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/TrigonometricFunctionsUI$1.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/TrigonometricFunctionsUI$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/TrigonometricFunctionsUI$10.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/TrigonometricFunctionsUI$10.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/TrigonometricFunctionsUI$11.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/TrigonometricFunctionsUI$11.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/TrigonometricFunctionsUI$12.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/TrigonometricFunctionsUI$12.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/TrigonometricFunctionsUI$2.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/TrigonometricFunctionsUI$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/TrigonometricFunctionsUI$3.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/TrigonometricFunctionsUI$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/TrigonometricFunctionsUI$4.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/TrigonometricFunctionsUI$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/TrigonometricFunctionsUI$5.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/TrigonometricFunctionsUI$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/TrigonometricFunctionsUI$6.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/TrigonometricFunctionsUI$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/TrigonometricFunctionsUI$7.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/TrigonometricFunctionsUI$7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/TrigonometricFunctionsUI$8.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/TrigonometricFunctionsUI$8.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/TrigonometricFunctionsUI$9.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/TrigonometricFunctionsUI$9.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Calculator/GUI/TrigonometricFunctionsUI.class" afterPath="$PROJECT_DIR$/bin/Calculator/GUI/TrigonometricFunctionsUI.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Calculator/CharacterInterpreter.java" afterPath="$PROJECT_DIR$/src/Calculator/CharacterInterpreter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Calculator/CheckMain.java" afterPath="$PROJECT_DIR$/src/Calculator/CheckMain.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Calculator/Operators/MemoryBased/MClear.java" afterPath="$PROJECT_DIR$/src/Calculator/Operators/MemoryBased/MClear.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Calculator/Operators/MemoryBased/MRecall.java" afterPath="$PROJECT_DIR$/src/Calculator/Operators/MemoryBased/MRecall.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Calculator/Operators/MemoryBased/MSet.java" afterPath="$PROJECT_DIR$/src/Calculator/Operators/MemoryBased/MSet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Calculator/Operators/MemoryBased/M_Minus.java" afterPath="$PROJECT_DIR$/src/Calculator/Operators/MemoryBased/M_Minus.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Calculator/Operators/MemoryBased/M_Plus.java" afterPath="$PROJECT_DIR$/src/Calculator/Operators/MemoryBased/M_Plus.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Calculator/Operators/MemoryBased/Memory.java" afterPath="$PROJECT_DIR$/src/Calculator/Operators/MemoryBased/Memory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Calculator/Operators/Operator.java" afterPath="$PROJECT_DIR$/src/Calculator/Operators/Operator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Calculator/Operators/Statistics/Statistics.java" afterPath="$PROJECT_DIR$/src/Calculator/Operators/Statistics/Statistics.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="88cc919b-783b-4233-9977-195a57450faf" name="Default" comment="Error Module" />
     <ignored path="Graphical Calculator.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/bin/" />
@@ -100,12 +35,9 @@
       <file leaf-file-name="CharacterInterpreter.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Calculator/CharacterInterpreter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.7202381" vertical-offset="0" max-vertical-offset="5202">
-              <caret line="77" column="42" selection-start-line="77" selection-start-column="42" selection-end-line="77" selection-end-column="42" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#peakIntoStack#0;class#CharacterInterpreter#0" expanded="false" />
-              </folding>
+            <state vertical-scroll-proportion="2.6686046" vertical-offset="0" max-vertical-offset="5253">
+              <caret line="87" column="58" selection-start-line="87" selection-start-column="58" selection-end-line="87" selection-end-column="58" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -113,7 +45,7 @@
       <file leaf-file-name="AngleNotation.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Calculator/Operators/Trigonometric/AngleNotation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
+            <state vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="238">
               <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
               <folding />
             </state>
@@ -125,7 +57,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="612" max-vertical-offset="1530">
               <caret line="49" column="23" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -133,9 +67,17 @@
       <file leaf-file-name="Sin.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Calculator/Operators/Trigonometric/Sin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="901">
+            <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="901">
               <caret line="28" column="63" selection-start-line="28" selection-start-column="63" selection-end-line="28" selection-end-column="63" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#170#171#0" expanded="false" />
+                <element signature="e#194#195#0" expanded="false" />
+                <element signature="e#234#235#0" expanded="false" />
+                <element signature="e#275#276#0" expanded="false" />
+                <element signature="e#319#320#0" expanded="false" />
+                <element signature="e#343#344#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -318,32 +260,10 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Graphical-Calculator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Graphical-Calculator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Calculator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GUI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -672,6 +592,7 @@
       <workItem from="1430494660619" duration="12639000" />
       <workItem from="1430511642826" duration="716000" />
       <workItem from="1430514821604" duration="23325000" />
+      <workItem from="1430580307799" duration="828000" />
     </task>
     <task id="LOCAL-00001" summary="Error Module">
       <created>1430339818210</created>
@@ -701,16 +622,15 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65634000" />
+    <option name="totallyTimeSpent" value="66462000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1552" height="845" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5420168" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32959327" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -718,8 +638,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913166" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3141655" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2184874" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21879382" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32959327" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -729,11 +648,13 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3436185" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3436185" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32959327" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3141655" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -769,6 +690,22 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Calculator/Operators/Trigonometric/Sin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="901">
+          <caret line="28" column="63" selection-start-line="28" selection-start-column="63" selection-end-line="28" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#170#171#0" expanded="false" />
+            <element signature="e#194#195#0" expanded="false" />
+            <element signature="e#234#235#0" expanded="false" />
+            <element signature="e#275#276#0" expanded="false" />
+            <element signature="e#319#320#0" expanded="false" />
+            <element signature="e#343#344#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Calculator/Operators/Trigonometric/SecInverse.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="782">
@@ -776,9 +713,6 @@
           <folding>
             <element signature="imports" expanded="false" />
             <element signature="e#203#204#0" expanded="false" />
-            <marker date="1430514831278" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1430514831278" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1430514831278" expanded="true" signature="-1:-1" placeholder="//..." />
           </folding>
         </state>
       </provider>
@@ -790,9 +724,6 @@
           <folding>
             <element signature="imports" expanded="false" />
             <element signature="e#193#194#0" expanded="false" />
-            <marker date="1430514831266" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1430514831266" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1430514831266" expanded="true" signature="-1:-1" placeholder="//..." />
           </folding>
         </state>
       </provider>
@@ -801,7 +732,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1683">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -809,10 +742,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="909" max-vertical-offset="2108">
           <caret line="123" column="46" selection-start-line="123" selection-start-column="46" selection-end-line="123" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#peakIntoStack#0;class#CharacterInterpreter#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -828,7 +758,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="901">
           <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#170#171#0" expanded="false" />
+            <element signature="e#194#195#0" expanded="false" />
+            <element signature="e#234#235#0" expanded="false" />
+            <element signature="e#275#276#0" expanded="false" />
+            <element signature="e#319#320#0" expanded="false" />
+            <element signature="e#343#344#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -846,7 +784,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1632">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -854,7 +794,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="833">
           <caret line="27" column="69" selection-start-line="27" selection-start-column="69" selection-end-line="27" selection-end-column="69" />
-          <folding />
+          <folding>
+            <element signature="method#evaluate#0;class#Cos#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1007,9 +949,6 @@
           <folding>
             <element signature="imports" expanded="false" />
             <element signature="e#203#204#0" expanded="false" />
-            <marker date="1430514831278" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1430514831278" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1430514831278" expanded="true" signature="-1:-1" placeholder="//..." />
           </folding>
         </state>
       </provider>
@@ -1021,9 +960,6 @@
           <folding>
             <element signature="imports" expanded="false" />
             <element signature="e#193#194#0" expanded="false" />
-            <marker date="1430514831266" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1430514831266" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1430514831266" expanded="true" signature="-1:-1" placeholder="//..." />
           </folding>
         </state>
       </provider>
@@ -1066,10 +1002,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="77" max-vertical-offset="578">
           <caret line="64" column="16" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="16" />
-          <folding>
-            <element signature="method#setOperands#0;class#M_Minus#0" expanded="false" />
-            <element signature="e#1670#1671#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1077,9 +1009,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.47111112" vertical-offset="60" max-vertical-offset="1003">
           <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
-          <folding>
-            <element signature="e#406#407#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1087,9 +1016,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.60444444" vertical-offset="0" max-vertical-offset="986">
           <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
-          <folding>
-            <element signature="e#392#393#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1170,10 +1096,10 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="663">
           <caret line="31" column="46" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="46" />
           <folding>
-            <element signature="e#236#237#0" expanded="true" />
-            <element signature="e#278#279#0" expanded="true" />
-            <element signature="e#720#721#0" expanded="true" />
-            <element signature="e#751#752#0" expanded="true" />
+            <element signature="e#236#237#0" expanded="false" />
+            <element signature="e#278#279#0" expanded="false" />
+            <element signature="e#720#721#0" expanded="false" />
+            <element signature="e#751#752#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1182,7 +1108,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="901">
           <caret line="28" column="63" selection-start-line="28" selection-start-column="63" selection-end-line="28" selection-end-column="63" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#170#171#0" expanded="false" />
+            <element signature="e#194#195#0" expanded="false" />
+            <element signature="e#234#235#0" expanded="false" />
+            <element signature="e#275#276#0" expanded="false" />
+            <element signature="e#319#320#0" expanded="false" />
+            <element signature="e#343#344#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1190,18 +1124,25 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="850" max-vertical-offset="1666">
           <caret line="49" column="23" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="686">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Calculator/CharacterInterpreter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.7202381" vertical-offset="0" max-vertical-offset="5202">
-          <caret line="77" column="42" selection-start-line="77" selection-start-column="42" selection-end-line="77" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#peakIntoStack#0;class#CharacterInterpreter#0" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="2.6686046" vertical-offset="0" max-vertical-offset="5253">
+          <caret line="87" column="58" selection-start-line="87" selection-start-column="58" selection-end-line="87" selection-end-column="58" />
+          <folding />
         </state>
       </provider>
     </entry>
