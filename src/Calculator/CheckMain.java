@@ -23,7 +23,7 @@ public class CheckMain {
 		// TODO Auto-generated method stub
 //		GUI gui = new GUI();
 //		gui.setVisible(true);
-//		
+//
 //		String[] input = new String[2];
 //		input[0] = "12.4";
 //		input[1] = "12.3";

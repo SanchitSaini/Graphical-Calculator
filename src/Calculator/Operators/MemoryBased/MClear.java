@@ -18,8 +18,14 @@ public class MClear extends Memory {
 	{
 		return 0;
 	}
-	
-	/**
+
+
+    @Override
+    public void setOperands(String[] operands) {
+        throw new UnsupportedOperationException("setOperands not supported for MClear");
+    }
+
+    /**
 	 * This function will clear the memory. 
 	 * @return true/false as String, based on the success of clearing operation
 	 */

@@ -11,5 +11,8 @@ public abstract class Operator {
 	 * @return evaluated value
 	 */
 	public abstract String evaluate();
+    public abstract int getNumArguments();
+    public abstract void setOperands(String[] operands);
+
 
 }
