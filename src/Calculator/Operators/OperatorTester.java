@@ -1,9 +1,7 @@
 package Calculator.Operators;
 
 import Calculator.Operators.MemoryBased.MSet;
-import Calculator.Operators.MemoryBased.M_Minus;
 import Calculator.Operators.OtherUnary.Absolute;
-import Calculator.Operators.Trigonometric.Sin;
 
 public class OperatorTester {
 

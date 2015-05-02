@@ -7,9 +7,6 @@ import Calculator.Operators.Operator;
 import Calculator.Operators.OtherBinary.*;
 import Calculator.Operators.OtherUnary.*;
 
-
-import javax.swing.*;
-
 /**
  * Created by Pranav on 01-05-2015.
  */

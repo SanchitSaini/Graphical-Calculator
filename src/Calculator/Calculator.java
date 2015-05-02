@@ -1,11 +1,6 @@
 
 package Calculator;
 
-import java.util.ArrayList;
-
-import Calculator.EquationSolver.EquationSolver;
-import Calculator.Plotter.Plotter;
-import Calculator.SequenceSaver.SequenceSaver;
 import Calculator.Statistics.Mean;
 import Calculator.Statistics.Median;
 import Calculator.Statistics.Mode;
@@ -17,10 +12,7 @@ public class Calculator {
   private String input;
   private CharacterInterpreter charInterpreter;
   private String output;
-  private Plotter plotter;
   private ImportExport data;
-  private SequenceSaver operationSequence;
-  private EquationSolver equationSolver;
   private Statistics statistics;
 
 
@@ -28,10 +20,7 @@ public class Calculator {
 	  input = null;
 	  charInterpreter = null;
 	  output = null;
-	  plotter = null;
 	  data = null;
-	  operationSequence = null;
-	  equationSolver = null;
 	  statistics = null;
   }
 
@@ -100,8 +89,6 @@ public class Calculator {
 	  statistics = new Mode(data.getDataValues());
 	  String mode = statistics.evaluate();
 	  return mode;
-  }
-  
-  
+  }  
 
 }

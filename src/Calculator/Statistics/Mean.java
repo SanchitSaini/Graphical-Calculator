@@ -13,7 +13,6 @@ import Calculator.ErrorModule;
 
 public class Mean extends Statistics {
 
-
 	public Mean(){
 		dataPoints = null;
 	}

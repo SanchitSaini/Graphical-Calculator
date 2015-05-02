@@ -12,8 +12,6 @@ public class CharacterInterpreter {
     private Stack<String> valuesStack;
     private Stack<String> operatorStack;
 
-    private InputType inputType;
-
     private Operator operator;
 
     private boolean isExpression;

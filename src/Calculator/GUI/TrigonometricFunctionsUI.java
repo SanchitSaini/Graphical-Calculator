@@ -1,6 +1,5 @@
 package Calculator.GUI;
 
-import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.GroupLayout;
 import javax.swing.GroupLayout.Alignment;
@@ -12,7 +11,9 @@ import java.awt.event.ActionEvent;
 
 public class TrigonometricFunctionsUI extends JPanel{
 
-  public TrigonometricFunctionsUI(final JTextField input) {
+	private static final long serialVersionUID = 1L;
+
+public TrigonometricFunctionsUI(final JTextField input) {
   	
   	JButton btnSin = new JButton("cos");
   	btnSin.addActionListener(new ActionListener() {
