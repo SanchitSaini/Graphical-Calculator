@@ -2,6 +2,8 @@ package Calculator.Operators.OtherBinary;
 
 import java.util.logging.Logger;
 
+import Calculator.ErrorModule;
+
 public class AExpB extends Binary {
 
 	
@@ -21,10 +23,12 @@ public class AExpB extends Binary {
 			return String.valueOf(Math.pow(Double.parseDouble(super.firstOperand),Double.parseDouble(super.secondOperand)));
 		}
 		catch(Exception e) {
-			//Log the exception
-			Logger.getLogger(e.getMessage());
-			//Return string value of false
-			return String.valueOf(false);
+			//Display an error message
+            ErrorModule.displayError("Error. Please try again.");
+            //Log the error
+            Logger.getLogger(e.getMessage());
+            //Return null
+            return null;
 		}
 	}
 }

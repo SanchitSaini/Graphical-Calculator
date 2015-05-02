@@ -6,10 +6,10 @@ import Calculator.Operators.Arithmetic.Add;
 import Calculator.Operators.MemoryBased.MRecall;
 import Calculator.Operators.MemoryBased.MSet;
 import Calculator.Operators.MemoryBased.Memory;
-import Calculator.Operators.Statistics.Mean;
-import Calculator.Operators.Statistics.Median;
-import Calculator.Operators.Statistics.Mode;
-import Calculator.Operators.Statistics.Statistics;
+import Calculator.Statistics.Mean;
+import Calculator.Statistics.Median;
+import Calculator.Statistics.Mode;
+import Calculator.Statistics.Statistics;
 
 /***
  *  Class to check new functionalities

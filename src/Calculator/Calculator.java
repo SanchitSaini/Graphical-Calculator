@@ -3,54 +3,64 @@ package Calculator;
 import java.util.ArrayList;
 
 import Calculator.EquationSolver.EquationSolver;
-import Calculator.Operators.Statistics.Mean;
-import Calculator.Operators.Statistics.Median;
-import Calculator.Operators.Statistics.Mode;
-import Calculator.Operators.Statistics.Statistics;
 import Calculator.Plotter.Plotter;
 import Calculator.SequenceSaver.SequenceSaver;
+import Calculator.Statistics.Mean;
+import Calculator.Statistics.Median;
+import Calculator.Statistics.Mode;
+import Calculator.Statistics.Statistics;
 
 
 public class Calculator {
 
-  private ArrayList<String> input;
+  private String input;
   private CharacterInterpreter charInterpreter;
-  private ArrayList<String> output;
+  private String output;
   private Plotter plotter;
   private ImportExport data;
   private SequenceSaver operationSequence;
   private EquationSolver equationSolver;
+  private Statistics statistics;
 
 
   public Calculator() {
+	  input = null;
+	  charInterpreter = null;
+	  output = null;
+	  plotter = null;
+	  data = null;
+	  operationSequence = null;
+	  equationSolver = null;
+	  statistics = null;
   }
 
-  private void setOutput(String output) {
-  }
+//  private void setOutput(String output) {
+//  }
 
   public String getOutput() {
-	  return new String();
+	  return output;
   }
 
-  private void setInput(ArrayList input) {
+  private void setInput(String input) {
+	  this.input = input;
   }
 
-  public ArrayList getInput() {
-	  return new ArrayList();
-  }
+//  public ArrayList getInput() {
+//	  return new ArrayList();
+//  }
 
-  public void onEdit(String edit) {
-  }
+//  public void onEdit(String edit) {
+//  }
 
   public void onClick(String abc) {
   }
 
-  public void displayResult(String abc) {
-  }
+//  public void displayResult(String abc) {
+//  }
   
   public void compute(String exp)
   {
-	  //charInterpreter.compute(exp);
+//	  charInterpreter.compute(exp);
   }
 
   
@@ -63,22 +73,22 @@ public class Calculator {
   
   public String computeMean()
   {
-	  Statistics meanObj = new Mean(data.getDataValues());
-	  String mean = meanObj.evaluate();
+	  statistics = new Mean(data.getDataValues());
+	  String mean = statistics.evaluate();
 	  return mean;
   }
   
   public String computeMedian()
   {
-	  Statistics medianObj = new Median(data.getDataValues());
-	  String median = medianObj.evaluate();
+	  statistics = new Median(data.getDataValues());
+	  String median = statistics.evaluate();
 	  return median;
   }
   
   public String computeMode()
   {
-	  Statistics modeObj = new Mode(data.getDataValues());
-	  String mode = modeObj.evaluate();
+	  statistics = new Mode(data.getDataValues());
+	  String mode = statistics.evaluate();
 	  return mode;
   }
   
