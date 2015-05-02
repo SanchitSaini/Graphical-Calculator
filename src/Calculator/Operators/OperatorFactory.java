@@ -58,6 +58,8 @@ public class OperatorFactory {
                 return new Permutation();
             case "sqrt":
                 return new SquareRoot();
+            case "√":
+                return new SquareRoot();
             case "sin":
                 return new Sin();
             case "cos":
