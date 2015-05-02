@@ -48,9 +48,17 @@ public class Calculator {
   public void displayResult(String abc) {
   }
   
-  public void compute(String exp)
+  public String compute(String exp)
   {
-	  //charInterpreter.compute(exp);
+	  charInterpreter = new CharacterInterpreter();
+	  try {
+		String output = charInterpreter.compute(exp);
+		return output;
+	} catch (Exception e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+	return null;  
   }
 
   

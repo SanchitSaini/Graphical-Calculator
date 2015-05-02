@@ -65,9 +65,9 @@ public class GUI extends JFrame{
 	private double maxY = 5;
 	private int xAxis = 0;
 	private int yAxis = 0;
-    /*private ArrayList<String> expElements = new ArrayList<String>();
-    private ArrayList<String> expression = new ArrayList<String>();
-    */
+    //private ArrayList<String> expElements = new ArrayList<String>();
+    //private ArrayList<String> expression = new ArrayList<String>();
+    
   
     
     
@@ -83,20 +83,28 @@ public class GUI extends JFrame{
     
 
     calculator = new Calculator();
+    
+    //Radian and Degree radio buttons
     JRadioButton rdbtnRadian = new JRadioButton("Radian");
   	buttonGroup_1.add(rdbtnRadian);
-  	
   	JRadioButton radioButton = new JRadioButton("Degree");
   	buttonGroup_1.add(radioButton);
+  	if(rdbtnRadian.isSelected())
+    {
+    	inputType = rdbtnRadian.getText(); 
+    }
+    if(radioButton.isSelected())
+    {
+    	inputType = radioButton.getText(); 
+    }
   	
+  	
+  	//Input format from file for Statistics function
   	JRadioButton rdbtnRowwise = new JRadioButton("Rowwise");
   	buttonGroup.add(rdbtnRowwise);
-  	
   	JRadioButton rdbtnColumnwise = new JRadioButton("Columnwise");
   	buttonGroup.add(rdbtnColumnwise);
-  	
-    
-    if(rdbtnRowwise.isSelected())
+  	if(rdbtnRowwise.isSelected())
     {
     	alignment = rdbtnRowwise.getText(); 
     }
@@ -105,15 +113,9 @@ public class GUI extends JFrame{
     	alignment = rdbtnColumnwise.getText(); 
     }
     
-    if(rdbtnRadian.isSelected())
-    {
-    	inputType = rdbtnRadian.getText(); 
-    }
-    if(radioButton.isSelected())
-    {
-    	inputType = radioButton.getText(); 
-    }
     
+    
+    //Input given by user
     Input = new JTextField();
   	Input.setColumns(10);
   	Input.getDocument().addDocumentListener(new DocumentListener(){
@@ -127,8 +129,11 @@ public class GUI extends JFrame{
 		@Override
 		public void insertUpdate(DocumentEvent arg0) {
 			// TODO Auto-generated method stub
-			expression = Input.getText();
-			System.out.println(expression);
+			
+			
+			//expression to be given to character interpreter 
+			//exp = Input.getText();
+			//System.out.println(expression);
 			//calculator.compute(expression);
 //			exp = Input.getText();
 //			expElements.add(exp);
@@ -215,25 +220,55 @@ public class GUI extends JFrame{
 		}
   		
   	});
-  	varGrid[0][2].setText("A²");
+  	varGrid[0][2].setText("a²");
   	varGrid[0][2].addActionListener(new ActionListener(){
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
 			// TODO Auto-generated method stub
 			JButton temp = (JButton)e.getSource();
+			int lenInput  = Input.getText().length() - 1;
+			String lastChar = Input.getText().substring(lenInput,lenInput + 1);
+			System.out.println(lastChar);
+			//System.out.println(lastChar=="+");
+			boolean test = ((lastChar.equals("+")) || (lastChar.equals("-")) || (lastChar.equals("*")) || (lastChar.equals("/")) || (lastChar.equals("%")) || (lastChar.equals("^")));
+			System.out.println(test);
+			if(test)
+			{
+				String tempText = Input.getText().replace(lastChar,"^2");
+				System.out.println(tempText);
+				Input.setText(tempText);
+			}
+			else
+			{
 			Input.setText(Input.getText() + "^2");
+			}
 		}
   		
   	});
-  	varGrid[0][3].setText("Aˣ");
+  	varGrid[0][3].setText("aˣ");
   	varGrid[0][3].addActionListener(new ActionListener(){
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
 			// TODO Auto-generated method stub
 			JButton temp = (JButton)e.getSource();
-			Input.setText(Input.getText() + "^");
+			int lenInput  = Input.getText().length() - 1;
+			String lastChar = Input.getText().substring(lenInput,lenInput + 1);
+			System.out.println(lastChar);
+			//System.out.println(lastChar=="+");
+			boolean test = ((lastChar.equals("+")) || (lastChar.equals("-")) || (lastChar.equals("*")) || (lastChar.equals("/")) || (lastChar.equals("%")) || (lastChar.equals("^")) || (lastChar.equals("^2")) );
+			System.out.println(test);
+			if(test)
+			{
+				String tempText = Input.getText().replace(lastChar,"^");
+				System.out.println(tempText);
+				Input.setText(tempText);
+			}
+			else
+			{
+				Input.setText(Input.getText() + "^");
+			}	
 		}
   		
   	});
@@ -413,9 +448,18 @@ public class GUI extends JFrame{
 
   	
   	
-   	//Adding TabbedPane
+   	//Adding TabbedPane having trigonomteric,misc,statistics,memory
   	JTabbedPane tabbedPane = new JTabbedPane(JTabbedPane.TOP);
+  	TrigonometricFunctionsUI trigPanel = new TrigonometricFunctionsUI(Input);
+  	tabbedPane.add("trig", trigPanel);
+  	StatisticalFunctionsUI statPanel = new StatisticalFunctionsUI();
+  	tabbedPane.add("stats", statPanel);
+  	MemoryBasedFunctionsUI memPanel = new MemoryBasedFunctionsUI();
+  	tabbedPane.add("Mem", memPanel);
+  	MiscFunctionsUI miscPanel = new MiscFunctionsUI(Input);
+  	tabbedPane.add("Misc", miscPanel);
   	
+  	//Choosing file for statistical functions
   	JButton btnChooseFile = new JButton("Choose File");
   	btnChooseFile.addActionListener(new ActionListener() {
   		public void actionPerformed(ActionEvent arg0) {
@@ -436,41 +480,41 @@ public class GUI extends JFrame{
   		}
   	});
   	
-  	GraphPanel panel = new GraphPanel();
   	
-  	panel.setMinimumSize(new Dimension(400,1400));
-  	panel.setPreferredSize(new Dimension(400,400));
-  	
+  	JButton btnGraph = new JButton("Graph");
+  	final JPanel panel = new GraphPanel();
   	GroupLayout groupLayout = new GroupLayout(getContentPane());
   	groupLayout.setHorizontalGroup(
-  		groupLayout.createParallelGroup(Alignment.TRAILING)
+  		groupLayout.createParallelGroup(Alignment.LEADING)
   			.addGroup(groupLayout.createSequentialGroup()
-  				.addContainerGap(755, Short.MAX_VALUE)
-  				.addComponent(staticPanel, GroupLayout.PREFERRED_SIZE, 324, GroupLayout.PREFERRED_SIZE)
-  				.addContainerGap())
-  			.addGroup(Alignment.LEADING, groupLayout.createSequentialGroup()
   				.addGap(24)
   				.addGroup(groupLayout.createParallelGroup(Alignment.LEADING)
-  					.addComponent(panel, GroupLayout.PREFERRED_SIZE, 684, GroupLayout.PREFERRED_SIZE)
   					.addGroup(groupLayout.createSequentialGroup()
   						.addGap(25)
   						.addGroup(groupLayout.createParallelGroup(Alignment.LEADING)
-  							.addComponent(digitPanel, GroupLayout.PREFERRED_SIZE, 352, GroupLayout.PREFERRED_SIZE)
+  							.addGroup(groupLayout.createSequentialGroup()
+  								.addComponent(digitPanel, GroupLayout.PREFERRED_SIZE, 352, GroupLayout.PREFERRED_SIZE)
+  								.addPreferredGap(ComponentPlacement.UNRELATED)
+  								.addComponent(tabbedPane, GroupLayout.PREFERRED_SIZE, 326, GroupLayout.PREFERRED_SIZE)
+  								.addGap(18)
+  								.addComponent(staticPanel, GroupLayout.PREFERRED_SIZE, 324, GroupLayout.PREFERRED_SIZE))
   							.addGroup(groupLayout.createSequentialGroup()
   								.addComponent(rdbtnRadian)
   								.addGap(18)
-  								.addComponent(radioButton, GroupLayout.PREFERRED_SIZE, 69, GroupLayout.PREFERRED_SIZE)))
-  						.addGap(18)
-  						.addComponent(tabbedPane, GroupLayout.PREFERRED_SIZE, 326, GroupLayout.PREFERRED_SIZE))
-  					.addGroup(groupLayout.createSequentialGroup()
-  						.addComponent(Input, GroupLayout.PREFERRED_SIZE, 489, GroupLayout.PREFERRED_SIZE)
-  						.addGap(34)
-  						.addComponent(btnChooseFile)
-  						.addGap(34)
-  						.addComponent(rdbtnRowwise)
-  						.addGap(18)
-  						.addComponent(rdbtnColumnwise)))
-  				.addContainerGap(255, Short.MAX_VALUE))
+  								.addComponent(radioButton, GroupLayout.PREFERRED_SIZE, 69, GroupLayout.PREFERRED_SIZE))))
+  					.addGroup(groupLayout.createParallelGroup(Alignment.LEADING, false)
+  						.addComponent(panel, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+  						.addGroup(groupLayout.createSequentialGroup()
+  							.addComponent(Input, GroupLayout.PREFERRED_SIZE, 489, GroupLayout.PREFERRED_SIZE)
+  							.addGap(34)
+  							.addComponent(btnChooseFile)
+  							.addGap(34)
+  							.addComponent(rdbtnRowwise)
+  							.addGap(18)
+  							.addComponent(rdbtnColumnwise)
+  							.addGap(28)
+  							.addComponent(btnGraph))))
+  				.addContainerGap(GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
   	);
   	groupLayout.setVerticalGroup(
   		groupLayout.createParallelGroup(Alignment.TRAILING)
@@ -480,44 +524,37 @@ public class GUI extends JFrame{
   					.addComponent(Input, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
   					.addComponent(btnChooseFile)
   					.addComponent(rdbtnColumnwise)
-  					.addComponent(rdbtnRowwise))
-  				.addGap(59)
-  				.addComponent(panel, GroupLayout.PREFERRED_SIZE, 194, GroupLayout.PREFERRED_SIZE)
+  					.addComponent(rdbtnRowwise)
+  					.addComponent(btnGraph))
+  				.addGap(31)
+  				.addComponent(panel, GroupLayout.PREFERRED_SIZE, 320, GroupLayout.PREFERRED_SIZE)
   				.addGap(32)
   				.addGroup(groupLayout.createParallelGroup(Alignment.LEADING)
-  					.addGroup(groupLayout.createParallelGroup(Alignment.LEADING)
-  						.addGroup(groupLayout.createSequentialGroup()
-  							.addGap(18)
-  							.addGroup(groupLayout.createParallelGroup(Alignment.BASELINE)
-  								.addComponent(rdbtnRadian)
-  								.addComponent(radioButton))
-  							.addPreferredGap(ComponentPlacement.RELATED, 16, Short.MAX_VALUE)
-  							.addComponent(digitPanel, GroupLayout.PREFERRED_SIZE, 201, GroupLayout.PREFERRED_SIZE)
-  							.addGap(76))
-  						.addGroup(groupLayout.createSequentialGroup()
-  							.addGap(67)
-  							.addComponent(staticPanel, GroupLayout.PREFERRED_SIZE, 176, GroupLayout.PREFERRED_SIZE)
-  							.addContainerGap()))
   					.addGroup(groupLayout.createSequentialGroup()
-  						.addGap(32)
-  						.addComponent(tabbedPane, GroupLayout.PREFERRED_SIZE, 241, GroupLayout.PREFERRED_SIZE)
-  						.addContainerGap())))
+  						.addPreferredGap(ComponentPlacement.RELATED, 51, Short.MAX_VALUE)
+  						.addComponent(staticPanel, GroupLayout.PREFERRED_SIZE, 176, GroupLayout.PREFERRED_SIZE)
+  						.addGap(75))
+  					.addGroup(groupLayout.createSequentialGroup()
+  						.addGap(18)
+  						.addGroup(groupLayout.createParallelGroup(Alignment.BASELINE)
+  							.addComponent(rdbtnRadian)
+  							.addComponent(radioButton))
+  						.addPreferredGap(ComponentPlacement.RELATED)
+  						.addGroup(groupLayout.createParallelGroup(Alignment.LEADING)
+  							.addComponent(tabbedPane, GroupLayout.PREFERRED_SIZE, 241, GroupLayout.PREFERRED_SIZE)
+  							.addComponent(digitPanel, GroupLayout.PREFERRED_SIZE, 201, GroupLayout.PREFERRED_SIZE))
+  						.addGap(36))))
   	);
-  	
   	getContentPane().add(panel);
-  	//panel.setBackground(Color.WHITE);
-  	panel.setVisible(true);
-  	
-  	TrigonometricFunctionsUI trigPanel = new TrigonometricFunctionsUI(Input);
-  	tabbedPane.add("trig", trigPanel);
-  	StatisticalFunctionsUI statPanel = new StatisticalFunctionsUI();
-  	tabbedPane.add("stats", statPanel);
-  	MemoryBasedFunctionsUI memPanel = new MemoryBasedFunctionsUI();
-  	tabbedPane.add("Mem", memPanel);
-  	MiscFunctionsUI miscPanel = new MiscFunctionsUI(Input);
-  	tabbedPane.add("Misc", miscPanel);
-  	
   	//Creating DigitPanel	
+  	
+  	btnGraph.addActionListener(new ActionListener() {
+  		public void actionPerformed(ActionEvent arg0) {
+  			//panel = new GraphPanel();
+  			((GraphPanel) panel).setEquation(Input.getText());
+  			panel.repaint();
+  		}
+  	});
   	int offset = 0;
 	JButton[][] btnGrid = new JButton[5][5];
   	
@@ -560,6 +597,17 @@ public class GUI extends JFrame{
   	btnGrid[3][0].setText(String.valueOf(0));
   	btnGrid[3][1].setText(".");
   	btnGrid[3][2].setText("=");
+  	btnGrid[3][2].addActionListener(new ActionListener(){
+
+		@Override
+		public void actionPerformed(ActionEvent arg0) {
+			// TODO Auto-generated method stub
+			expression = Input.getText();
+			String finalOutput = calculator.compute(expression);
+			Input.setText(finalOutput);
+		}
+  		
+  	});
   	btnGrid[3][0].addActionListener(new ActionListener(){
 
 		@Override
@@ -599,7 +647,22 @@ public class GUI extends JFrame{
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
 				JButton temp = (JButton)e.getSource();
-				Input.setText(Input.getText() + temp.getText());
+				int lenInput  = Input.getText().length() - 1;
+				String lastChar = Input.getText().substring(lenInput,lenInput + 1);
+				System.out.println(lastChar);
+				//System.out.println(lastChar=="+");
+				boolean test = ((lastChar.equals("+")) || (lastChar.equals("-")) || (lastChar.equals("*")) || (lastChar.equals("/")) || (lastChar.equals("%")) || (lastChar.equals("^")) || (lastChar.equals("^2")) );
+				System.out.println(test);
+				if(test)
+				{
+					String tempText = Input.getText().replace(lastChar,temp.getText());
+					System.out.println(tempText);
+					Input.setText(tempText);
+				}
+				else
+				{
+					Input.setText(Input.getText() + temp.getText());
+				}
 			}
   			
   		});
@@ -620,22 +683,10 @@ public class GUI extends JFrame{
   	
   	getContentPane().setVisible(true);
   	getContentPane().setLayout(groupLayout);
-  	this.setSize(1105, 716);
+  	this.setSize(1105,767);
   
   }
     
   public void clear() {
   }
-  
-  public synchronized int UnitToPixelX(double x) {
-		double pixelsPerUnit = this.getWidth() / (maxX - minX);
-		double pos = (x - minX) * pixelsPerUnit;
-		return (int) pos;
-	}
-  public synchronized int UnitToPixelY(double y) {
-		double pixelsPerUnit = this.getHeight() / (maxY - minY);
-		double pos = (y - minY) * pixelsPerUnit;
-		pos = -pos + this.getHeight();
-		return (int) pos;
-	}
 }

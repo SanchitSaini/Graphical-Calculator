@@ -17,14 +17,14 @@ public class MiscFunctionsUI extends JPanel{
 		JButton btnNcr = new JButton("nCr");
 		btnNcr.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				input.setText(input.getText() + "nCr(");
+				input.setText(input.getText() + "C");
 			}
 		});
 		
 		JButton btnNpr = new JButton("nPr");
 		btnNpr.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				input.setText(input.getText() + "nPr(");
+				input.setText(input.getText() + "P");
 			}
 		});
 		

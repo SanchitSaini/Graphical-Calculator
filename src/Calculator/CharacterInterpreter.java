@@ -135,11 +135,11 @@ public class CharacterInterpreter {
 
             else if (input.charAt(0)=='+' || input.charAt(0)=='-' || input.charAt(0)=='*' || input.charAt(0)=='/' || input.charAt(0)=='%' || input.charAt(0)=='^')
             {
-                if (!Character.isDigit(input.charAt(1)) && !Character.isLetter(input.charAt(1)))
-                {
-                    ErrorModule.displayError("Wrong Format: expected number or variable after " + input.charAt(0));
-                    return null;
-                }
+//                if (!Character.isDigit(input.charAt(1)) && !Character.isLetter(input.charAt(1)))
+//                {
+//                    ErrorModule.displayError("Wrong Format: expected number or variable after " + input.charAt(0));
+//                    return null;
+//                }
                 while (!operatorStack.isEmpty() && hasPrecedence(operatorStack.peek(), input.substring(0, 1)))
                 {
 
