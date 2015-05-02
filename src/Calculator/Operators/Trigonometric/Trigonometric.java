@@ -1,5 +1,6 @@
 package Calculator.Operators.Trigonometric;
 
+import Calculator.AngleNotation;
 import Calculator.Operators.Operator;
 
 public abstract class Trigonometric extends Operator {
@@ -25,7 +26,7 @@ public abstract class Trigonometric extends Operator {
 	 * Function to set the angle type
 	 * @param angleType Angle type to be set
 	 */
-	protected static void setAngleType(AngleNotation angleType) {
+	public static void setAngleType(AngleNotation angleType) {
 		Trigonometric.angleType = angleType;
 	}
 	

@@ -2,6 +2,7 @@ package Calculator;
 
 //import Calculator.Statistics.Mean;
 //import Calculator.Statistics.Median;
+import Calculator.GUI.GUI;
 import Calculator.Statistics.Mode;
 import Calculator.Statistics.Statistics;
 
@@ -15,8 +16,8 @@ public class CheckMain {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-//		GUI gui = new GUI();
-//		gui.setVisible(true);
+		GUI gui = new GUI();
+		gui.setVisible(true);
 
 //		String[] input = new String[2];
 //		input[0] = "12.4";
@@ -36,15 +37,15 @@ public class CheckMain {
 //			System.out.println(input[0] +" " +symbol[i] + " "+ input[1] +" = " + a.evaluate());
 //		}
 //				
-		ImportExport data = new ImportExport();
-		data.setDataSource("data.txt");
-		data.importData();
+//		ImportExport data = new ImportExport();
+//		data.setDataSource("data.txt");
+//		data.importData();
 //		Statistics meanObj = new Mean(data.getDataValues());
 //		meanObj.evaluate();
 //		Statistics medObj = new Median(data.getDataValues());
 //		medObj.evaluate();
-		Statistics modeObj = new Mode(data.getDataValues());
-		modeObj.evaluate();
+//		Statistics modeObj = new Mode(data.getDataValues());
+//		modeObj.evaluate();
 //		Memory m = new MSet();
 //		System.out.println(m.getNumArguments());
 	}

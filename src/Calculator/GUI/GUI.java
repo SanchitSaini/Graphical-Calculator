@@ -462,7 +462,7 @@ public class GUI extends JFrame{
   	JTabbedPane tabbedPane = new JTabbedPane(JTabbedPane.TOP);
   	TrigonometricFunctionsUI trigPanel = new TrigonometricFunctionsUI(Input);
   	tabbedPane.add("trig", trigPanel);
-  	StatisticalFunctionsUI statPanel = new StatisticalFunctionsUI();
+  	StatisticalFunctionsUI statPanel = new StatisticalFunctionsUI(calculator,Input);
   	tabbedPane.add("stats", statPanel);
   	MemoryBasedFunctionsUI memPanel = new MemoryBasedFunctionsUI();
   	tabbedPane.add("Mem", memPanel);
@@ -480,9 +480,11 @@ public class GUI extends JFrame{
   				//use alignment here for rowwise and columnwise
   				fileName = c.getSelectedFile().getName();
   				dir = c.getCurrentDirectory().toString();
-  	        
-  	        	//System.out.println(fileName);
-  	      		//System.out.println(dir);
+//  				StringBuilder pathName = new StringBuilder();
+  				String pathName = dir + "\\" + fileName;
+  				calculator.readFromFile(pathName);
+//  	        	System.out.println(fileName);
+//  	      		System.out.println(dir);
   	      }
   	      if (rVal == JFileChooser.CANCEL_OPTION) {
   	        System.out.println("No File Selected!!");

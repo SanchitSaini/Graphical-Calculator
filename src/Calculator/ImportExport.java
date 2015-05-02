@@ -9,6 +9,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Logger;
 
 
 public class ImportExport {
@@ -75,10 +76,17 @@ public class ImportExport {
 		}
 		catch(FileNotFoundException e)
 		{
-			e.printStackTrace();
+			//Display an error message
+            ErrorModule.displayError("Error. Please try again.");
+            //Log the error
+            Logger.getLogger(e.getMessage());
+            
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			//Display an error message
+            ErrorModule.displayError("Error. Please try again.");
+            //Log the error
+            Logger.getLogger(e.getMessage());
+            
 		}
 
 	}

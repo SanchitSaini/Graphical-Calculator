@@ -1,5 +1,6 @@
 package Calculator.Operators.Trigonometric;
 
+import Calculator.AngleNotation;
 import Calculator.ErrorModule;
 
 import java.util.logging.Logger;
