@@ -48,7 +48,7 @@ public class Calculator {
 //  public void displayResult(String abc) {
 //  }
   
-  public String compute(String expression)
+  public String compute(String expression,String angleType)
   {
 	  charInterpreter = new CharacterInterpreter();
 	  try {
@@ -62,6 +62,10 @@ public class Calculator {
 	return null;  
   }
 
+  public void recordAngleType()
+  {
+	  
+  }
   
   public void readFromFile(String fileName){
 	  data = new ImportExport();

@@ -31,6 +31,8 @@ public class GraphPanel extends JPanel {
 	private int xAxis = 0;
 	private int yAxis = 0;
 	private String equation;
+	private double xInterval = 0;
+	private double yInterval = 0;
 //	/**
 //	 * Create the panel.
 //	 */
@@ -84,7 +86,7 @@ public class GraphPanel extends JPanel {
 	 			//g.setColor(Color.WHITE);
 	 			//g2.fillRect(getX(), getY(), getWidth(), getHeight());
 	 			setBackground(Color.WHITE);
-	 			g.setColor(Color.red);
+	 			g.setColor(Color.black);
 	 			g.drawLine(0, xAxis, this.getWidth(), xAxis);
 	 			g.drawLine(yAxis, 0, yAxis, this.getHeight());
 	 			//g.drawPolyline(p.xpoints,p.ypoints,p.npoints);
@@ -97,44 +99,64 @@ public class GraphPanel extends JPanel {
 	 			g2.drawString(df.format(minY), yAxis + 2, this.getHeight() - 5);
 	 			g2.drawString(df.format(maxY), yAxis + 2, 15);
 	 			
+				g2.setColor(Color.LIGHT_GRAY);
+				xInterval = Math.pow(10, String.valueOf((int) (maxX - minX) / 4).length() - 1);
+				yInterval = Math.pow(10, String.valueOf((int) (maxY - minY) / 4).length() - 1);
+				
+				xInterval = yInterval = Math.min(xInterval, yInterval);
+
+				for (double i = 0 + xInterval; i <= maxX; i += xInterval) {
+					g2.drawLine(UnitToPixelX(i), 0, UnitToPixelX(i), this.getHeight());
+				}
+				for (double i = 0 - xInterval; i >= minX; i -= xInterval) {
+					g2.drawLine(UnitToPixelX(i), 0, UnitToPixelX(i), this.getHeight());
+				}
+				for (double i = 0 + yInterval; i <= maxY; i += yInterval) {
+					g2.drawLine(0, UnitToPixelY(i), this.getWidth(), UnitToPixelY(i));
+				}
+				for (double i = 0 - yInterval; i >= minY; i -= yInterval) {
+					g2.drawLine(0, UnitToPixelY(i), this.getWidth(), UnitToPixelY(i));
+				}
+	 			
 	 			if(equation==null)
 	 			{
 	 				return;
 	 			}
 	 			else{
-	 			double eqPrev;
-	 			Double eqVal;
-	 			boolean firstPoint = true;
-	 			double interval,intervalFormula;
-	 			ExpressionBuilder expBuilder = new ExpressionBuilder(equation);
-				expBuilder.variable("x");
-				net.objecthunter.exp4j.Expression equation = expBuilder.build();
-				eqPrev=equation.setVariable("x", minX).evaluate();
-				
-				polyline.moveTo(UnitToPixelX(minX), UnitToPixelY(eqPrev));
-				polylines.set(0, polyline);
-				interval = intervalFormula = (maxX - minX) / (this.getWidth());
-				int loop = 0;
-				double[] a = new double[2];
-				for (double x = minX;x<100; x += interval) {
+	 				g2.setColor(Color.red);
+		 			double eqPrev;
+		 			Double eqVal;
+		 			boolean firstPoint = true;
+		 			double interval,intervalFormula;
+		 			ExpressionBuilder expBuilder = new ExpressionBuilder(equation);
+					expBuilder.variable("x");
+					net.objecthunter.exp4j.Expression equation = expBuilder.build();
+					eqPrev=equation.setVariable("x", minX).evaluate();
 					
-					eqVal = equation.setVariable("x", x).evaluate();
-					int pixValX = UnitToPixelX(x);
-
-					if (eqVal.isNaN() || eqVal.isInfinite()) {
-						firstPoint = true;
-					} else if (firstPoint) {
-						polyline.moveTo(pixValX, UnitToPixelY(eqVal));
-						polylines.set(0, polyline);
-						firstPoint = false;
-					} else {
-						polyline.lineTo(pixValX, UnitToPixelY(eqVal));
-						polylines.set(0, polyline);
+					polyline.moveTo(UnitToPixelX(minX), UnitToPixelY(eqPrev));
+					polylines.set(0, polyline);
+					interval = intervalFormula = (maxX - minX) / (this.getWidth());
+					int loop = 0;
+					double[] a = new double[2];
+					for (double x = minX;x<100; x += interval) {
+						
+						eqVal = equation.setVariable("x", x).evaluate();
+						int pixValX = UnitToPixelX(x);
+	
+						if (eqVal.isNaN() || eqVal.isInfinite()) {
+							firstPoint = true;
+						} else if (firstPoint) {
+							polyline.moveTo(pixValX, UnitToPixelY(eqVal));
+							polylines.set(0, polyline);
+							firstPoint = false;
+						} else {
+							polyline.lineTo(pixValX, UnitToPixelY(eqVal));
+							polylines.set(0, polyline);
+						}
+	
 					}
-
-				}
-				
-				g2.draw(polylines.get(0));
+					
+					g2.draw(polylines.get(0));
 	 			}
 
 	  }
