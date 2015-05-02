@@ -20,11 +20,11 @@ public class Cot extends Trigonometric {
 			Double angle = Double.parseDouble(super.angleValue);
 			//Check if the angle type is Degree and return the result in degree form if it is
 			if(super.getAngleType() == AngleNotation.DEGREES) {
-				return String.valueOf(1/Math.tan(Math.toDegrees(angle)));
+				return String.valueOf(1/Math.tan(Math.toRadians(angle)));
 			}
 			//Else, check if the angle type is Radians and return the result in radian form if it is
 			else if(super.getAngleType() == AngleNotation.RADIANS) {
-				return String.valueOf(1/Math.tan(Math.toRadians(angle)));
+				return String.valueOf(1/Math.tan(angle));
 			}
 			else {
 				//For future extensions. Problematic if it comes here right now.
