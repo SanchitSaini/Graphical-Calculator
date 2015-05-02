@@ -11,6 +11,11 @@ public class HCF extends Binary{
 		secondOperand = null;
 	}
 
+	public HCF(String firstOperand, String secondOperand) {
+		this.firstOperand = firstOperand;
+		this.secondOperand = firstOperand;
+	}
+
 	public String evaluate() {
 		try {
 			Double firstOp = Double.parseDouble(super.firstOperand);

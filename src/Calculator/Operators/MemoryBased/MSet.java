@@ -32,9 +32,9 @@ public class MSet extends Memory {
 	public String evaluate() {
 		try {
 			// Check if memory location isn't null
-			if(!super.getMemoryData().equals(null)) {
+			if(!super.getMemoryData().equals(null)) {					
 				//If not null, store the value to location
-				super.setMemoryData(this.valueToSet);
+				super.setMemoryData(String.valueOf(Double.parseDouble(this.valueToSet)));
 				//return "true"
 				return String.valueOf(true);
 			}
@@ -42,7 +42,7 @@ public class MSet extends Memory {
                 //Display an error message
                 ErrorModule.displayError("Error. Please try again.");
 				//Log the problem that memory is null
-				Logger.getLogger("memory is null in MSet");
+				Logger.getLogger("Memory is null in MSet");
 				//Else, return null
 				return null;
 			}
