@@ -87,6 +87,4 @@ public class Mode extends Statistics {
 		}
 	}
 
-
-
 }

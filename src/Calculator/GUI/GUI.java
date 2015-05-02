@@ -65,9 +65,9 @@ public class GUI extends JFrame{
 	private double maxY = 5;
 	private int xAxis = 0;
 	private int yAxis = 0;
-    //private ArrayList<String> expElements = new ArrayList<String>();
-    //private ArrayList<String> expression = new ArrayList<String>();
-    
+    /*private ArrayList<String> expElements = new ArrayList<String>();
+    private ArrayList<String> expression = new ArrayList<String>();
+    */
   
     
     
@@ -83,28 +83,20 @@ public class GUI extends JFrame{
     
 
     calculator = new Calculator();
-    
-    //Radian and Degree radio buttons
     JRadioButton rdbtnRadian = new JRadioButton("Radian");
   	buttonGroup_1.add(rdbtnRadian);
+  	
   	JRadioButton radioButton = new JRadioButton("Degree");
   	buttonGroup_1.add(radioButton);
-  	if(rdbtnRadian.isSelected())
-    {
-    	inputType = rdbtnRadian.getText(); 
-    }
-    if(radioButton.isSelected())
-    {
-    	inputType = radioButton.getText(); 
-    }
   	
-  	
-  	//Input format from file for Statistics function
   	JRadioButton rdbtnRowwise = new JRadioButton("Rowwise");
   	buttonGroup.add(rdbtnRowwise);
+  	
   	JRadioButton rdbtnColumnwise = new JRadioButton("Columnwise");
   	buttonGroup.add(rdbtnColumnwise);
-  	if(rdbtnRowwise.isSelected())
+  	
+    
+    if(rdbtnRowwise.isSelected())
     {
     	alignment = rdbtnRowwise.getText(); 
     }
@@ -113,9 +105,15 @@ public class GUI extends JFrame{
     	alignment = rdbtnColumnwise.getText(); 
     }
     
+    if(rdbtnRadian.isSelected())
+    {
+    	inputType = rdbtnRadian.getText(); 
+    }
+    if(radioButton.isSelected())
+    {
+    	inputType = radioButton.getText(); 
+    }
     
-    
-    //Input given by user
     Input = new JTextField();
   	Input.setColumns(10);
   	Input.getDocument().addDocumentListener(new DocumentListener(){
@@ -129,11 +127,8 @@ public class GUI extends JFrame{
 		@Override
 		public void insertUpdate(DocumentEvent arg0) {
 			// TODO Auto-generated method stub
-			
-			
-			//expression to be given to character interpreter 
-			//exp = Input.getText();
-			//System.out.println(expression);
+			expression = Input.getText();
+			System.out.println(expression);
 			//calculator.compute(expression);
 //			exp = Input.getText();
 //			expElements.add(exp);
@@ -220,55 +215,25 @@ public class GUI extends JFrame{
 		}
   		
   	});
-  	varGrid[0][2].setText("a²");
+  	varGrid[0][2].setText("A²");
   	varGrid[0][2].addActionListener(new ActionListener(){
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
 			// TODO Auto-generated method stub
 			JButton temp = (JButton)e.getSource();
-			int lenInput  = Input.getText().length() - 1;
-			String lastChar = Input.getText().substring(lenInput,lenInput + 1);
-			System.out.println(lastChar);
-			//System.out.println(lastChar=="+");
-			boolean test = ((lastChar.equals("+")) || (lastChar.equals("-")) || (lastChar.equals("*")) || (lastChar.equals("/")) || (lastChar.equals("%")) || (lastChar.equals("^")));
-			System.out.println(test);
-			if(test)
-			{
-				String tempText = Input.getText().replace(lastChar,"^2");
-				System.out.println(tempText);
-				Input.setText(tempText);
-			}
-			else
-			{
 			Input.setText(Input.getText() + "^2");
-			}
 		}
   		
   	});
-  	varGrid[0][3].setText("aˣ");
+  	varGrid[0][3].setText("Aˣ");
   	varGrid[0][3].addActionListener(new ActionListener(){
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
 			// TODO Auto-generated method stub
 			JButton temp = (JButton)e.getSource();
-			int lenInput  = Input.getText().length() - 1;
-			String lastChar = Input.getText().substring(lenInput,lenInput + 1);
-			System.out.println(lastChar);
-			//System.out.println(lastChar=="+");
-			boolean test = ((lastChar.equals("+")) || (lastChar.equals("-")) || (lastChar.equals("*")) || (lastChar.equals("/")) || (lastChar.equals("%")) || (lastChar.equals("^")) || (lastChar.equals("^2")) );
-			System.out.println(test);
-			if(test)
-			{
-				String tempText = Input.getText().replace(lastChar,"^");
-				System.out.println(tempText);
-				Input.setText(tempText);
-			}
-			else
-			{
-				Input.setText(Input.getText() + "^");
-			}	
+			Input.setText(Input.getText() + "^");
 		}
   		
   	});
@@ -448,18 +413,9 @@ public class GUI extends JFrame{
 
   	
   	
-   	//Adding TabbedPane having trigonomteric,misc,statistics,memory
+   	//Adding TabbedPane
   	JTabbedPane tabbedPane = new JTabbedPane(JTabbedPane.TOP);
-  	TrigonometricFunctionsUI trigPanel = new TrigonometricFunctionsUI(Input);
-  	tabbedPane.add("trig", trigPanel);
-  	StatisticalFunctionsUI statPanel = new StatisticalFunctionsUI();
-  	tabbedPane.add("stats", statPanel);
-  	MemoryBasedFunctionsUI memPanel = new MemoryBasedFunctionsUI();
-  	tabbedPane.add("Mem", memPanel);
-  	MiscFunctionsUI miscPanel = new MiscFunctionsUI(Input);
-  	tabbedPane.add("Misc", miscPanel);
   	
-  	//Choosing file for statistical functions
   	JButton btnChooseFile = new JButton("Choose File");
   	btnChooseFile.addActionListener(new ActionListener() {
   		public void actionPerformed(ActionEvent arg0) {
@@ -480,9 +436,10 @@ public class GUI extends JFrame{
   		}
   	});
   	
-  	//Graph panel for equation plotter
-  	GraphPanel graphPanel = new GraphPanel();
+  	GraphPanel panel = new GraphPanel();
   	
+  	panel.setMinimumSize(new Dimension(400,1400));
+  	panel.setPreferredSize(new Dimension(400,400));
   	
   	GroupLayout groupLayout = new GroupLayout(getContentPane());
   	groupLayout.setHorizontalGroup(
@@ -494,7 +451,7 @@ public class GUI extends JFrame{
   			.addGroup(Alignment.LEADING, groupLayout.createSequentialGroup()
   				.addGap(24)
   				.addGroup(groupLayout.createParallelGroup(Alignment.LEADING)
-  					.addComponent(graphPanel, GroupLayout.PREFERRED_SIZE, 684, GroupLayout.PREFERRED_SIZE)
+  					.addComponent(panel, GroupLayout.PREFERRED_SIZE, 684, GroupLayout.PREFERRED_SIZE)
   					.addGroup(groupLayout.createSequentialGroup()
   						.addGap(25)
   						.addGroup(groupLayout.createParallelGroup(Alignment.LEADING)
@@ -525,7 +482,7 @@ public class GUI extends JFrame{
   					.addComponent(rdbtnColumnwise)
   					.addComponent(rdbtnRowwise))
   				.addGap(59)
-  				.addComponent(graphPanel, GroupLayout.PREFERRED_SIZE, 194, GroupLayout.PREFERRED_SIZE)
+  				.addComponent(panel, GroupLayout.PREFERRED_SIZE, 194, GroupLayout.PREFERRED_SIZE)
   				.addGap(32)
   				.addGroup(groupLayout.createParallelGroup(Alignment.LEADING)
   					.addGroup(groupLayout.createParallelGroup(Alignment.LEADING)
@@ -547,13 +504,18 @@ public class GUI extends JFrame{
   						.addContainerGap())))
   	);
   	
-  	getContentPane().add(graphPanel);
-  	graphPanel.setMinimumSize(new Dimension(400,400));
-  	graphPanel.setPreferredSize(new Dimension(400,400));
+  	getContentPane().add(panel);
   	//panel.setBackground(Color.WHITE);
-  	graphPanel.setVisible(true);
+  	panel.setVisible(true);
   	
-  	
+  	TrigonometricFunctionsUI trigPanel = new TrigonometricFunctionsUI(Input);
+  	tabbedPane.add("trig", trigPanel);
+  	StatisticalFunctionsUI statPanel = new StatisticalFunctionsUI();
+  	tabbedPane.add("stats", statPanel);
+  	MemoryBasedFunctionsUI memPanel = new MemoryBasedFunctionsUI();
+  	tabbedPane.add("Mem", memPanel);
+  	MiscFunctionsUI miscPanel = new MiscFunctionsUI(Input);
+  	tabbedPane.add("Misc", miscPanel);
   	
   	//Creating DigitPanel	
   	int offset = 0;
@@ -598,15 +560,6 @@ public class GUI extends JFrame{
   	btnGrid[3][0].setText(String.valueOf(0));
   	btnGrid[3][1].setText(".");
   	btnGrid[3][2].setText("=");
-  	btnGrid[3][2].addActionListener(new ActionListener(){
-
-		@Override
-		public void actionPerformed(ActionEvent arg0) {
-			// TODO Auto-generated method stub
-			expression = Input.getText();
-		}
-  		
-  	});
   	btnGrid[3][0].addActionListener(new ActionListener(){
 
 		@Override
@@ -646,22 +599,7 @@ public class GUI extends JFrame{
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
 				JButton temp = (JButton)e.getSource();
-				int lenInput  = Input.getText().length() - 1;
-				String lastChar = Input.getText().substring(lenInput,lenInput + 1);
-				System.out.println(lastChar);
-				//System.out.println(lastChar=="+");
-				boolean test = ((lastChar.equals("+")) || (lastChar.equals("-")) || (lastChar.equals("*")) || (lastChar.equals("/")) || (lastChar.equals("%")) || (lastChar.equals("^")) || (lastChar.equals("^2")) );
-				System.out.println(test);
-				if(test)
-				{
-					String tempText = Input.getText().replace(lastChar,temp.getText());
-					System.out.println(tempText);
-					Input.setText(tempText);
-				}
-				else
-				{
-					Input.setText(Input.getText() + temp.getText());
-				}
+				Input.setText(Input.getText() + temp.getText());
 			}
   			
   		});
@@ -689,5 +627,15 @@ public class GUI extends JFrame{
   public void clear() {
   }
   
-  
+  public synchronized int UnitToPixelX(double x) {
+		double pixelsPerUnit = this.getWidth() / (maxX - minX);
+		double pos = (x - minX) * pixelsPerUnit;
+		return (int) pos;
+	}
+  public synchronized int UnitToPixelY(double y) {
+		double pixelsPerUnit = this.getHeight() / (maxY - minY);
+		double pos = (y - minY) * pixelsPerUnit;
+		pos = -pos + this.getHeight();
+		return (int) pos;
+	}
 }

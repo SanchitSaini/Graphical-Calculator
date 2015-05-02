@@ -74,6 +74,4 @@ public class Mean extends Statistics {
 		}
 
 	}
-
-
 }
