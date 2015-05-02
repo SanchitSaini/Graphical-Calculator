@@ -2,6 +2,8 @@ package Calculator.Operators.OtherUnary;
 
 import java.util.logging.Logger;
 
+import Calculator.ErrorModule;
+
 public class SquareRoot extends Unary {
 
 	public SquareRoot(){
@@ -18,10 +20,12 @@ public class SquareRoot extends Unary {
 			return String.valueOf(Math.sqrt(Double.parseDouble(super.firstOperand)));
 		}
 		catch(Exception e) {
-			//Log the exception
-			Logger.getLogger(e.getMessage());
-			//Return string value of false
-			return String.valueOf(false);
+			//Display an error message
+            ErrorModule.displayError("Error. Please try again.");
+            //Log the error
+            Logger.getLogger(e.getMessage());
+            //Return null
+            return null;
 		}
 	}
 }

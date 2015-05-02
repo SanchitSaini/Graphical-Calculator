@@ -6,10 +6,10 @@ import Calculator.Operators.Arithmetic.Add;
 import Calculator.Operators.MemoryBased.MRecall;
 import Calculator.Operators.MemoryBased.MSet;
 import Calculator.Operators.MemoryBased.Memory;
-import Calculator.Operators.Statistics.Mean;
-import Calculator.Operators.Statistics.Median;
-import Calculator.Operators.Statistics.Mode;
-import Calculator.Operators.Statistics.Statistics;
+import Calculator.Statistics.Mean;
+import Calculator.Statistics.Median;
+import Calculator.Statistics.Mode;
+import Calculator.Statistics.Statistics;
 
 /***
  *  Class to check new functionalities
@@ -23,7 +23,7 @@ public class CheckMain {
 		// TODO Auto-generated method stub
 		GUI gui = new GUI();
 		gui.setVisible(true);
-//
+
 //		String[] input = new String[2];
 //		input[0] = "12.4";
 //		input[1] = "12.3";
@@ -56,3 +56,4 @@ public class CheckMain {
 	}
 
 }
+>>>>>>> 453980c2a296df26ed63c9cfd2e749d6676e2607

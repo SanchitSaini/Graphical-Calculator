@@ -1,8 +1,6 @@
-package Calculator.Operators.Statistics;
+package Calculator.Statistics;
 
 import java.util.List;
-
-import Calculator.Operators.Operator;
 
 public abstract class Statistics {
 
