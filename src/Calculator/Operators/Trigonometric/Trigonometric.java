@@ -8,7 +8,7 @@ public abstract class Trigonometric extends Operator {
 	protected String angleValue;
 
 	public Trigonometric() {
-		setAngleType(AngleNotation.DEGREES);
+		angleType = AngleNotation.DEGREES;
 	}
 	
 	public abstract String evaluate();
