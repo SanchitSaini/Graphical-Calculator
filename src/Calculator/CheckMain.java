@@ -56,4 +56,3 @@ public class CheckMain {
 	}
 
 }
->>>>>>> 453980c2a296df26ed63c9cfd2e749d6676e2607
