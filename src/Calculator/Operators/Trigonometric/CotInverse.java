@@ -20,11 +20,11 @@ public class CotInverse extends Trigonometric {
 			Double angle = Double.parseDouble(super.angleValue);
 			//Check if the angle type is Degree and return the result in degree form if it is
 			if(super.getAngleType() == AngleNotation.DEGREES) {
-				return String.valueOf(Math.toDegrees(1/Math.atan(angle)));
+				return String.valueOf(1/Math.atan(Math.toDegrees(angle)));
 			}
 			//Else, check if the angle type is Radians and return the result in radian form if it is
 			else if(super.getAngleType() == AngleNotation.RADIANS) {
-				return String.valueOf(Math.toRadians(1/Math.atan(angle)));
+				return String.valueOf(1/Math.atan(Math.toRadians(angle)));
 			}
 			else {
 				//For future extensions

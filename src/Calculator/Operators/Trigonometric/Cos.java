@@ -21,11 +21,11 @@ public class Cos extends Trigonometric {
 			Double angle = Double.parseDouble(super.angleValue);
 			//Check if the angle type is Degree and return the result in degree form if it is
 			if(super.getAngleType() == AngleNotation.DEGREES) {
-				return String.valueOf(Math.toDegrees(Math.cos(angle)));
+				return String.valueOf(Math.cos(Math.toDegrees(angle)));
 			}
 			//Else, check if the angle type is Radians and return the result in radian form if it is
 			else if(super.getAngleType() == AngleNotation.RADIANS) {
-				return String.valueOf(Math.toRadians(Math.cos(angle)));
+				return String.valueOf(Math.cos(Math.toRadians(angle)));
 			}
 			else {
 				//For future extensions. Problematic if it comes here right now.
