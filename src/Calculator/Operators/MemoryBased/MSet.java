@@ -20,8 +20,8 @@ public class MSet extends Memory {
 		this.valueToSet = valueToSet;
 	}
 	
-	public void setValueToSet(String valueToSet){
-		this.valueToSet = valueToSet;
+	public void setOperands(String[] operands){
+		this.valueToSet = operands[0];
 	}
 	
 	/*

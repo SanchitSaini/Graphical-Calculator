@@ -12,8 +12,13 @@ public class MRecall extends Memory {
 	public MRecall() {
 		//this.valueToReturn = super.memoryData;
 	}
-	
-	@Override
+
+    @Override
+    public void setOperands(String[] operands) {
+        throw new UnsupportedOperationException("setOperands not supported for MRecall");
+    }
+
+    @Override
 	public int getNumArguments()
 	{
 		return 0;

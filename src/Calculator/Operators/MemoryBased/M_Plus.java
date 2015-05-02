@@ -20,8 +20,8 @@ public class M_Plus extends Memory {
 		this.valueToAdd = valueToAdd;
 	}
 	
-	public void setValueToAdd(String valueToAdd){
-		this.valueToAdd = valueToAdd;
+	public void setOperands(String[] operands){
+		this.valueToAdd = operands[0];
 	}
 	
 	/**

@@ -60,4 +60,9 @@ public class M_Minus extends Memory {
             return null;
         }
 	}
+
+    @Override
+    public void setOperands(String[] operands) {
+        valueToSubtract = operands[0];
+    }
 }
