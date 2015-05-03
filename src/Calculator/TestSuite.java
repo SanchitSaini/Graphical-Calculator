@@ -30,8 +30,6 @@ import org.junit.runners.Suite.SuiteClasses;
         CombinationTest.class,
         PercentageTest.class,
         PermutationTest.class,
-        HCFTest.class,
-        LCMTest.class,
         AbsoluteTest.class,
         CeilingTest.class,
         ExpTest.class,

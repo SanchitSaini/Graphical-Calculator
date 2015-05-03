@@ -37,15 +37,6 @@ public class MiscFunctionsUI extends JPanel{
 			}
 		});
 		
-		
-		
-		JButton btnLcm = new JButton("LCM");
-		btnLcm.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				input.setText(input.getText() + "LCM(");
-			}
-		});
-		
 		JButton btnFloor = new JButton("Floor");
 		btnFloor.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -75,22 +66,20 @@ public class MiscFunctionsUI extends JPanel{
 			groupLayout.createParallelGroup(Alignment.LEADING)
 				.addGroup(groupLayout.createSequentialGroup()
 					.addGap(31)
-					.addGroup(groupLayout.createParallelGroup(Alignment.LEADING)
-						.addComponent(btnNcr)
-						.addGroup(groupLayout.createParallelGroup(Alignment.TRAILING, false)
-							.addComponent(btnN, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-							.addComponent(btnLog, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-					.addGap(42)
 					.addGroup(groupLayout.createParallelGroup(Alignment.LEADING, false)
+						.addComponent(btnNcr, GroupLayout.DEFAULT_SIZE, 62, Short.MAX_VALUE)
+						.addComponent(btnLog, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+						.addComponent(btnN, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+					.addGap(29)
+					.addGroup(groupLayout.createParallelGroup(Alignment.LEADING, false)
+						.addComponent(btnCeiling, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
 						.addComponent(btnNpr, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-						.addComponent(btnLcm, Alignment.TRAILING, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
 						.addComponent(btnEx, Alignment.TRAILING, GroupLayout.DEFAULT_SIZE, 72, Short.MAX_VALUE))
 					.addGap(46)
 					.addGroup(groupLayout.createParallelGroup(Alignment.LEADING, false)
 						.addComponent(button, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-						.addComponent(btnFloor, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-						.addComponent(btnCeiling, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-					.addContainerGap(47, Short.MAX_VALUE))
+						.addComponent(btnFloor, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+					.addContainerGap(147, Short.MAX_VALUE))
 		);
 		groupLayout.setVerticalGroup(
 			groupLayout.createParallelGroup(Alignment.LEADING)
@@ -103,14 +92,13 @@ public class MiscFunctionsUI extends JPanel{
 					.addGap(18)
 					.addGroup(groupLayout.createParallelGroup(Alignment.BASELINE)
 						.addComponent(btnLog)
-						.addComponent(btnLcm)
-						.addComponent(btnFloor))
+						.addComponent(btnFloor)
+						.addComponent(btnCeiling))
 					.addGap(29)
 					.addGroup(groupLayout.createParallelGroup(Alignment.BASELINE)
 						.addComponent(btnN)
-						.addComponent(btnEx)
-						.addComponent(btnCeiling))
-					.addContainerGap(135, Short.MAX_VALUE))
+						.addComponent(btnEx))
+					.addContainerGap(173, Short.MAX_VALUE))
 		);
 		setLayout(groupLayout);
 		
