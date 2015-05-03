@@ -18,7 +18,7 @@ public class CharacterInterpreter {
 
 
 //    Variable names
-    public static final String[] variableBlackList = {"acos", "asin", "atan", "ceil", "cos", "exp", "floor", "log", "log10", "sin", "sqrt", "tan", "cot", "sec", "cosec", "abs", "ms", "acot", "asec", "acosec", };
+    public static final String[] variableBlackList = {"acosec", "acos", "asin", "atan", "ceil", "cos", "acot", "exp", "floor", "log10", "log" , "sin", "sqrt", "tan", "cot", "sec", "cosec", "abs", "ms", "asec" };
 
 
     public CharacterInterpreter() {
