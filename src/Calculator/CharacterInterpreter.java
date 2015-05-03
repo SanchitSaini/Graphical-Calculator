@@ -19,7 +19,7 @@ public class CharacterInterpreter {
     private boolean isExpression;
 
 //    Variable names
-    public static final String[] variableBlackList = {"acos", "asin", "atan", "ceil", "cos", "exp", "floor", "log", "log10", "sin", "sqrt", "tan", "cot", "sec", "cosec", "abs", "m+", "m-", "mc", "mr", "ms", "acot", "asec", "acosec", };
+    public static final String[] variableBlackList = {"acos", "asin", "atan", "ceil", "cos", "exp", "floor", "log", "log10", "sin", "sqrt", "tan", "cot", "sec", "cosec", "abs", "ms", "acot", "asec", "acosec", };
 
 
     public void CharacterInterpreter() {
@@ -129,6 +129,43 @@ public class CharacterInterpreter {
                 pushElementToStack(valuesStack, sb.toString());
 //                input = input.substring(1);
 
+            }
+
+            else if (input.startsWith("m+")||input.startsWith("m-"))
+            {
+                if (input.length()>1) {
+//                  check if it is surrounded by a digit or variable or bracket. Throw an error if not
+                    if (!Character.isDigit(input.charAt(2)) && input.charAt(2)!='(') {
+                        ErrorModule.displayError("Wrong Format: expected number or variable after " + input.charAt(0));
+                        return null;
+                    }
+                }
+                else
+                {
+                    ErrorModule.displayError("Error: Incomplete Expression");
+                    return null;
+                }
+
+                while (!operatorStack.isEmpty() && hasPrecedence(operatorStack.peek(), input.substring(0, 2)))
+                {
+
+                    evaluate();
+                }
+                System.out.println("pushing " + input.substring(0, 2));
+
+//              Push the current operator into stack
+                operatorStack.push(input.substring(0, 2));
+                if (input.length()==2)
+                    input = "";
+                else
+                    input = input.substring(2);
+            }
+
+            else if (input.startsWith("mc")||input.startsWith("mr"))
+            {
+                pushElementToStack(operatorStack, input.substring(0,2));
+                evaluate();
+                return valuesStack.peek();
             }
 
 //          Check if the object is a '('. Push it to operator stack
@@ -341,7 +378,7 @@ public class CharacterInterpreter {
             return 4;
         else if(op.equals("*"))
             return 3;
-        else if(op.equals("+") || op.equals("-"))
+        else if(op.equals("+") || op.equals("-") || op.equals("m+") || op.equals("m-"))
             return 2;
         else if(op.equals("="))
             return 1;
@@ -367,24 +404,22 @@ public class CharacterInterpreter {
 
 //        Check the number of arguements it needs
         int args = op.getNumArguments();
+        if (args>0) {
+            String[] operands = new String[args];
 
-        String[] operands = new String[args];
-
-//        Get the required number of arguements from Values Stack
-        for (int i = 0; i<args; i++)
-        {
-            if (valuesStack.isEmpty())
-            {
-                ErrorModule.displayError("Error: Invalid Expression");
-                return;
+            //        Get the required number of arguements from Values Stack
+            for (int i = 0; i < args; i++) {
+                if (valuesStack.isEmpty()) {
+                    ErrorModule.displayError("Error: Invalid Expression");
+                    return;
+                }
+                operands[i] = popElementFromStack(valuesStack);
             }
-            operands[i] = popElementFromStack(valuesStack);
+
+            //        Set the right order for the operands
+            Collections.reverse(Arrays.asList(operands));
+            op.setOperands(operands);
         }
-
-//        Set the right order for the operands
-        Collections.reverse(Arrays.asList(operands));
-        op.setOperands(operands);
-
 //        Evaluate the operator and push the output to the Values Stack
         pushElementToStack(valuesStack, op.evaluate());
     }
@@ -393,6 +428,7 @@ public class CharacterInterpreter {
     public static void main(String[] args) throws Exception {
         CharacterInterpreter c = new CharacterInterpreter();
 
-        System.out.println(c.compute("e^sin(30)"));
+        System.out.println(c.compute("ms(10)"));
+        System.out.println(c.compute("mr"));
     }
 }
