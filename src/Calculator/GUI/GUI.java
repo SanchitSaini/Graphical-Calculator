@@ -2,32 +2,19 @@ package Calculator.GUI;
 
 import java.awt.AWTException;
 import java.awt.BorderLayout;
-import java.awt.Component;
 import java.awt.Dimension;
-import java.awt.Event;
-import java.awt.Font;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
 import java.awt.GridLayout;
-import java.awt.Point;
 import java.awt.Rectangle;
 import java.awt.Robot;
-import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.ComponentEvent;
-import java.awt.event.ComponentListener;
-import java.awt.event.KeyEvent;
 import java.awt.image.BufferedImage;
 
 import javax.imageio.ImageIO;
-import javax.swing.JComponent;
 import javax.swing.JFileChooser;
 import javax.swing.JFrame;
-import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JTabbedPane;
-import javax.swing.JWindow;
 import javax.swing.JTextField;
 import javax.swing.GroupLayout;
 import javax.swing.GroupLayout.Alignment;
@@ -36,15 +23,10 @@ import javax.swing.JButton;
 
 import Calculator.Calculator;
 import javax.swing.LayoutStyle.ComponentPlacement;
-import java.awt.Color;
 import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
-
-import javax.swing.JInternalFrame;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
-import javax.swing.plaf.FileChooserUI;
 import javax.swing.JRadioButton;
 import javax.swing.ButtonGroup;
 
@@ -52,12 +34,10 @@ import javax.swing.ButtonGroup;
 
 public class GUI extends JFrame{
 
+	
+	private static final long serialVersionUID = 1L;
 	private Calculator calculator;
-	public CheckAndCorrectUI myCheckAndCorrectUI;
-    public MemoryBasedFunctionsUI myMemoryFunctionsUI;
-    public NumbersUI myNumbersUI;
-    public FunctionsUI myFunctionsUI;
-    public PlotUI myPlotUI;
+	public MemoryBasedFunctionsUI myMemoryFunctionsUI;
     public Calculator myCalculator;
     private JTextField Input;
     private String expression;
@@ -67,13 +47,7 @@ public class GUI extends JFrame{
     private final ButtonGroup buttonGroup_1 = new ButtonGroup();
     private String alignment;
     private String inputType;
-    private double minX = -5;
-	private double maxX = 5;
-	private double minY = -5;
-	private double maxY = 5;
-	private int xAxis = 0;
-	private int yAxis = 0;
-	private boolean clearInput = false;
+    private boolean clearInput = false;
     //private ArrayList<String> expElements = new ArrayList<String>();
     //private ArrayList<String> expression = new ArrayList<String>();
     
@@ -140,40 +114,6 @@ public class GUI extends JFrame{
 		public void insertUpdate(DocumentEvent arg0) {
 			// TODO Auto-generated method stub
 			
-			
-			//expression to be given to character interpreter 
-			//exp = Input.getText();
-			//System.out.println(expression);
-			//calculator.compute(expression);
-//			exp = Input.getText();
-//			expElements.add(exp);
-//			String a = null;
-//			String s1 = expElements.get(expElements.size() - 1);
-//			if(expElements.size()>1)
-//			{
-//				String s2 = expElements.get(expElements.size() - 2);
-//				a = s1.substring(s2.length());
-//			
-//			}
-//			else
-//			{
-//				a = s1;
-//			}	
-//			System.out.println(a);
-//			int asciiNew = (int)a.charAt(0);
-//			String checkNum = expression.get(expression.size() - 1);
-//			int asciiLast = (int)checkNum.charAt(checkNum.length() - 1);
-//			boolean check1 = 48<=asciiLast && asciiLast<=57;
-//			boolean check2 = 48<=asciiNew && asciiNew<=57;
-//			if(check1 && check2)
-//			{
-//				checkNum.concat(a);
-//				expression.remove(expression.size() - 1);
-//				expression.add(checkNum);
-//				return;
-//				//expression.add();
-//			}
-//			expression.add(a);
 		}
 
 		@Override
@@ -200,10 +140,10 @@ public class GUI extends JFrame{
   	staticPanel.setPreferredSize(new Dimension(80,80));
   	staticPanel.setSize(new Dimension(80,80));
   	staticPanel.setLocation(20,10);
-  	JButton[][] varGrid = new JButton[4][4];
+  	JButton[][] varGrid = new JButton[4][3];
   	for(int i=0;i<4;i++)
   	{
-  		for(int j=0;j<4;j++)
+  		for(int j=0;j<3;j++)
   		{
   			varGrid[i][j] = new JButton();
   		}
@@ -256,8 +196,8 @@ public class GUI extends JFrame{
 		}
   		
   	});
-  	varGrid[0][3].setText("aˣ");
-  	varGrid[0][3].addActionListener(new ActionListener(){
+  	varGrid[1][0].setText("aˣ");
+  	varGrid[1][0].addActionListener(new ActionListener(){
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
@@ -282,18 +222,7 @@ public class GUI extends JFrame{
 		}
   		
   	});
-  	varGrid[1][0].setText("(");
-  	varGrid[1][0].addActionListener(new ActionListener(){
-
-		@Override
-		public void actionPerformed(ActionEvent e) {
-			// TODO Auto-generated method stub
-			JButton temp = (JButton)e.getSource();
-			Input.setText(Input.getText() + temp.getText());
-		}
-  		
-  	});
-  	varGrid[1][1].setText(")");
+  	varGrid[1][1].setText("(");
   	varGrid[1][1].addActionListener(new ActionListener(){
 
 		@Override
@@ -304,7 +233,7 @@ public class GUI extends JFrame{
 		}
   		
   	});
-  	varGrid[1][2].setText("<");
+  	varGrid[1][2].setText(")");
   	varGrid[1][2].addActionListener(new ActionListener(){
 
 		@Override
@@ -315,19 +244,18 @@ public class GUI extends JFrame{
 		}
   		
   	});
-  	varGrid[1][3].setText(">");
-  	varGrid[1][3].addActionListener(new ActionListener(){
+
+  	varGrid[2][0].setText("|a|");
+  	varGrid[2][0].addActionListener(new ActionListener(){
 
 		@Override
-		public void actionPerformed(ActionEvent e) {
+		public void actionPerformed(ActionEvent arg0) {
 			// TODO Auto-generated method stub
-			JButton temp = (JButton)e.getSource();
-			Input.setText(Input.getText() + temp.getText());
+			//JButton temp = (JButton)e.getSource();
+			Input.setText(Input.getText() + "abs(");
 		}
   		
   	});
-  	
-  	varGrid[2][0].setText("|a|");
   	varGrid[2][1].setText(",");
   	varGrid[2][1].addActionListener(new ActionListener(){
 
@@ -339,31 +267,9 @@ public class GUI extends JFrame{
 		}
   		
   	});
-  	varGrid[2][2].setText("<=");
-  	varGrid[2][2].addActionListener(new ActionListener(){
-
-		@Override
-		public void actionPerformed(ActionEvent e) {
-			// TODO Auto-generated method stub
-			JButton temp = (JButton)e.getSource();
-			Input.setText(Input.getText() + temp.getText());
-		}
-  		
-  	});
-  	varGrid[2][3].setText(">=");
-  	varGrid[2][3].addActionListener(new ActionListener(){
-
-		@Override
-		public void actionPerformed(ActionEvent e) {
-			// TODO Auto-generated method stub
-			JButton temp = (JButton)e.getSource();
-			Input.setText(Input.getText() + temp.getText());
-		}
-  		
-  	});
   	
-  	varGrid[3][0].setText("√");
-  	varGrid[3][0].addActionListener(new ActionListener(){
+  	varGrid[2][2].setText("√");
+  	varGrid[2][2].addActionListener(new ActionListener(){
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
@@ -373,7 +279,18 @@ public class GUI extends JFrame{
 		}
   		
   	});
-  	varGrid[3][1].setText("π");
+  	varGrid[3][0].setText("π");
+  	varGrid[3][0].addActionListener(new ActionListener(){
+
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			// TODO Auto-generated method stub
+			JButton temp = (JButton)e.getSource();
+			Input.setText(Input.getText() + temp.getText());
+		}
+  		
+  	});
+  	varGrid[3][1].setText("e");
   	varGrid[3][1].addActionListener(new ActionListener(){
 
 		@Override
@@ -384,19 +301,8 @@ public class GUI extends JFrame{
 		}
   		
   	});
-  	varGrid[3][2].setText("e");
+  	varGrid[3][2].setText("10ˣ");
   	varGrid[3][2].addActionListener(new ActionListener(){
-
-		@Override
-		public void actionPerformed(ActionEvent e) {
-			// TODO Auto-generated method stub
-			JButton temp = (JButton)e.getSource();
-			Input.setText(Input.getText() + temp.getText());
-		}
-  		
-  	});
-  	varGrid[3][3].setText("10ˣ");
-  	varGrid[3][3].addActionListener(new ActionListener(){
 
 		@Override
 		public void actionPerformed(ActionEvent arg0) {
@@ -409,52 +315,11 @@ public class GUI extends JFrame{
   	
   	for(int i=0;i<4;i++)
   	{
-  		for(int j=0;j<4;j++)
+  		for(int j=0;j<3;j++)
   		{
   			staticPanel.add(varGrid[i][j]);
   		}
   	}
-//  	groupLayout_1.setHorizontalGroup(
-//  		groupLayout_1.createParallelGroup(Alignment.LEADING)
-//  			.addGap(0, 796, Short.MAX_VALUE)
-//  	);
-//  	groupLayout_1.setVerticalGroup(
-//  		groupLayout_1.createParallelGroup(Alignment.LEADING)
-//  			.addGap(0, 259, Short.MAX_VALUE)
-//  	);
-//  	
-//	graphPanel.addComponentListener(new ComponentListener(){
-//
-//		@Override
-//		public void componentHidden(ComponentEvent arg0) {
-//			// TODO Auto-generated method stub
-//			
-//		}
-//
-//		@Override
-//		public void componentMoved(ComponentEvent arg0) {
-//			// TODO Auto-generated method stub
-//			
-//		}
-//
-//		@Override
-//		public void componentResized(ComponentEvent arg0) {
-//			// TODO Auto-generated method stub
-//			System.out.println("Gjdfk");
-//			
-//			JPanel a = (JPanel)arg0.getComponent();
-//			//System.out.println(a.getSize());
-//			a.paintComponents(getGraphics());
-//			
-//		}
-//
-//		@Override
-//		public void componentShown(ComponentEvent arg0) {
-//			// TODO Auto-generated method stub
-//			
-//		}
-//  		
-//  	});
 
   	
   	

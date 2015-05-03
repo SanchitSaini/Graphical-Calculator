@@ -1,7 +1,5 @@
 package Calculator.GUI;
 
-import java.awt.BorderLayout;
-
 import javax.swing.JPanel;
 import javax.swing.GroupLayout;
 import javax.swing.GroupLayout.Alignment;
@@ -10,7 +8,10 @@ import javax.swing.LayoutStyle.ComponentPlacement;
 
 public class MemoryBasedFunctionsUI  extends JPanel{
 
-  public MemoryBasedFunctionsUI() 
+  
+	private static final long serialVersionUID = 1L;
+
+public MemoryBasedFunctionsUI() 
   {
   	
   	JButton btnM = new JButton("M+");

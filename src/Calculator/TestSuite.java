@@ -4,7 +4,6 @@ package Calculator;
  * Created by Pranav on 03-05-2015.
  */
 
-import Calculator.Operators.Trigonometric.Trigonometric;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 import Calculator.Operators.Arithmetic.*;

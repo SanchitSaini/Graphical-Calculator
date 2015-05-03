@@ -16,13 +16,13 @@ public class CharacterInterpreter {
 
     private Operator operator;
 
-    private boolean isExpression;
 
 //    Variable names
-    public static final String[] variableBlackList = {"acos", "asin", "atan", "ceil", "cos", "exp", "floor", "log", "log10", "sin", "sqrt", "tan", "cot", "sec", "cosec", "abs", "m+", "m-", "mc", "mr", "ms", "acot", "asec", "acosec", };
+    public static final String[] variableBlackList = {"acosec","acos", "asin", "atan", "ceil","cosec", "cos", "exp", "floor", "log10","log", "sin", "sqrt", "tan", "cot", "sec",  "abs", "m+", "m-", "mc", "mr", "ms", "acot", "asec"  };
 
 
-    public void CharacterInterpreter() {
+    public CharacterInterpreter() {
+    	operator = null;
     }
 
     //Function to return the values stack

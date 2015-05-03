@@ -4,25 +4,17 @@ import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
-import java.awt.Polygon;
 import java.awt.geom.GeneralPath;
-import java.awt.geom.Point2D;
-
 import javax.swing.JPanel;
 
 import net.objecthunter.exp4j.ExpressionBuilder;
 
-import java.awt.geom.Point2D;
-
 import java.text.DecimalFormat;
-import java.util.Random;
 import java.util.Vector;
 
 
 public class GraphPanel extends JPanel {
-	/**
-	 * 
-	 */
+	
 	private static final long serialVersionUID = 1L;
 	private double minX = -10;
 	private double maxX = 10;
@@ -136,8 +128,7 @@ public class GraphPanel extends JPanel {
 					polyline.moveTo(UnitToPixelX(minX), UnitToPixelY(eqPrev));
 					polylines.set(0, polyline);
 					interval = intervalFormula = (maxX - minX) / (this.getWidth());
-					int loop = 0;
-					double[] a = new double[2];
+
 					for (double x = minX;x<100; x += interval) {
 						
 						eqVal = equation.setVariable("x", x).evaluate();
