@@ -29,13 +29,6 @@ public class GraphPanel extends JPanel {
 //	 * Create the panel.
 //	 */
 	public GraphPanel() {
-		//setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
-		//super();
-
-		//System.out.println("Ekam");
-
-		//System.out.println("Ekam");
-
 		
 	}
 	public void setEquation(String equation)
@@ -46,14 +39,12 @@ public class GraphPanel extends JPanel {
 	 public  int UnitToPixelX(double x) {
 			double pixelsPerUnit = this.getWidth() / (maxX - minX);
 			double pos = (x - minX) * pixelsPerUnit;
-			//System.out.print((int) pos + ",");
 			return (int) pos;
 		}
 	  public  int UnitToPixelY(double y) {
 			double pixelsPerUnit = this.getHeight() / (maxY - minY);
 			double pos = (y - minY) * pixelsPerUnit;
 			pos = -pos + this.getHeight();
-			//System.out.println((int) pos);
 			return (int) pos;
 		}
 	  
@@ -64,25 +55,17 @@ public class GraphPanel extends JPanel {
 		  		DecimalFormat df = new DecimalFormat("#.###");
 		  		yAxis = UnitToPixelX(0);
 			    xAxis = UnitToPixelY(0);
-	 			//System.out.println("hello");
 	 			
-	 			//count = count + 1;
-	 			//System.out.println(String.valueOf(count));
-	 			//setPreferredSize(new Dimension(400,400));
 	 			Graphics2D g2 = (Graphics2D)g;
-	 			//super.paintComponent(g);
+	 			
 	 			Vector<GeneralPath> polylines = new Vector<GeneralPath>();
 	 			GeneralPath polyline = new GeneralPath(GeneralPath.WIND_EVEN_ODD, this.getWidth());
 	 			polylines.add(new GeneralPath(GeneralPath.WIND_EVEN_ODD));
-	 			
-	 			//g.setColor(Color.WHITE);
-	 			//g2.fillRect(getX(), getY(), getWidth(), getHeight());
 	 			setBackground(Color.WHITE);
 	 			g.setColor(Color.black);
 	 			g.drawLine(0, xAxis, this.getWidth(), xAxis);
 	 			g.drawLine(yAxis, 0, yAxis, this.getHeight());
-	 			//g.drawPolyline(p.xpoints,p.ypoints,p.npoints);
-	 			//g2.draw(polylines.get(0));
+	 			
 	 			g2.setColor(Color.black);
 	 			g2.drawString("0", yAxis + 2, xAxis - 1);
 	 			g2.drawString(df.format(minX), 5, xAxis - 1);
@@ -119,7 +102,7 @@ public class GraphPanel extends JPanel {
 		 			double eqPrev;
 		 			Double eqVal;
 		 			boolean firstPoint = true;
-		 			double interval,intervalFormula;
+		 			double interval;
 		 			ExpressionBuilder expBuilder = new ExpressionBuilder(equation);
 					expBuilder.variable("x");
 					net.objecthunter.exp4j.Expression equation = expBuilder.build();
@@ -127,7 +110,7 @@ public class GraphPanel extends JPanel {
 					
 					polyline.moveTo(UnitToPixelX(minX), UnitToPixelY(eqPrev));
 					polylines.set(0, polyline);
-					interval = intervalFormula = (maxX - minX) / (this.getWidth());
+					interval  = (maxX - minX) / (this.getWidth());
 
 					for (double x = minX;x<100; x += interval) {
 						
