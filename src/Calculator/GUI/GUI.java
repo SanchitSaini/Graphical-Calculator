@@ -25,8 +25,6 @@ import Calculator.Calculator;
 import javax.swing.LayoutStyle.ComponentPlacement;
 import java.io.File;
 import java.io.IOException;
-import javax.swing.event.DocumentEvent;
-import javax.swing.event.DocumentListener;
 import javax.swing.JRadioButton;
 import javax.swing.ButtonGroup;
 
@@ -43,36 +41,22 @@ public class GUI extends JFrame{
     private String expression;
     private String fileName;
     private String dir;
-    private final ButtonGroup buttonGroup = new ButtonGroup();
-    private final ButtonGroup buttonGroup_1 = new ButtonGroup();
-    private String alignment;
+    private final ButtonGroup buttonGroupRowCol = new ButtonGroup();
+    private final ButtonGroup buttonGroupAngleType = new ButtonGroup();
     private String inputType;
     private boolean clearInput = false;
-    //private ArrayList<String> expElements = new ArrayList<String>();
-    //private ArrayList<String> expression = new ArrayList<String>();
-    
-  
-    
-    
-    
-    
-    
-    
-    public GUI() {
-
-    
-    //Input JLabel added
-    
-    
-
+ 
+   public GUI() {
+    //Calculator object for the backend computations	
     calculator = new Calculator();
     
     //Radian and Degree radio buttons
     JRadioButton rdbtnRadian = new JRadioButton("Radian");
-  	buttonGroup_1.add(rdbtnRadian);
+  	buttonGroupAngleType.add(rdbtnRadian);
   	JRadioButton radioButton = new JRadioButton("Degree");
   	radioButton.setSelected(true);
-  	buttonGroup_1.add(radioButton);
+  	buttonGroupAngleType.add(radioButton);
+  	//checking for radiobutton
   	if(rdbtnRadian.isSelected())
     {
     	inputType = rdbtnRadian.getText(); 
@@ -85,14 +69,16 @@ public class GUI extends JFrame{
   	
   	//Input format from file for Statistics function
   	JRadioButton rdbtnRowwise = new JRadioButton("Rowwise");
-  	buttonGroup.add(rdbtnRowwise);
+  	buttonGroupRowCol.add(rdbtnRowwise);
   	JRadioButton rdbtnColumnwise = new JRadioButton("Columnwise");
-  	buttonGroup.add(rdbtnColumnwise);
-  	if(rdbtnRowwise.isSelected())
+  	buttonGroupRowCol.add(rdbtnColumnwise);
+  	//checking for radiobutton
+  	final String alignment;
+    if(rdbtnRowwise.isSelected())
     {
     	alignment = rdbtnRowwise.getText(); 
     }
-    if(rdbtnColumnwise.isSelected())
+    else
     {
     	alignment = rdbtnColumnwise.getText(); 
     }
@@ -102,30 +88,6 @@ public class GUI extends JFrame{
     //Input given by user
     Input = new JTextField();
   	Input.setColumns(10);
-  	Input.getDocument().addDocumentListener(new DocumentListener(){
-
-		@Override
-		public void changedUpdate(DocumentEvent arg0) {
-			// TODO Auto-generated method stub
-			
-		}
-
-		@Override
-		public void insertUpdate(DocumentEvent arg0) {
-			// TODO Auto-generated method stub
-			
-		}
-
-		@Override
-		public void removeUpdate(DocumentEvent arg0) {
-			// TODO Auto-generated method stub
-	
-		}
-  		
-  	});
-  	
-  	
-  	
   	
   	//Digit Panel along with basic arithmetic buttons
   	JPanel digitPanel = new JPanel(new GridLayout(4,4));
@@ -176,7 +138,6 @@ public class GUI extends JFrame{
 		@Override
 		public void actionPerformed(ActionEvent e) {
 			// TODO Auto-generated method stub
-			JButton temp = (JButton)e.getSource();
 			int lenInput  = Input.getText().length() - 1;
 			String lastChar = Input.getText().substring(lenInput,lenInput + 1);
 			System.out.println(lastChar);
@@ -202,7 +163,7 @@ public class GUI extends JFrame{
 		@Override
 		public void actionPerformed(ActionEvent e) {
 			// TODO Auto-generated method stub
-			JButton temp = (JButton)e.getSource();
+			
 			int lenInput  = Input.getText().length() - 1;
 			String lastChar = Input.getText().substring(lenInput,lenInput + 1);
 			System.out.println(lastChar);
@@ -274,7 +235,7 @@ public class GUI extends JFrame{
 		@Override
 		public void actionPerformed(ActionEvent e) {
 			// TODO Auto-generated method stub
-			JButton temp = (JButton)e.getSource();
+			
 			Input.setText(Input.getText() + "√(");
 		}
   		
@@ -307,7 +268,7 @@ public class GUI extends JFrame{
 		@Override
 		public void actionPerformed(ActionEvent arg0) {
 			// TODO Auto-generated method stub
-			JButton temp = (JButton)arg0.getSource();
+			
 			Input.setText(Input.getText() + "10^");
 		}
   		
@@ -329,7 +290,7 @@ public class GUI extends JFrame{
   	tabbedPane.add("trig", trigPanel);
   	StatisticalFunctionsUI statPanel = new StatisticalFunctionsUI(calculator,Input);
   	tabbedPane.add("stats", statPanel);
-  	MemoryBasedFunctionsUI memPanel = new MemoryBasedFunctionsUI();
+  	MemoryBasedFunctionsUI memPanel = new MemoryBasedFunctionsUI(calculator,Input);
   	tabbedPane.add("Mem", memPanel);
   	MiscFunctionsUI miscPanel = new MiscFunctionsUI(Input);
   	tabbedPane.add("Misc", miscPanel);
@@ -347,9 +308,7 @@ public class GUI extends JFrame{
   				dir = c.getCurrentDirectory().toString();
 //  				StringBuilder pathName = new StringBuilder();
   				String pathName = dir + "\\" + fileName;
-  				calculator.readFromFile(pathName);
-//  	        	System.out.println(fileName);
-//  	      		System.out.println(dir);
+  				calculator.readFromFile(pathName,alignment);
   	      }
   	      if (rVal == JFileChooser.CANCEL_OPTION) {
   	        System.out.println("No File Selected!!");
@@ -359,8 +318,16 @@ public class GUI extends JFrame{
   	
   	
   	JButton btnGraph = new JButton("Graph");
-  	final JPanel panel = new GraphPanel();
   	
+  	final JPanel panel = new GraphPanel();
+  	btnGraph.addActionListener(new ActionListener() {
+  		public void actionPerformed(ActionEvent arg0) {
+  			//panel = new GraphPanel();
+  			((GraphPanel) panel).setEquation(Input.getText());
+  			panel.repaint();
+  		  	  		  	
+  		}
+  	});
   	
   	
   	JButton btnSaveGraph = new JButton("Save Graph");
@@ -476,14 +443,7 @@ public class GUI extends JFrame{
   	
   	
 
-  	btnGraph.addActionListener(new ActionListener() {
-  		public void actionPerformed(ActionEvent arg0) {
-  			//panel = new GraphPanel();
-  			((GraphPanel) panel).setEquation(Input.getText());
-  			panel.repaint();
-  		  	  		  	
-  		}
-  	});
+
   	
   	
   //Creating DigitPanel
@@ -518,8 +478,7 @@ public class GUI extends JFrame{
 					
 					if(clearInput)
 					{
-						//String lastChar = Input.getText().substring(Input.getText().length() - 1);
-						//System.out.println(Input.getText().charAt(Input.getText().length() - 1));
+						
 						int ascii = (int)Input.getText().charAt(Input.getText().length() - 1);
 						boolean asciiTest = (ascii>=48 && ascii<=57);
 						if(asciiTest)

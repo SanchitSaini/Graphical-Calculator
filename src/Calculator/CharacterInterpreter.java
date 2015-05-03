@@ -14,7 +14,6 @@ public class CharacterInterpreter {
     private Stack<String> valuesStack;
     private Stack<String> operatorStack;
 
-    private Operator operator;
 
 
 //    Variable names
@@ -22,7 +21,7 @@ public class CharacterInterpreter {
 
 
     public CharacterInterpreter() {
-    	operator = null;
+    	
     }
 
     //Function to return the values stack
@@ -165,7 +164,7 @@ public class CharacterInterpreter {
             {
                 pushElementToStack(operatorStack, input.substring(0,2));
                 evaluate();
-                return valuesStack.peek();
+                //return valuesStack.peek();
             }
 
 //          Check if the object is a '('. Push it to operator stack
@@ -343,16 +342,10 @@ public class CharacterInterpreter {
 
     }
 
-    public void applyOperator() {
-    }
+    
 
-    public void checkOperatorType() {
-
-    }
-
-    public void saveResultToSequence() {
-    }
-
+    
+    
 
     private boolean checkString(String st)
     {

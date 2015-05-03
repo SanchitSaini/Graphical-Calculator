@@ -88,8 +88,18 @@ public class Calculator {
 	 * Function that reads data points from a file
 	 * @param fileName
 	 */
-	public void readFromFile(String fileName){
+	public void readFromFile(String fileName,String alignType){
 		try {
+			//Create an object that allows file based import and export
+			data = new ImportExport();
+			//Open the file to be read
+			data.setDataSource(fileName);
+			if(alignType.equals("Rowwise"))
+				data.setAlignType(Alignment.ROWWISE);
+			else
+				data.setAlignType(Alignment.COLUMNWISE);
+			//Import the data from file and store it in the data member internally
+			data.importData();
 			
 		}
 		catch (Exception e) {
@@ -98,12 +108,6 @@ public class Calculator {
 			//Log the error
 			Logger.getLogger(e.getMessage());
 		}
-		//Create an object that allows file based import and export
-		data = new ImportExport();
-		//Open the file to be read
-		data.setDataSource(fileName);
-		//Import the data from file and store it in the data member internally
-		data.importData();
 
 	}
 
