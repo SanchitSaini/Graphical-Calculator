@@ -7,14 +7,15 @@ import javax.swing.GroupLayout.Alignment;
 import javax.swing.JButton;
 
 import Calculator.Calculator;
-import Calculator.ErrorModule;
-
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
 public class StatisticalFunctionsUI extends JPanel {
 
-  public StatisticalFunctionsUI(final Calculator calculator,final JTextField input) {
+  
+	private static final long serialVersionUID = 1L;
+
+public StatisticalFunctionsUI(final Calculator calculator,final JTextField input) {
   	
   	JButton btnMean = new JButton("Mean");
   	btnMean.addActionListener(new ActionListener(){

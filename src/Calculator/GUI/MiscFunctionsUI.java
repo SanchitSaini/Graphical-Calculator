@@ -8,10 +8,13 @@ import javax.swing.JTextField;
 
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
-import javax.swing.LayoutStyle.ComponentPlacement;
 
 public class MiscFunctionsUI extends JPanel{
 
+	
+	
+	private static final long serialVersionUID = 1L;
+	
 	public MiscFunctionsUI(final JTextField input) {
 		
 		JButton btnNcr = new JButton("nCr");
@@ -34,15 +37,6 @@ public class MiscFunctionsUI extends JPanel{
 		btnLog.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				input.setText(input.getText() + "log(");
-			}
-		});
-		
-		
-		
-		JButton btnLcm = new JButton("LCM");
-		btnLcm.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				input.setText(input.getText() + "LCM(");
 			}
 		});
 		
@@ -70,27 +64,34 @@ public class MiscFunctionsUI extends JPanel{
 			}
 		});
 		
+		JButton btnLog_1 = new JButton("log10");
+		btnLog_1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				input.setText(input.getText() + "log10(");
+			}
+		});
+		
 		GroupLayout groupLayout = new GroupLayout(this);
 		groupLayout.setHorizontalGroup(
 			groupLayout.createParallelGroup(Alignment.LEADING)
 				.addGroup(groupLayout.createSequentialGroup()
 					.addGap(31)
-					.addGroup(groupLayout.createParallelGroup(Alignment.LEADING)
-						.addComponent(btnNcr)
-						.addGroup(groupLayout.createParallelGroup(Alignment.TRAILING, false)
-							.addComponent(btnN, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-							.addComponent(btnLog, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-					.addGap(42)
 					.addGroup(groupLayout.createParallelGroup(Alignment.LEADING, false)
+						.addComponent(btnNcr, GroupLayout.DEFAULT_SIZE, 62, Short.MAX_VALUE)
+						.addComponent(btnLog, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+						.addComponent(btnN, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+					.addGap(29)
+					.addGroup(groupLayout.createParallelGroup(Alignment.LEADING, false)
+						.addComponent(btnCeiling, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
 						.addComponent(btnNpr, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-						.addComponent(btnLcm, Alignment.TRAILING, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
 						.addComponent(btnEx, Alignment.TRAILING, GroupLayout.DEFAULT_SIZE, 72, Short.MAX_VALUE))
 					.addGap(46)
-					.addGroup(groupLayout.createParallelGroup(Alignment.LEADING, false)
-						.addComponent(button, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-						.addComponent(btnFloor, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-						.addComponent(btnCeiling, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-					.addContainerGap(47, Short.MAX_VALUE))
+					.addGroup(groupLayout.createParallelGroup(Alignment.LEADING)
+						.addGroup(groupLayout.createParallelGroup(Alignment.LEADING, false)
+							.addComponent(button, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+							.addComponent(btnFloor, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+						.addComponent(btnLog_1))
+					.addContainerGap(121, Short.MAX_VALUE))
 		);
 		groupLayout.setVerticalGroup(
 			groupLayout.createParallelGroup(Alignment.LEADING)
@@ -103,17 +104,16 @@ public class MiscFunctionsUI extends JPanel{
 					.addGap(18)
 					.addGroup(groupLayout.createParallelGroup(Alignment.BASELINE)
 						.addComponent(btnLog)
-						.addComponent(btnLcm)
-						.addComponent(btnFloor))
+						.addComponent(btnFloor)
+						.addComponent(btnCeiling))
 					.addGap(29)
 					.addGroup(groupLayout.createParallelGroup(Alignment.BASELINE)
 						.addComponent(btnN)
 						.addComponent(btnEx)
-						.addComponent(btnCeiling))
-					.addContainerGap(135, Short.MAX_VALUE))
+						.addComponent(btnLog_1))
+					.addContainerGap(173, Short.MAX_VALUE))
 		);
 		setLayout(groupLayout);
 		
 	}
-
 }

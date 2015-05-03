@@ -8,7 +8,7 @@ public class SquareTest {
 
 	@Test
 	public void testEvaluatePass1() {
-		Square obj = new Square("2");
+		Square obj = new Square("3");
 		String result = String.valueOf(Math.pow(3,2));
 		assertEquals(result,obj.evaluate());
 	}
@@ -23,7 +23,7 @@ public class SquareTest {
 	@Test
 	public void testEvaluatePass3() {
 		Square obj = new Square("-5");
-		String result = String.valueOf(Math.pow(-5, 3));
+		String result = String.valueOf(Math.pow(-5, 2));
 		assertEquals(result,obj.evaluate());
 	}
 	

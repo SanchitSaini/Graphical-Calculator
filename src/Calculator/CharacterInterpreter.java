@@ -4,7 +4,7 @@ import java.util.Stack;
 
 import Calculator.Operators.Operator;
 import Calculator.Operators.OperatorFactory;
-import com.sun.org.apache.xalan.internal.xsltc.compiler.util.ErrorMessages_pt_BR;
+//import com.sun.org.apache.xalan.internal.xsltc.compiler.util.ErrorMessages_pt_BR;
 
 import java.util.*;
 
@@ -16,13 +16,13 @@ public class CharacterInterpreter {
 
     private Operator operator;
 
-    private boolean isExpression;
 
 //    Variable names
     public static final String[] variableBlackList = {"acos", "asin", "atan", "ceil", "cos", "exp", "floor", "log", "log10", "sin", "sqrt", "tan", "cot", "sec", "cosec", "abs", "ms", "acot", "asec", "acosec", };
 
 
-    public void CharacterInterpreter() {
+    public CharacterInterpreter() {
+    	operator = null;
     }
 
     //Function to return the values stack

@@ -16,7 +16,7 @@ public class Floor extends Unary {
 
 	public String evaluate() {
 		try {
-			
+			return String.valueOf(Math.floor(Double.parseDouble(super.firstOperand)));
 		}
 		catch(Exception e) {
 			//Display an error message
@@ -26,6 +26,6 @@ public class Floor extends Unary {
             //Return null
             return null;
 		}
-		return String.valueOf(Math.floor(Double.parseDouble(super.firstOperand)));
+		
 	}
 }

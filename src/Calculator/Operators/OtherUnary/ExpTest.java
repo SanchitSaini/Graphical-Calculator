@@ -18,7 +18,7 @@ public class ExpTest {
 	public void testEvaluatePass2() {
 		Exp obj = new Exp("0");
 //		System.out.println(obj.evaluate());
-		String result = String.valueOf(Math.exp(3));
+		String result = String.valueOf(Math.exp(0));
 		assertEquals(result,obj.evaluate());
 	}
 
