@@ -4,7 +4,7 @@ import java.util.Stack;
 
 import Calculator.Operators.Operator;
 import Calculator.Operators.OperatorFactory;
-import com.sun.org.apache.xalan.internal.xsltc.compiler.util.ErrorMessages_pt_BR;
+//import com.sun.org.apache.xalan.internal.xsltc.compiler.util.ErrorMessages_pt_BR;
 
 import java.util.*;
 

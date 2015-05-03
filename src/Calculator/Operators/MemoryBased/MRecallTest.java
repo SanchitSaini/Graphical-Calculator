@@ -11,7 +11,7 @@ public class MRecallTest {
 		MSet obj1 = new MSet("200");
 		obj1.evaluate();
 		MRecall obj2 = new MRecall();
-		assertEquals("200",obj2.evaluate());
+		assertEquals("200.0",obj2.evaluate());
 	}
 	
 	@Test

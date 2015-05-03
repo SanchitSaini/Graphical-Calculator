@@ -27,7 +27,7 @@ public class Tan extends Trigonometric {
 			}
 			//Else, check if the angle type is Radians and return the result in radian form if it is
 			else if(super.getAngleType() == AngleNotation.RADIANS) {
-				return String.valueOf(Math.tan(angle));
+				return String.valueOf(Math.tan(Math.toRadians(angle)));
 			}
 			else {
 				//For future extensions

@@ -39,7 +39,12 @@ public class Calculator {
 		return output;
 	}
 
-
+	/**
+	 * This function tries to compute/evaluate the solution of the calculation to be performed
+	 * @param expression The expression to be evaluated
+	 * @param angleType Type of angles being entered. May be Radians or Degrees
+	 * @return the computed output
+	 */
 	public String compute(String expression,String angleType)
 	{
 		//Create an object of the object that interprets the characters
@@ -56,7 +61,12 @@ public class Calculator {
 		}
 		//Else, raise an error, since angle should either be in radians or degrees
 		else {
-
+			//Display the error in the Error Module
+			ErrorModule.displayError("Angle type not valid.");
+			//Log the error
+			Logger.getLogger("Angle type not valid.");
+			//Return null to convey that an exception occured
+			return null;
 		}
 		try {
 			input = expression;
@@ -64,20 +74,43 @@ public class Calculator {
 			return output;
 		} 
 		catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		return null;  
+			//Display the error in the Error Module
+			ErrorModule.displayError("Please import a file or enter data points to work on.");
+			//Log the error
+			Logger.getLogger(e.getMessage());
+			//Return null to convey that an exception occured
+			return null;
+		}  
 	}
 
 
+	/**
+	 * Function that reads data points from a file
+	 * @param fileName
+	 */
 	public void readFromFile(String fileName){
+		try {
+			
+		}
+		catch (Exception e) {
+			//Display the error in the Error Module
+			ErrorModule.displayError("Error reading from file.");
+			//Log the error
+			Logger.getLogger(e.getMessage());
+		}
+		//Create an object that allows file based import and export
 		data = new ImportExport();
+		//Open the file to be read
 		data.setDataSource(fileName);
+		//Import the data from file and store it in the data member internally
 		data.importData();
 
 	}
 
+	/**
+	 * 
+	 * @return
+	 */
 	public String computeMean()
 	{
 		try{
@@ -87,24 +120,73 @@ public class Calculator {
 		}
 		catch(NullPointerException e)
 		{
+			//Display the error in the Error Module
 			ErrorModule.displayError("Please import a file or enter data points to work on.");
+			//Log the error
 			Logger.getLogger(e.getMessage());
+			//Return null to convey that an exception occured
+			return null;
+		}
+		catch(Exception e) {
+			//Display the error in the Error Module
+			ErrorModule.displayError("Error! Please try again.");
+			//Log the error
+			Logger.getLogger(e.getMessage());
+			//Return null to convey that an exception occured
 			return null;
 		}
 	}
 
 	public String computeMedian()
 	{
-		statistics = new Median(data.getDataValues());
-		String median = statistics.evaluate();
-		return median;
+		try {
+			statistics = new Median(data.getDataValues());
+			String median = statistics.evaluate();
+			return median;
+		}
+		catch(NullPointerException e)
+		{
+			//Display the error in the Error Module
+			ErrorModule.displayError("Please import a file or enter data points to work on.");
+			//Log the error
+			Logger.getLogger(e.getMessage());
+			//Return null to convey that an exception occured
+			return null;
+		}
+		catch(Exception e) {
+			//Display the error in the Error Module
+			ErrorModule.displayError("Error! Please try again.");
+			//Log the error
+			Logger.getLogger(e.getMessage());
+			//Return null to convey that an exception occured
+			return null;
+		}
 	}
 
 	public String computeMode()
 	{
-		statistics = new Mode(data.getDataValues());
-		String mode = statistics.evaluate();
-		return mode;
+		try {
+			statistics = new Mode(data.getDataValues());
+			String mode = statistics.evaluate();
+			return mode;
+		}
+		catch(NullPointerException e)
+		{
+			//Display the error in the Error Module
+			ErrorModule.displayError("Please import a file or enter data points to work on.");
+			//Log the error
+			Logger.getLogger(e.getMessage());
+			//Return null to convey that an exception occured
+			return null;
+		}
+		catch(Exception e) {
+			//Display the error in the Error Module
+			ErrorModule.displayError("Error! Please try again.");
+			//Log the error
+			Logger.getLogger(e.getMessage());
+			//Return null to convey that an exception occured
+			return null;
+		}
 	}  
 
 }
